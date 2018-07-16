@@ -11,7 +11,7 @@ Implementing NN in Python for Computer vision in autonomous vehicles and robotic
 
 ## Content
 Codes (it'll send you to appropriate file):
-* [First_NN](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Folder1)
+* [First_NN](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/First_NN)
 
 <br/>
 Theory and experimental results (on this page):
