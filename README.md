@@ -23,7 +23,7 @@ Theory and experimental results (on this page):
 ### <a name="First NN">First NN</a>
 Soon.
 
-![Result](images/First_NN.png)
+![First_NN](images/First_NN.png)
 
 
 ## MIT License
