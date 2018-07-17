@@ -5,9 +5,6 @@
 # MIT License
 # Copyright (c) 2018 Valentyn N Sichkar
 # github.com/sichkar-valentyn
-#
-# Reference to:
-# [1] Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles and robotics // GitHub platform [Electronic resource]. URL: https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision (date of access: XX.XX.XXXX)
 
 
 
