@@ -1,7 +1,15 @@
 # Introduction in Neural Network (NN) with Python
 Explaining basic concepts on how NN works and implementing simple, kind of classical, task in Python using just <b>numpy</b> library without special toolkits and NN libraries.
 
-### Basic concepts of artificial NN
+## Content
+Theory and experimental results (on this page):
+
+* <a href="#Basic concepts of artificial NN">Basic concepts of artificial NN</a>
+* <a href="#Training of the neuron">Training of the neuron</a>
+* <a href="#Writing a code in Python">Writing a code in Python</a>
+* <a href="#Results">Results</a>
+
+### <a name="Basic concepts of artificial NN">Basic concepts of artificial NN</a>
 In our brain there are billions of billions neurons that are connected with each other with so called synapses (connectors). When we are thinking, neurons send signals to another neurons and depending on the power of this signals collected by synapses, the neurons can be activated and produce output to another neurons.
 <br/><br/> 
 On the figure below the simple one neuron is shown.
@@ -20,7 +28,7 @@ The Inputs above are called <b>Training sets</b> and the Outputs - <b>Desired re
 <br/>This fifth Input is called <b>Testing set</b>
 <br/>In the mathematical representation of NN we use matrices with numbers and to operate with neurons we provide operations between these matrices.
 
-### Training of the neuron
+### <a name="Training of the neuron">Training of the neuron</a>
 Process where we teach our neuron to produce desired results (to 'think') is called <b>Training process</b>.
 <br/>In order to begin the training process we need firstly to give the synapses (our input lines) weights. These weights will influence the output of the neuron.
 * So, we set the weights randomly, usually between 0 and 1.
@@ -56,7 +64,7 @@ where <b>O</b> - is an output of the neuron.
 
 where <b>error</b> - is the difference between the desired output and neuron's output, <b>I</b> - is an input value, and <b>O</b> - is an output value.
 
-### Writing a code in Python
+### <a name="Writing a code in Python">Writing a code in Python</a>
 To write a code in Python for building and training NN we will not use special toolkits or NN libraries. Instead we will use powerful <b>numpy</b> library to deal with matrices. Code with a lot of comments is shown below.
 
 ```py
@@ -153,10 +161,27 @@ print(single_neuron_neural_network.run_nn(np.array([1, 0, 0])))
  
 ```
 
-### Results
+### <a name="Results">Results</a>
+Set of inputs and outputs for the training process:
+<br/><b>input_set_for_training = np.array([[1, 1, 1], [1, 0, 1], [0, 0, 1], [0, 1, 1]])</b>
+<br/><b>output_set_for_training = np.array([[1, 1, 0, 0]]).T</b>  The output set we transposes into the vector with function 'T'
 
+Weights of synapses initialized from the beginning randomly:
+<br/><b>[[-0.16595599]</b>
+<br/><b>[ 0.44064899]</b>
+<br/><b>[-0.99977125]]</b>
 
+Weights of synapses after training process:
+<br/><b>[[ 8.95950703]</b>
+<br/><b>[-0.20975775]</b>
+<br/><b>[-4.27128529]]</b>
 
+The data for testing after training is [1, 0, 0] and the expected output is 1.
+<br/>Result is:
+<br/><b>[0.99987151]</b>
+<br/> Congratulations! The output is equal to <b>0.99987</b> which is very close to 1.
+
+<br/>
 
 ## MIT License
 ## Copyright (c) 2018 Valentyn N Sichkar
