@@ -5,7 +5,7 @@ Implementing Neural Networks for computer vision in autonomous vehicles and robo
 [1] Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles and robotics // GitHub platform [Electronic resource]. URL: https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision (date of access: XX.XX.XXXX)
 
 ## Description
-The aim of the repository is to study and create complex project on Computer vision in autonomous vehicles and robotics through basics in Neural Networks to advanced learning.
+The aim of the repository is to study and create complex project on Computer vision in autonomous vehicles and robotics through basics in Neural Networks to advanced learning. Here, later on, will be description of complex project. This repository is currently under construction.
 
 ## Content
 Codes (it'll send you to appropriate file):
@@ -16,6 +16,7 @@ Theory and experimental results (it'll send you to appropriate file):
 
 * [Introduction](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Introduction.md)
 
+<br/>
 
 ## MIT License
 ## Copyright (c) 2018 Valentyn N Sichkar
