@@ -8,6 +8,7 @@ Theory and experimental results (on this page):
 * <a href="#Training of the neuron">Training of the neuron</a>
 * <a href="#Writing a code in Python">Writing a code in Python</a>
 * <a href="#Results">Results</a>
+* <a href="#Analysis of results">Analysis of results</a>
 
 ### <a name="Basic concepts of artificial NN">Basic concepts of artificial NN</a>
 In our brain there are billions of billions neurons that are connected with each other with so called synapses (connectors). When we are thinking, neurons send signals to another neurons and depending on the power of this signals collected by synapses, the neurons can be activated and produce output to another neurons.
@@ -24,8 +25,8 @@ On the figure below the simple one neuron is shown.
 * Input #4 = 0 1 1; Output #4 = 0
 
 The Inputs above are called <b>Training sets</b> and the Outputs - <b>Desired results</b>.
-<br/>We will try to find the output for the <b>Input #5 = 1 0 0</b> (the output should be equal to 1)
-<br/>This fifth Input is called <b>Testing set</b>
+<br/>We will try to find the output for the <b>Input #5 = 1 0 0</b> (the output should be equal to 1).
+<br/>This fifth Input is called <b>Testing set</b>.
 <br/>In the mathematical representation of NN we use matrices with numbers and to operate with neurons we provide operations between these matrices.
 
 ### <a name="Training of the neuron">Training of the neuron</a>
@@ -73,6 +74,8 @@ To write a code in Python for building and training NN we will not use special t
 
 # Importing 'numpy' library
 import numpy as np
+# Importing 'matplotlib' library to plot experimental results in form of figures
+import matplotlib.pyplot as plt
 
 
 # Creating a class for Neural Network
@@ -180,6 +183,91 @@ The data for testing after training is [1, 0, 0] and the expected output is 1.
 <br/>Result is:
 <br/><b>[0.99987151]</b>
 <br/> Congratulations! The output is equal to <b>0.99987</b> which is very close to 1.
+
+
+
+### <a name="Analysis of results">Analysis of results</a>
+Now we're going to analyse obtained results and build the figure with <b>Outputs</b> and number of <b>Iterations</b> in order to understand the raising accuracy of output and needed amount of iterations for training.
+<br/>Let's consider following part of the code:
+
+```py
+# Providing experimental analysis
+# By this experiment we want to understand the needed amount of iterations to reach curtain accuracy
+# Creating list to store the resulting data
+lst_result = []
+
+# Creating list to store the number of iterations for each experiment
+lst_iterations = []
+
+# Creating a loop and collecting resulted output data with different numbers of iterations
+# From 10 to 1000 with step=10
+for i in range(10, 1000, 10):
+    # Create new instance of the NN class each time
+    # In order not to be influenced from the previous training results=
+    single_neuron_neural_network_analysis = NN()
+
+    # Starting the training process with number of repetitions equals to i
+    single_neuron_neural_network_analysis.training_process(input_set_for_training, output_set_for_training, i)
+
+    # Collecting number of iterations in the list
+    lst_iterations += [i]
+
+    # Now we run trained NN with data for testing and obtain the result
+    output = single_neuron_neural_network_analysis.run_nn(np.array([1, 0, 0]))
+
+    # Collecting resulted outputs in the list
+    lst_result += [output]
+
+
+# Plotting the results
+plt.figure()
+plt.plot(lst_iterations, lst_result, 'b')
+plt.title('Iterations via Output')
+plt.xlabel('Iterations')
+plt.ylabel('Output')
+
+# Showing the plots
+plt.show()
+
+```
+
+As a result we get our figure:
+
+![Figure](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/figure_1.png)
+
+We can see that after <b>200 iterations</b> the accuracy doesn't change to much.
+<br/>But how to calculate the exact number of iterations to achieve needed accuracy?
+<br/>Let's consider final part of the code
+
+```py
+# And finally lets find the exact number of needed iterations fo specific accuracy
+i = 10  # Iterations
+output = 0.1  # Output
+# Creating a while loop and training NN
+# Stop when output is with accuracy 0.999
+while output < 0.999:
+    # Again we create new instance of the NN class each time
+    # In order not to be influenced from the previous training results above
+    single_neuron_neural_network_analysis_1 = NN()
+
+    # Starting the training process with number of repetitions equals to i
+    single_neuron_neural_network_analysis_1.training_process(input_set_for_training, output_set_for_training, i)
+
+    # Now we run trained NN with data for testing and obtain the result
+    output = single_neuron_neural_network_analysis_1.run_nn(np.array([1, 0, 0]))
+
+    # Increasing the number of iterations
+    i += 10
+
+
+# Showing the found number of iterations for accuracy 0.999
+print(i)  # Needed numbers of iterations is equal to 740
+
+```
+
+So, as we can see, to reach the accuracy <b>0.999</b> we need <b>740</b> iterations.
+
+Full code is available here: [1_simple_NN.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/1_simple_NN.py)
 
 <br/>
 
