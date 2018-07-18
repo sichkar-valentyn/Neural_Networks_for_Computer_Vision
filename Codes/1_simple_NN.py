@@ -1,3 +1,17 @@
+# File: 1_simple_NN.py
+# Description: Function for modifying lists with remove and count methods
+# Environment: PyCharm and Anaconda environment
+#
+# MIT License
+# Copyright (c) 2018 Valentyn N Sichkar
+# github.com/sichkar-valentyn
+#
+# Reference to:
+#[1] Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles and robotics // GitHub platform [Electronic resource]. URL: https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision (date of access: XX.XX.XXXX)
+
+
+
+
 # Creating a simple NN by using mathematical 'numpy' library
 # We will use several methods from the library to operate with matrices
 
