@@ -1,22 +1,10 @@
-# File: 1_simple_NN.py
-# Description: Function for modifying lists with remove and count methods
-# Environment: PyCharm and Anaconda environment
-#
-# MIT License
-# Copyright (c) 2018 Valentyn N Sichkar
-# github.com/sichkar-valentyn
-#
-# Reference to:
-# [1] Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles and robotics // GitHub platform [Electronic resource]. URL: https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision (date of access: XX.XX.XXXX)
-
-
-
-
 # Creating a simple NN by using mathematical 'numpy' library
 # We will use several methods from the library to operate with matrices
 
 # Importing 'numpy' library
 import numpy as np
+# Importing 'matplotlib' library to plot experimental results in form of figures
+import matplotlib.pyplot as plt
 
 
 # Creating a class for Neural Network
@@ -70,7 +58,7 @@ class NN():
             self.weights_of_synapses += corrections
 
 
-# Creating NN by initializing instance of the class
+# Creating NN by initializing of instance of the class
 single_neuron_neural_network = NN()
 
 # Showing the weights of synapses initialized from the very beginning randomly
@@ -102,3 +90,66 @@ print(single_neuron_neural_network.run_nn(np.array([1, 0, 0])))
 
 # Congratulations! The output is equal to 0.99987 which is very close to 1
 # [0.99987151]
+
+
+# Providing experimental analysis
+# By this experiment we want to understand the needed amount of iterations to reach curtain accuracy
+# Creating list to store the resulting data
+lst_result = []
+
+# Creating list to store the number of iterations for each experiment
+lst_iterations = []
+
+# Creating a loop and collecting resulted output data with different numbers of iterations
+# From 10 to 1000 with step=10
+for i in range(10, 1000, 10):
+    # Create new instance of the NN class each time
+    # In order not to be influenced from the previous training results=
+    single_neuron_neural_network_analysis = NN()
+
+    # Starting the training process with number of repetitions equals to i
+    single_neuron_neural_network_analysis.training_process(input_set_for_training, output_set_for_training, i)
+
+    # Collecting number of iterations in the list
+    lst_iterations += [i]
+
+    # Now we run trained NN with data for testing and obtain the result
+    output = single_neuron_neural_network_analysis.run_nn(np.array([1, 0, 0]))
+
+    # Collecting resulted outputs in the list
+    lst_result += [output]
+
+
+# Plotting the results
+plt.figure()
+plt.plot(lst_iterations, lst_result, 'b')
+plt.title('Iterations via Output')
+plt.xlabel('Iterations')
+plt.ylabel('Output')
+
+# Showing the plots
+plt.show()
+
+
+# And finally lets find the exact number of needed iterations fo specific accuracy
+i = 10  # Iterations
+output = 0.1  # Output
+# Creating a while loop and training NN
+# Stop when output is with accuracy 0.999
+while output < 0.999:
+    # Again we create new instance of the NN class each time
+    # In order not to be influenced from the previous training results above
+    single_neuron_neural_network_analysis_1 = NN()
+
+    # Starting the training process with number of repetitions equals to i
+    single_neuron_neural_network_analysis_1.training_process(input_set_for_training, output_set_for_training, i)
+
+    # Now we run trained NN with data for testing and obtain the result
+    output = single_neuron_neural_network_analysis_1.run_nn(np.array([1, 0, 0]))
+
+    # Increasing the number of iterations
+    i += 10
+
+
+# Showing the found number of iterations for accuracy 0.999
+print(i)  # Needed numbers of iterations is equal to 740
