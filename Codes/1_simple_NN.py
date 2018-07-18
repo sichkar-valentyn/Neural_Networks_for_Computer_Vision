@@ -7,7 +7,7 @@
 # github.com/sichkar-valentyn
 #
 # Reference to:
-#[1] Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles and robotics // GitHub platform [Electronic resource]. URL: https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision (date of access: XX.XX.XXXX)
+# [1] Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles and robotics // GitHub platform [Electronic resource]. URL: https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision (date of access: XX.XX.XXXX)
 
 
 
@@ -118,7 +118,7 @@ lst_iterations = []
 # From 10 to 1000 with step=10
 for i in range(10, 1000, 10):
     # Create new instance of the NN class each time
-    # In order not to be influenced from the previous training results=
+    # In order not to be influenced from the previous training results
     single_neuron_neural_network_analysis = NN()
 
     # Starting the training process with number of repetitions equals to i
@@ -167,3 +167,4 @@ while output < 0.999:
 
 # Showing the found number of iterations for accuracy 0.999
 print(i)  # Needed numbers of iterations is equal to 740
+
