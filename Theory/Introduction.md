@@ -203,7 +203,7 @@ lst_iterations = []
 # From 10 to 1000 with step=10
 for i in range(10, 1000, 10):
     # Create new instance of the NN class each time
-    # In order not to be influenced from the previous training results=
+    # In order not to be influenced from the previous training results
     single_neuron_neural_network_analysis = NN()
 
     # Starting the training process with number of repetitions equals to i
@@ -235,9 +235,9 @@ As a result we get our figure:
 
 ![Figure](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/figure_1.png)
 
-We can see that after <b>200 iterations</b> the accuracy doesn't change to much.
+We can see that after <b>200 iterations</b> the accuracy doesn't change too much.
 <br/>But how to calculate the exact number of iterations to achieve needed accuracy?
-<br/>Let's consider final part of the code
+<br/>Let's consider final part of the code:
 
 ```py
 # And finally lets find the exact number of needed iterations fo specific accuracy
@@ -265,7 +265,7 @@ print(i)  # Needed numbers of iterations is equal to 740
 
 ```
 
-So, as we can see, to reach the accuracy <b>0.999</b> we need <b>740</b> iterations.
+As we can see, to reach the accuracy <b>0.999</b> we need <b>740</b> iterations.
 
 Full code is available here: [1_simple_NN.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/1_simple_NN.py)
 
