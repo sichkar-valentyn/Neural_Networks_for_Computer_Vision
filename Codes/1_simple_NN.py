@@ -1,5 +1,5 @@
 # File: 1_simple_NN.py
-# Description: Function for modifying lists with remove and count methods
+# Description: Neural Networks for computer vision in autonomous vehicles and robotics
 # Environment: PyCharm and Anaconda environment
 #
 # MIT License
