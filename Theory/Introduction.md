@@ -167,7 +167,8 @@ print(single_neuron_neural_network.run_nn(np.array([1, 0, 0])))
 ### <a name="Results">Results</a>
 Set of inputs and outputs for the training process:
 <br/><b>input_set_for_training = np.array([[1, 1, 1], [1, 0, 1], [0, 0, 1], [0, 1, 1]])</b>
-<br/><b>output_set_for_training = np.array([[1, 1, 0, 0]]).T</b>  The output set we transposes into the vector with function 'T'
+<br/>The output set we transposes into the vector with function 'T':
+<br/><b>output_set_for_training = np.array([[1, 1, 0, 0]]).T</b>
 
 Weights of synapses initialized from the beginning randomly:
 <br/><b>[[-0.16595599]</b>
