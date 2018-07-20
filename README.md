@@ -12,7 +12,7 @@ Codes (it'll send you to appropriate file):
 * [1_simple_NN](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/1_simple_NN.py)
 
 <br/>
-Theory and experimental results (it'll send you to appropriate file):
+Theory and experimental results (it'll send you to appropriate page):
 
 * [Introduction](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Introduction.md)
 
