@@ -1,9 +1,9 @@
 # Neural Networks for Computer Vision
 Implementing Neural Networks for computer vision in autonomous vehicles and robotics for classification, pattern recognition, control. From very beginning to complex project
-<br/>![DOI](https://zenodo.org/badge/141113366.svg)
+<br/>![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1317904.svg)
 
 ### Reference to:
-Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles and robotics // GitHub platform. DOI: 10.5281/zenodo.1317905
+Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles and robotics // GitHub platform. DOI: 10.5281/zenodo.1317904
 
 ## Description
 The aim of the repository is to study and create complex project on Computer vision in autonomous vehicles and robotics through basics in Neural Networks to advanced learning. Here, later on, will be description of complex project. This repository is currently under construction.
@@ -23,4 +23,4 @@ Theory and experimental results (it'll send you to appropriate page):
 ### Copyright (c) 2018 Valentyn N Sichkar
 ### github.com/sichkar-valentyn
 ### Reference to:
-Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles and robotics // GitHub platform. DOI: 10.5281/zenodo.1317905
+Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles and robotics // GitHub platform. DOI: 10.5281/zenodo.1317904
