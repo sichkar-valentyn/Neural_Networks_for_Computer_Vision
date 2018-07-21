@@ -27,7 +27,9 @@ On the figure below the simple one neuron is shown.
 The Inputs above are called <b>Training sets</b> and the Outputs - <b>Desired results</b>.
 <br/>We will try to find the output for the <b>Input #5 = 1 0 0</b> (the output should be equal to 1).
 <br/>This fifth Input is called <b>Testing set</b>.
-<br/>In the mathematical representation of NN we use matrices with numbers and to operate with neurons we provide operations between these matrices.
+<br/>In the mathematical representation of NN we use matrices with numbers and to operate with neurons we provide operations between these matrices as it is shown below on the figure.
+
+![Matrices](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/matrices.png)
 
 ### <a name="Training of the neuron">Training of the neuron</a>
 Process where we teach our neuron to produce desired results (to 'think') is called <b>Training process</b>.
