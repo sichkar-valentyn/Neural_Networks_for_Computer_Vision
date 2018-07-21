@@ -1,6 +1,6 @@
 # Neural Networks for Computer Vision
 Implementing Neural Networks for computer vision in autonomous vehicles and robotics for classification, pattern recognition, control. From very beginning to complex project
-<br/>![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1317904.svg)
+<br/>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1317904.svg)](https://zenodo.org/badge/DOI/10.5281/zenodo.1317904.svg)
 
 ### Reference to:
 Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles and robotics // GitHub platform. DOI: 10.5281/zenodo.1317904
