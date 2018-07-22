@@ -8,6 +8,11 @@ Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles a
 ## Description
 The aim of the repository is to study and create complex project on Computer vision in autonomous vehicles and robotics through basics in Neural Networks to advanced learning. Here, later on, will be description of complex project. This repository is currently under construction.
 
+### Related works:
+* The research results for Neural Network Knowledge Based system for the tasks of collision avoidance is put in separate repository and is available here: https://github.com/sichkar-valentyn/Matlab_implementation_of_Neural_Networks
+
+* The study of Semantic Representation of knowledge and querying of it through owl files with SPARQL is put in separate repository and is available here: https://github.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files
+
 ## Content
 Codes (it'll send you to appropriate file):
 * [1_simple_NN](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/1_simple_NN.py)
