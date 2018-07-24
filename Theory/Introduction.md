@@ -66,7 +66,7 @@ where <b>O</b> - is an output of the neuron.
 
 ![Correct weights](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/correct_weights.png)
 
-where <b>error</b> - is the difference between the desired output and neuron's output, <b>I</b> - is an input value, and <b>O</b> - is an output value.
+where <b>I</b> - is an input value, <b>error</b> - is the difference between the desired output and neuron's output, and <b>O</b> - is an output value.
 
 ### <a name="Writing a code in Python">Writing a code in Python</a>
 To write a code in Python for building and training NN we will not use special toolkits or NN libraries. Instead we will use powerful <b>numpy</b> library to deal with matrices. Code with a lot of comments is shown below.
@@ -126,7 +126,7 @@ class NN():
             nn_error = set_of_outputs_for_training - nn_output
 
             # Calculating correction values for weights
-            # We multiply the error to the input set and by Gradient of Sigmoid
+            # We multiply input to the error multiplied by Gradient of Sigmoid
             # In this way, the weights that do not fit too much will be corrected more
             # If some inputs are equal to 0, that will not influence to the value of weights
             # We use here function 'T' that transpose matrix and allows to multiply matrices
