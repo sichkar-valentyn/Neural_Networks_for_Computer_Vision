@@ -65,7 +65,7 @@ import numpy as np
 
 
 
-Full code is available here: [Code2_simple_three_layer_NN.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Code2_simple_three_layers_NN.py)
+Full code is available here: [Code2_simple_three_layers_NN.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Code2_simple_three_layers_NN.py)
 
 <br/>
 
