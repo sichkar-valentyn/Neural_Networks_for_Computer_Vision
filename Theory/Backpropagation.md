@@ -7,6 +7,7 @@ Theory and experimental results (on this page):
 
 * <a href="#Three Layers NN">Three Layers NN</a>
 * <a href="#Mathematical calculations">Mathematical calculations</a>
+* <a href="#Backpropagation">Backpropagation</a>
 
 ### <a name="Three Layers NN">Three Layers NN</a>
 In order to solve more complex tasks, apart from that was described in the [Introduction](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Introduction.md) part, it is needed to use more layers in the NN. In this case the weights will be updated sequentially from the last layer to the input layer with respect to the confidance of the current results. This approach is called **Backpropagation**.
@@ -35,8 +36,20 @@ In order to solve more complex tasks, apart from that was described in the [Intr
 By using matrices it is possible to calculate the output for each set of inputs.
 <br/>On the figure below operations between matrices are shown.
 
+![Matrices_for_three_layer_NN.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/matrices_for_three_layer_NN.png)
 
-<br/>
+<br/>First matrix corresponds to the inputs and is multiplied by matrix of weights. As a result, the matrix with values for hidden layer received which is further multiplied by another matrix of weights. And matrix with outputs finally received.
+
+### <a name="Backpropagation">Backpropagation</a>
+Updating the weights is the process of adjusting or training the NN in order to get more accurate result. Backpropagation updates weights from last layer to the first layer.
+* Firstly, the **error** for the **Layer 2** is calculated, which is the difference between desired output and received output, and this is the error for the last layer (Layer 2): **layer_2_error = Output data - Received data**
+* Secondly, the **delta** for the **Layer 2** is calculated, which is used for correction the weights of the hidden layer and for finding the error for the first layer: **delta_2 = layer_2_error * layer_2 * (1 - layer_2)**
+* Thirdly, the **error** for the **Layer 1** is calculated, multiplying **delta_2** by weights of the first layer. In this way the comparison of influence of the weights from the first layer to the weights from the hidden layer is evaluated: **layer_1_error = delta_2 * weights_layer_1**
+* Finally, the **delta** for the **Layer 1** is calculated for correction the weights of the first layer: **delta_1 = layer_1_error * layer_1 * (1 - layer_1)**
+
+After the **delta** for first and hidden layers were found, the weights are updated by multiplying matrices of outputs from layers on appropriate delta:
+* **weights_layer_2 += Layer_1 * delta_2***
+* **weights_layer_1 += Layer_0 * delta_1***
 
 
 
