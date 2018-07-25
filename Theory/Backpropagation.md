@@ -49,8 +49,8 @@ Updating the weights is the process of adjusting or training the NN in order to 
 * Finally, the **delta** for the **Layer 1** is calculated for correction the weights of the first layer: **delta_1 = layer_1_error * layer_1 * (1 - layer_1)**
 
 After the **delta** for first and hidden layers were found, the weights are updated by multiplying matrices of outputs from layers on appropriate delta:
-* **weights_layer_2 += Layer_1 * delta_2***
-* **weights_layer_1 += Layer_0 * delta_1***
+* **weights_layer_2 += Layer_1 * delta_2**
+* **weights_layer_1 += Layer_0 * delta_1**
 
 ### <a name="Writing a code in Python">Writing a code in Python</a>
 To write a code in Python for building and training three layers NN we will use <b>numpy</b> library to deal with matrices.
