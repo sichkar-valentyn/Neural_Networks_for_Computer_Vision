@@ -5,10 +5,12 @@ Explaining backpropagation on the three layer NN in Python using <b>numpy</b> li
 ## Content
 Theory and experimental results (on this page):
 
-* <a href="#Backropagation in NN">Concepts of backpropagation in NN</a>
+* <a href="#Concepts of backpropagation in NN">Concepts of backpropagation in NN</a>
 
-### <a name="Backropagation in NN">Concepts of backpropagation in NN</a>
-Backpropagation.
+### <a name="Concepts of backpropagation in NN">Concepts of backpropagation in NN</a>
+In order to solve more complex tasks, that was described in the [Introduction](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Introduction.md) part, it is needed to use more layers in the NN. In this case the weights will be updated sequentially from the last layer to the input layer with respect to the confidance of the current results. <br/>Let's consider three layer NN.
+<br/>On the figure below the NN is shown.
+<br/>It has .
 <br/><br/>
 
 ![Three_layer_NN](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/three_layer_NN.png)
