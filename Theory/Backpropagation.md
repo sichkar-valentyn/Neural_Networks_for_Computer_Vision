@@ -8,6 +8,7 @@ Theory and experimental results (on this page):
 * <a href="#Three Layers NN">Three Layers NN</a>
 * <a href="#Mathematical calculations">Mathematical calculations</a>
 * <a href="#Backpropagation">Backpropagation</a>
+* <a href="#Writing a code in Python">Writing a code in Python</a>
 
 ### <a name="Three Layers NN">Three Layers NN</a>
 In order to solve more complex tasks, apart from that was described in the [Introduction](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Introduction.md) part, it is needed to use more layers in the NN. In this case the weights will be updated sequentially from the last layer to the input layer with respect to the confidance of the current results. This approach is called **Backpropagation**.
@@ -38,7 +39,7 @@ By using matrices it is possible to calculate the output for each set of inputs.
 
 ![Matrices_for_three_layer_NN.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/matrices_for_three_layer_NN.png)
 
-<br/>First matrix corresponds to the inputs and is multiplied by matrix of weights. As a result, the matrix with values for hidden layer received which is further multiplied by another matrix of weights. And matrix with outputs finally received.
+<br/>First matrix corresponds to the inputs (Layer 0) and is multiplied by matrix of weights. As a result, the matrix with values for hidden layer (Layer 1) received which is further multiplied by another matrix of weights. And matrix with outputs (Layer 2) finally received.
 
 ### <a name="Backpropagation">Backpropagation</a>
 Updating the weights is the process of adjusting or training the NN in order to get more accurate result. Backpropagation updates weights from last layer to the first layer.
@@ -51,10 +52,15 @@ After the **delta** for first and hidden layers were found, the weights are upda
 * **weights_layer_2 += Layer_1 * delta_2***
 * **weights_layer_1 += Layer_0 * delta_1***
 
-
+### <a name="Writing a code in Python">Writing a code in Python</a>
+To write a code in Python for building and training three layers NN we will use <b>numpy</b> library to deal with matrices.
 
 ```py
-Code
+
+# Importing 'numpy' library
+import numpy as np
+
+
 ```
 
 
