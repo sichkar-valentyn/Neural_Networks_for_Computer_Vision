@@ -1,5 +1,5 @@
 # Backpropagation in Neural Network (NN) with Python
-Explaining backpropagation on the three layer NN in Python using just <b>numpy</b> library without special toolkits and NN libraries.
+Explaining backpropagation on the three layer NN in Python using <b>numpy</b> library.
 <br/>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1317904.svg)](https://doi.org/10.5281/zenodo.1317904)
 
 ## Content
@@ -13,11 +13,13 @@ Backpropagation.
 
 ![Three_layer_NN](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/three_layer_NN.png)
 
+```py
+Code
+```
 
 
 
-
-Full code is available here: [Code2_simple_three_layer_NN.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Code2_simple_three_layer_NN)
+Full code is available here: [Code2_simple_three_layer_NN.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Code2_simple_three_layer_NN.py)
 
 <br/>
 
