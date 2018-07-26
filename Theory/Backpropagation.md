@@ -233,15 +233,15 @@ Set of inputs and outputs for the training process:
 <br/><b>output_set_for_training = np.array([[1, 1, 0, 0]]).T</b>
 
 Weights of synapses initialized from the very beginning randomly
-<br/>[[-0.16595599  0.44064899 -0.99977125 -0.39533485]
+<br/><b>[[-0.16595599  0.44064899 -0.99977125 -0.39533485]
 <br/>[-0.70648822 -0.81532281 -0.62747958 -0.30887855]
-<br/>[-0.20646505  0.07763347 -0.16161097  0.370439  ]]
+<br/>[-0.20646505  0.07763347 -0.16161097  0.370439  ]]</b>
 
 Weights 1-2 between hidden layer (Layer 1) and output layer (Layer 2)
-<br/>[[-0.5910955 ]
+<br/><b>[[-0.5910955 ]
 <br/>[ 0.75623487]
 <br/>[-0.94522481]
-<br/>[ 0.34093502]]
+<br/>[ 0.34093502]]</b>
 
 The data for testing after training is [1, 0, 0] and the expected output is 1.
 <br/>Result is:
