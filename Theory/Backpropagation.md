@@ -43,12 +43,18 @@ By using matrices it is possible to calculate the output for each set of inputs.
 
 ### <a name="Backpropagation">Backpropagation</a>
 Updating the weights is the process of adjusting or training the NN in order to get more accurate result. Backpropagation updates weights from last layer to the first layer.
-* Firstly, the **error** for the **Layer 2** is calculated, which is the difference between desired output and received output, and this is the error for the last layer (Layer 2): <br/>**layer_2_error = Output data - Received data**
-* Secondly, the **delta** for the **Layer 2** is calculated, which is used for correction the weights of the hidden layer and for finding the error for the first layer. The adjustments will be done in proportion to the value of error by using **Sigmoid Gradient** that was described in the [Introduction](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Introduction.md) part: <br/>**delta_2 = layer_2_error * layer_2 * (1 - layer_2)**
-* Thirdly, the **error** for the **Layer 1** is calculated, multiplying **delta_2** by weights of the first layer. In this way the comparison of influence of the weights from the first layer to the weights from the hidden layer is evaluated: <br/>**layer_1_error = delta_2 * weights_layer_1**
-* Finally, the **delta** for the **Layer 1** is calculated for correction the weights of the first layer: <br/>**delta_1 = layer_1_error * layer_1 * (1 - layer_1)**
+* Firstly, the **error** for the output **Layer 2** is calculated, which is the difference between desired output and received output, and this is the error for the last output layer (Layer 2): <br/>**layer_2_error = Desired data - Received data**
+* Secondly, the **delta** for the output **Layer 2** is calculated, which is used for correction the **Weights 1-2** and for finding the error for the hidden layer (Layer 1). The adjustments will be done in proportion to the value of error by using **Sigmoid Gradient** that was described in the [Introduction](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Introduction.md) part: <br/>**delta_2 = layer_2_error * layer_2 * (1 - layer_2)**
+* Thirdly, the **error** for the hidden **Layer 1** is calculated, multiplying **delta_2** by **Weights 0-1**. In this way the comparison of influence of the weights from the first layer (Layer 0) to the weights from the hidden layer (Layer 1) is evaluated: <br/>**layer_1_error = delta_2 * weights_0-1**
+* Finally, the **delta** for the hidden **Layer 1** is calculated for correction the **Weights 1-2**: <br/>**delta_1 = layer_1_error * layer_1 * (1 - layer_1)**
 
-After the **delta** for first and hidden layers were found, the weights are updated by multiplying matrices of outputs from layers on appropriate delta:
+Just steps are shown below:
+* **layer_2_error = Desired data - Received data**
+* **delta_2 = layer_2_error * layer_2 * (1 - layer_2)**
+* **layer_1_error = delta_2 * weights_0-1**
+* **delta_1 = layer_1_error * layer_1 * (1 - layer_1)**
+
+After the **delta**s for first and hidden layers were found, the weights are updated by multiplying matrices of outputs from layers on appropriate delta:
 * **weights_layer_2 += Layer_1 * delta_2**
 * **weights_layer_1 += Layer_0 * delta_1**
 
