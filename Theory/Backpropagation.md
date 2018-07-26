@@ -116,9 +116,9 @@ class ThreeLayersNeuralNetwork():
     def run_nn(self, set_of_inputs):
         # Feed forward through three layers in NN
         # Results are returned in normalized form in appropriate dimensions
-        layer_0 = set_of_inputs  # matrix 4x3
-        layer_1 = self.normalizing_results(np.dot(layer_0, self.weights_0_1))  # matrix 4x3 * matrix 3x4 = matrix 4x4
-        layer_2 = self.normalizing_results(np.dot(layer_1, self.weights_1_2))  # matrix 4x4 * matrix 4x1 = matrix 4x1
+        layer_0 = set_of_inputs  # matrix 1x3
+        layer_1 = self.normalizing_results(np.dot(layer_0, self.weights_0_1))  # matrix 1x3 * matrix 3x4 = matrix 1x4
+        layer_2 = self.normalizing_results(np.dot(layer_1, self.weights_1_2))  # matrix 1x4 * matrix 4x1 = matrix 1x1
         return layer_2
 
     # Creating function for training the NN
