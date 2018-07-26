@@ -54,7 +54,7 @@ Just steps are shown below:
 * **layer_1_error = delta_2 * weights_0-1**
 * **delta_1 = layer_1_error * layer_1 * (1 - layer_1)**
 
-After the **delta**s for first and hidden layers were found, the weights are updated by multiplying matrices of outputs from layers on appropriate delta:
+After the **delta**s for last (Layer 2) and hidden (Layer 1) layers were found, the weights are updated by multiplying matrices of outputs from layers on appropriate delta:
 * **weights_layer_2 += Layer_1 * delta_2**
 * **weights_layer_1 += Layer_0 * delta_1**
 
