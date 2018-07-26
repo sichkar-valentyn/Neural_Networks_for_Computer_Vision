@@ -1,4 +1,4 @@
-# File: Code2_simple_NN.py
+# File: Code2_simple_three_layers_NN.py
 # Description: Neural Networks for computer vision in autonomous vehicles and robotics
 # Environment: PyCharm and Anaconda environment
 #
@@ -8,6 +8,8 @@
 #
 # Reference to:
 # Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles and robotics // GitHub platform. DOI: 10.5281/zenodo.1317904
+
+
 
 
 # Creating a three layers NN by using mathematical 'numpy' library
@@ -81,9 +83,10 @@ class ThreeLayersNeuralNetwork():
             layer_2_error = set_of_outputs_for_training - self.layer_2
 
             # Showing the error each 500 iterations to track the improvements
-            # if (i % 500) == 0:
-            #     print('Final error after', i, 'iterations =', np.mean(np.abs(layer_2_error)))
-            #     # Final error after 0 iterations = 0.4685343254580603
+            # Comment before analysis to prevent extra information to be shown
+            if (i % 500) == 0:
+                print('Final error after', i, 'iterations =', np.mean(np.abs(layer_2_error)))
+                # Final error after 0 iterations = 0.4685343254580603
                 # Final error after 500 iterations = 0.027359665117498422
                 # Final error after 1000 iterations = 0.018014239352682853
                 # Final error after 1500 iterations = 0.01424538015492187
