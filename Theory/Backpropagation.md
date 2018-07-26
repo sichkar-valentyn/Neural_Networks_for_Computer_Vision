@@ -58,6 +58,10 @@ After the **delta**s for last (Layer 2) and hidden (Layer 1) layers were found, 
 * **weights_layer_2 += Layer_1 * delta_2**
 * **weights_layer_1 += Layer_0 * delta_1**
 
+<br/>On the figure below appropriate matrices are shown.
+
+![Matrices_for_three_layers_NN_1.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/matrices_for_three_layers_NN_1.png)
+
 ### <a name="Writing a code in Python">Writing a code in Python</a>
 To write a code in Python for building and training three layers NN we will use <b>numpy</b> library to deal with matrices.
 
