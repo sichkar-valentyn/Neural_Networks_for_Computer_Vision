@@ -5,7 +5,7 @@ Convolutional Neural Networks in Python using <b>numpy</b> library.
 ## Content
 Theory and experimental results (on this page):
 
-* <a href="#Three Layers NN">Three Layers NN</a>
+* <a href="#Convolutional NN">Convolutional NN</a>
 
 
 ### <a name="Convolutional NN">Convolutional NN</a>
