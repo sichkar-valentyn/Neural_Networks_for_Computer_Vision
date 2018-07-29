@@ -11,6 +11,8 @@ Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles a
 ## Description
 The aim of the repository is to study and create complex project on Computer vision in autonomous vehicles and robotics through basics in Neural Networks to advanced learning. Here, later on, will be description of complex project. This repository is currently under construction.
 
+![Under_construction](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/under_constaruction.png)
+
 ## Content
 Codes (it'll send you to appropriate file):
 * [Code1_simple_NN](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Code1_simple_NN.py)
