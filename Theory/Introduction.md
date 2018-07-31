@@ -42,7 +42,7 @@ Process where we teach our neuron to produce desired results (to 'think') is cal
 * Using the error, the weights are adjusted according to the direction of this error with very small value.
 
 The training steps described above we will repeat <b>5000 times</b>.
-<br/>After the neuron was trained it got the ability to 'think' and will produce correct prediction with <b>Testing set</b>. This technique is called <b>Back propagation</b>.
+<br/>After the neuron was trained it got the ability to 'think' and will produce correct prediction with <b>Testing set</b>. This technique is called <b>[Back propagation](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Backpropagation.md)</b>.
 
 Equation that is used by neuron for calculating the output is as following:
 
