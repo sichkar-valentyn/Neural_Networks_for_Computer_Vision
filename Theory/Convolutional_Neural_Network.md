@@ -1,14 +1,23 @@
-# Convolutional Neural Network (NN) with Python
+# Convolutional Neural Networks with Python
 Convolutional Neural Networks in Python using <b>numpy</b> library.
 <br/>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1317904.svg)](https://doi.org/10.5281/zenodo.1317904)
 
 ## Content
 Theory and experimental results (on this page):
 
-* <a href="#Convolutional NN">Convolutional NN</a>
+* <a href="#Convolutional Neural Networks">Convolutional Neural Networks</a>
+* <a href="#Layers of CNN">Layers of CNN</a>
+* <a href="#Architecture of CNNs">Architecture of CNNs</a>
 
 
-### <a name="Convolutional NN">Convolutional NN</a>
+
+### <a name="Convolutional Neural Networks">Convolutional Neural Networks</a>
+
+### <a name="Layers of CNN">Layers of CNN</a>
+
+### <a name="Architecture of CNNs">Architecture of CNNs</a>
+
+
 
 
 ```py
