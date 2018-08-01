@@ -7,7 +7,7 @@ Theory and experimental results (on this page):
 
 * <a href="#Convolutional Neural Networks">Convolutional Neural Networks</a>
 * <a href="#Layers of CNN">Layers of CNN</a>
-* <a href="#Architecture of CNNs">Architecture of CNNs</a>
+* <a href="#Architecture of CNN">Architecture of CNN</a>
 
 
 
@@ -15,7 +15,7 @@ Theory and experimental results (on this page):
 
 ### <a name="Layers of CNN">Layers of CNN</a>
 
-### <a name="Architecture of CNNs">Architecture of CNNs</a>
+### <a name="Architecture of CNN">Architecture of CNN</a>
 
 
 
