@@ -7,6 +7,10 @@ Theory and experimental results (on this page):
 
 * <a href="#Convolutional Neural Network">Convolutional Neural Network</a>
 * <a href="#Layers of CNN">Layers of CNN</a>
+  * <a href="#Convolutional Layer">Convolutional Layer</a>
+  * <a href="#Pooling Layer">Pooling Layer</a>
+  * <a href="#Normalization Layer">Normalization Layer</a>
+  * <a href="#Fully-Connected Layer">Fully-Connected Layer</a>
 * <a href="#Architecture of CNN">Architecture of CNN</a>
 
 
@@ -14,6 +18,14 @@ Theory and experimental results (on this page):
 ### <a name="Convolutional Neural Network">Convolutional Neural Network</a>
 
 ### <a name="Layers of CNN">Layers of CNN</a>
+
+### <a name="Convolutional Layer">Convolutional Layer</a>
+
+### <a name="Pooling Layer">Pooling Layer</a>
+
+### <a name="Normalization Layer">Normalization Layer</a>
+
+### <a name="Fully-Connected Layer">Fully-Connected Layer</a>
 
 ### <a name="Architecture of CNN">Architecture of CNN</a>
 
