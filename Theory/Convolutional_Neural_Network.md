@@ -31,7 +31,7 @@ But what is the difference then? The architecture of **CNN** makes an explicit a
 At the moment, **CNN** and its modifications are considered the best in accuracy and speed algorithms for finding objects on the stage.
 
 **Task**
-The task of classifying images is the obtaining initial image as input and output its class (cat, dog, etc.) or a group of likely classes that best characterizes the image. When the computer gets the image (takes the input data), it sees an array of pixels. Depending on the resolution and size of the image, for example, the size of the array can be 32x32x3 (where 3 are the values of the RGB channels). Each of these numbers is assigned a value from 0 to 255, which describes the intensity of the pixel at that point. These numbers are the only input data for the computer. The computer receives this matrix and displays numbers that describe the probability of the image class (75% for the cat, 20% for the dog, 10% for the bird, etc.).
+<br>The task of classifying images is the obtaining initial image as input and output its class (cat, dog, etc.) or a group of likely classes that best characterizes the image. When the computer gets the image (takes the input data), it sees an array of pixels. Depending on the resolution and size of the image, for example, the size of the array can be **32x32x3** (where 3 are the values of the **RGB channels**). Each of these numbers is assigned a value from **0 to 255**, which describes the intensity of the pixel at that point. These numbers are the only input data for the computer. The computer receives this matrix and displays numbers that describe the probability of the image class (**75%** for the cat, **20%** for the dog, **10%** for the bird, etc.).
 
 
 
