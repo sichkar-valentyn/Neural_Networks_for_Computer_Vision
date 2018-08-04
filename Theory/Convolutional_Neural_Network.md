@@ -5,16 +5,18 @@ Convolutional Neural Networks in Python using <b>numpy</b> library.
 ## Content
 Theory and experimental results (on this page):
 
-* <a href="#Convolutional Neural Network">Convolutional Neural Network</a>
+* <a href="#Brief Introduction into Convolutional Neural Network">Brief Introduction into Convolutional Neural Network</a>
+* <a href="#Task">Task</a>
 * <a href="#Layers of CNN">Layers of CNN</a>
   * <a href="#Convolutional Layer">Convolutional Layer</a>
   * <a href="#Pooling Layer">Pooling Layer</a>
   * <a href="#Normalization Layer">Normalization Layer</a>
   * <a href="#Fully-Connected Layer">Fully-Connected Layer</a>
+* <a href="#How does it work?">How does it work?</a>
 * <a href="#Architecture of CNN">Architecture of CNN</a>
 
 
-### <a name="Convolutional Neural Network">Convolutional Neural Network</a>
+### <a name="Brief Introduction into Convolutional Neural Network">Brief Introduction into Convolutional Neural Network</a>
 **Definition**
 <br/>**Convolutional Neural Network** (CNN, ConvNet) is a special architecture of artificial neural networks, aimed at effective image recognition, and it is a part of deep learning technologies. The working principle of **CNN** uses the features of the simple cells of the human visual cortex, responding to straight lines from different angles, as well as complex cells, whose reaction is associated with the activation of a certain set of simple cells. The idea of **CNN** is to alternate convolution layers and subsampling layers. The network structure is **feedforward** (without feedbacks), essentially multilayered. For training, standard methods are used, most often the method of **back propagation** of the error. The function of activation of neurons (transfer function) is any, at the choice of the researcher. The name of the network architecture is due to the existence of a convolution operation, the essence of which is that each fragment of the image is multiplied by the matrix (core) of convolution elementwise, and the result is summed and written to the same position of the output image.
 
@@ -38,7 +40,7 @@ As it is seen from the figure, every **CNN layer** converts 3D input volume into
 
 At the moment, **CNN** and its modifications are considered the best in accuracy and speed algorithms for finding objects on the stage.
 
-**Task**
+### <a name="Task">Task</a>
 <br>The task of classifying images is the obtaining initial image as input and output its class (cat, dog, etc.) or a group of likely classes that best characterizes the image. When the computer gets the image (takes the input data), it sees an array of pixels. Depending on the resolution and size of the image, for example, the size of the array can be **32x32x3** (where 3 are the values of the **RGB channels**). Each of these numbers is assigned a value from **0 to 255**, which describes the intensity of the pixel at that point. These numbers are the only input data for the computer. The computer receives this matrix and displays numbers that describe the probability of the image class (**75%** for the cat, **20%** for the dog, **10%** for the bird, etc.).
 
 
@@ -52,6 +54,8 @@ At the moment, **CNN** and its modifications are considered the best in accuracy
 ### <a name="Normalization Layer">Normalization Layer</a>
 
 ### <a name="Fully-Connected Layer">Fully-Connected Layer</a>
+
+### <a name="How does it work?">How does it work?</a>
 
 ### <a name="Architecture of CNN">Architecture of CNN</a>
 
