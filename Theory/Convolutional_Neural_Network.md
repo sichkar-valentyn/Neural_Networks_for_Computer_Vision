@@ -85,8 +85,8 @@ Initially, values of each feature map in convolution layer are equal to zero. Va
 ![Convolution_operation](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Convolution_operation.png)
 
 where
-<br/>**f**  - is initial matrix of input image,
-<br/>**g** - filter (kernel) for convolution.
+<br/>**f**  - is an initial matrix of input image,
+<br/>**g** - is a filter (kernel) for convolution.
 
 ![Convolution_process](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Convolution_process.png)
 
