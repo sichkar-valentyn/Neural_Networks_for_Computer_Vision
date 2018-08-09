@@ -63,6 +63,34 @@ These layers are used to build complete **CNN architecture**. A simple example o
 Eventually, described CNN architecture, with its set of layers, converts an input image into an output vector with probability for every class. The image belongs to the class that obtain the biggest value.
 
 ### <a name="Convolutional Layer">Convolutional Layer</a>
+A convolutional layer is a set of learnable filters (known also as core or kernel) and with the help of which a set of feature maps are obtained. Every filter produces its own feature map, or in other words - every feature map has its own filter. Consequently, convolutional layer consists of feature maps and corresponding filters.
+
+The number of feature maps is determined by the requirements for the task. If we take a large number of maps, then the quality of recognition will increase, but the computational complexity will also increase. Analysis of scientific articles shows that it is recommended to take the ratio of one to two - each map of the previous layer is associated with two maps of the convolutional layer. For the first convolutional layer, the previous one is the input layer. If the input layer has three channels R, G and B, then each channel will be assosiated with two feature maps in convolutional layer, and first convolutional layer will have six feauture maps. The size of all maps in convolutional layer is the same and are calculated by the formula:
+
+![Size_of_feature_map](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Size_of_feature_map.png)
+
+where
+(width, height) - is size of obtained feature map
+map_width - is width of previous map (or input layer if it is firs convolutional layer)
+map_height - is height of previous map (or input layer if it is firs convolutional layer)
+kernel_width - is width of the filter
+kernel_height - is height of the filter
+
+Filter (or kernel) slides over the entire area of the previous map and finds certain features. For example, one filter could produce the largest signal in the area of eye, mouth, or nose during training process, and another filter might reveal other features. Filter size is usually taken in the range from 3x3 to 7x7. If filter size is small, then it will not be able to identify any feature, if it's too large, then the number of connections between neurons increases. One of the main characteristic of CNN is in the filter which is a system of shared wieghts. Common weights allow to reduce the number of connections between neurons (in contrast with typical multilayer network) and allow to find the same features across entire image area.
+
+![CNN architecture](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/CNN_architecture.png)
+
+Initially, values of each feature map in convolution layer are equal to zero. Values of filter weights are randomly set in the range from -0.5 to 0.5. Flter slides over the previous map and performs a convolution operation. Mathematically it can be represented with equation:
+
+![Example_of_learned_filter](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Example_of_learned_filter.png)
+
+where
+f  - is initial matrix of inpiut image
+g - filter (kernel) for convolution
+
+![Convolution_operation](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Convolution_operation.png)
+
+This operation can be described as follows: filter g, with its window of given size, slides over the whole image with a given step (for example 1 or 2), then at each step elementwise multiplication process of two windows is done (filter window and appropriate image window), and result is summed and written into new matrix. Depending on the method of processing the edges of the original matrix, the resulted matrix may be less than the original, the same size or larger.
 
 ### <a name="Pooling Layer">Pooling Layer</a>
 
