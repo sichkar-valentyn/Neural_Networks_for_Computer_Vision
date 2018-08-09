@@ -71,22 +71,22 @@ The number of feature maps is determined by the requirements for the task. If we
 
 where
 <br/>**(width, height)** - is size of obtained feature map,
-<br/>**map_width** - is width of previous map (or input layer if it is firs convolutional layer),
-<br/>**map_height** - is height of previous map (or input layer if it is firs convolutional layer),
+<br/>**map_width** - is width of previous map (or input layer if it is first convolutional layer),
+<br/>**map_height** - is height of previous map (or input layer if it is first convolutional layer),
 <br/>**kernel_width** - is width of the filter,
 <br/>**kernel_height** - is height of the filter.
 
-Filter (or kernel) slides over the entire area of the previous map and finds certain features. For example, one filter could produce the largest signal in the area of eye, mouth, or nose during training process, and another filter might reveal other features. Filter size is usually taken in the range from 3x3 to 8x8. If filter size is small, then it will not be able to identify any feature, if it's too large, then the number of connections between neurons increases. One of the main characteristic of CNN is in the filter which is a system of **shared wieghts**. Common weights allow to reduce the number of connections between neurons (in contrast with typical multilayer network) and allow to find the same features across entire image area.
+Filter (or kernel) slides over the entire area of the previous map and finds certain features. For example, one filter could produce the largest signal in the area of eye, mouth, or nose during training process, and another filter might reveal other features. Filter size is usually taken in the range from 3x3 to 8x8. If filter size is small, then it will not be able to identify any feature, if it's too large, then the number of connections between neurons increases. One of the main characteristic of CNN is in the filter which is a system of **shared weights**. Common weights allow to reduce the number of connections between neurons (in contrast with typical multilayer network) and allow to find the same features across entire image area.
 
 ![Example_of_learned_filter](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Example_of_learned_filter.png)
 
-Initially, values of each feature map in convolution layer are equal to zero. Values of filter weights are randomly set in the range from -0.5 to 0.5. Flter slides over the previous map and performs a convolution operation. Mathematically it can be represented with equation:
+Initially, values of each feature map in convolution layer are equal to zero. Values of filter weights are randomly set in the range from -0.5 to 0.5. Filter slides over the previous map and performs a convolution operation. Mathematically it can be represented with equation:
 
 ![Convolution_operation](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Convolution_operation.png)
 
 where
-<br/>**f**  - is initial matrix of inpiut image
-<br/>**g** - filter (kernel) for convolution
+<br/>**f**  - is initial matrix of input image,
+<br/>**g** - filter (kernel) for convolution.
 
 ![Convolution_process](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Convolution_process.png)
 
