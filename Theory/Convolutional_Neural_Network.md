@@ -76,7 +76,7 @@ where
 <br/>**kernel_width** - is the width of the filter,
 <br/>**kernel_height** - is the height of the filter.
 
-Filter (or kernel) slides over the entire area of the previous map and finds certain features. For example, one filter could produce the largest signal in the area of eye, mouth, or nose during training process, and another filter might reveal other features. Filter size is usually taken in the range from 3x3 to 8x8. If filter size is small, then it will not be able to identify any feature, if it's too large, then the number of connections between neurons increases. One of the main characteristic of CNN is in the filter which is a system of **shared weights**. Common weights allow to reduce the number of connections between neurons (in contrast with typical multilayer network) and allow to find the same features across entire image area.
+Filter (or kernel) slides over the entire area of the previous map and finds certain features. For example, one filter could produce the largest signal in the area of eye, mouth, or nose during training process, and another filter might reveal other features. Filter size is usually taken in the range from 2x2 to 8x8. If filter size is small, then it will not be able to identify any feature, if it's too large, then the number of connections between neurons increases. One of the main characteristic of CNN is in the filter which is a system of **shared weights**. Common weights allow to reduce the number of connections between neurons (in contrast with typical multilayer network) and allow to find the same features across entire image area.
 
 ![Example_of_learned_filter](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Example_of_learned_filter.png)
 
