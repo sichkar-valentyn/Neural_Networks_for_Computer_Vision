@@ -102,6 +102,8 @@ where
 <br/>**f**  - is an initial matrix of input image,
 <br/>**g** - is a filter (kernel) for convolution.
 
+Convolution process is shown below.
+
 ![Convolution_process](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Convolution_process.png)
 
 This operation can be described as follows: filter **g**, with its window of given size, slides over the whole image with a given step (for example 1 or 2), then at each step elementwise multiplication process of two windows is done (filter window and appropriate image window), and result is summed and written into new matrix. Depending on the method of processing the edges of the original matrix, the resulted matrix may be less than the original, the same size or larger.
