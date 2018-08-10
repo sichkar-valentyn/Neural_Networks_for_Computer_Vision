@@ -78,6 +78,14 @@ where
 
 Filter (or kernel) slides over the entire area of the previous map and finds certain features. For example, one filter could produce the largest signal in the area of eye, mouth, or nose during training process, and another filter might reveal other features. Filter size is usually taken in the range from 2x2 to 8x8. If filter size is small, then it will not be able to identify any feature, if it's too large, then the number of connections between neurons increases. One of the main characteristic of CNN is in the filter which is a system of **shared weights**. Common weights allow to reduce the number of connections between neurons (in contrast with typical multilayer network) and allow to find the same features across entire image area.
 
+Filter for curve detection is shown below.
+
+![Filter_for_curve_detection](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Filter_for_curve_detection.png)
+
+Filter representation in pixels is shown below.
+
+![Filter_representation_in_pixels](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Filter_representation_in_pixels.png)
+
 ![Example_of_learned_filter](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Example_of_learned_filter.png)
 
 Initially, values of each feature map in convolution layer are equal to zero. Values of filter weights are randomly set in the range from -0.5 to 0.5. Filter slides over the previous map and performs a convolution operation. Mathematically it can be represented with equation:
