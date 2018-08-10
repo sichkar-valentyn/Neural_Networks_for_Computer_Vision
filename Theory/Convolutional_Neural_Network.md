@@ -86,6 +86,14 @@ Filter representation in pixels is shown below.
 
 ![Filter_representation_in_pixels](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Filter_representation_in_pixels.png)
 
+Filter on the image is shown below.
+
+![Filter_on_the_image](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Filter_on_the_image.jpg)
+
+Filter implementation to the receptive field on the image by elementwise multiplication is shown below.
+
+![Filter_implementation](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Filter_implementation.png)
+
 ![Example_of_learned_filter](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Example_of_learned_filter.png)
 
 Initially, values of each feature map in convolution layer are equal to zero. Values of filter weights are randomly set in the range from -0.5 to 0.5. Filter slides over the previous map and performs a convolution operation. Mathematically it can be represented with equation:
