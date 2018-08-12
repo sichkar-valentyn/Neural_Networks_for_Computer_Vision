@@ -94,7 +94,7 @@ Filter implementation to the receptive field on the image by elementwise multipl
 
 ![Filter_implementation](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Filter_implementation.png)
 
-Initially, values of each feature map in convolutional layer are equal to zero. Values of filter weights are randomly set in the range from -0.5 to 0.5 (if the special pre-trained filters are not used). Filter slides over the previous map and performs a convolution operation. Mathematically it can be represented with equation:
+Initially, values of each feature map in convolutional layer are equal to zero. Values of filter weights are randomly set in the range from -0.5 to 0.5 (if the special pre-trained filters are not used). Filter slides over the previous map (or over area on the input image if it is first convolutional layer) and performs a convolution operation. Mathematically it can be represented with equation:
 
 ![Convolution_operation](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Convolution_operation.png)
 
