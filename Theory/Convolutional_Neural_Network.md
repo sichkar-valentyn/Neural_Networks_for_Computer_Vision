@@ -15,6 +15,8 @@ Theory and experimental results (on this page):
 * <a href="#How does it work?">How does it work?</a>
 * <a href="#Architecture of CNN">Architecture of CNN</a>
 
+<br/>
+
 ### <a name="Brief Introduction into Convolutional Neural Network">Brief Introduction into Convolutional Neural Network</a>
 **Definition**. **Convolutional Neural Network** (CNN, ConvNet) is a special architecture of artificial neural networks, aimed at effective image recognition, and it is a part of deep learning technologies. The working principle of **CNN** uses the features of the simple cells of the human visual cortex, responding to straight lines from different angles, as well as complex cells, whose reaction is associated with the activation of a certain set of simple cells. The idea of **CNN** is to alternate convolution layers and subsampling layers. The network structure is **feedforward** (without feedbacks), essentially multilayered. For training, standard methods are used, most often the method of **back propagation** of the error. The function of activation of neurons (transfer function) is any, at the choice of the researcher. The name of the network architecture is due to the existence of a convolution operation, the essence of which is that each fragment of the image is multiplied by the matrix (core) of convolution elementwise, and the result is summed and written to the same position of the output image.
 
@@ -37,8 +39,12 @@ As it is seen from the figure, every **CNN layer** converts 3D input volume into
 
 At the moment, **CNN** and its modifications are considered the best in accuracy and speed algorithms for finding objects on the stage.
 
+<br/>
+
 ### <a name="Task">Task</a>
 The task of classifying images is the obtaining initial image as input and output its class (cat, dog, etc.) or a group of likely classes that best characterizes the image. When the computer gets the image (takes the input data), it sees an array of pixels. Depending on the resolution and size of the image, for example, the size of the array can be **32x32x3** (where 3 are the values of the **RGB channels**). Each of these numbers is assigned a value from **0 to 255**, which describes the intensity of the pixel at that point. These numbers are the only input data for the computer. The computer receives this matrix and displays numbers that describe the probability of the image class (**75%** for the cat, **20%** for the dog, **10%** for the bird, etc.).
+
+<br/>
 
 ### <a name="Layers of CNN">Layers of CNN</a>
 CNN is a sequence of layers. Each layer converts one volume of activations into another by means of a differentiable function. In the CNN, 3 main layers are used:
@@ -61,6 +67,8 @@ These layers are used to build complete **CNN architecture**. A simple example o
 **FC (Fully-Connected Layer)** - displays a 10-dimensional vector of classes (as CIFAR-10 data set has 10 categories) to determine scores for each class. Each neuron is connected to all values in the previous volume.
 
 Eventually, described CNN architecture, with its set of layers, converts an input image into an output vector with probability for every class. The image belongs to the class that obtain the biggest value.
+
+<br/>
 
 ### <a name="Convolutional Layer">Convolutional Layer</a>
 A convolutional layer is a set of **learnable filters** (known also as **core** or **kernel**) and with the help of which a set of **feature maps** (known also as **activation maps**) are obtained. Every filter produces its own feature map, or in other words - every feature map has its own filter. Consequently, convolutional layer consists of feature maps and corresponding filters.
@@ -124,6 +132,7 @@ General setting for hyperparameters are: **K_number = 2, K_size = 3, Step = 1, P
 <br/>Suppose that an input volume size is: **Width_In = 5, Height_In = 5, Depth_In = 3.**
 <br/>Then it means that there are **two 3 × 3 filters**, and they are applied with **step 1**. As a result, output volume has a spatial dimension (width and height are equal) calculated with described above equation: **(5 - 3 + 2) / 1 + 1 = 5.**
 
+<br/>
 
 ### <a name="Pooling Layer">Pooling Layer</a>
 
