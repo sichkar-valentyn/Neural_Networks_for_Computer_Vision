@@ -108,19 +108,24 @@ Convolution process is shown below.
 
 This operation can be described as follows: filter **g**, with its window of given size, slides over the whole image **f** with a given step (for example 1 or 2), then at each step elementwise multiplication process of two windows is done (filter window and appropriate image window), and result is summed and written into new matrix. Depending on the method of processing the edges of the original matrix, the resulted matrix may be less than the original, the same size or larger (in this example, obtained feature map is 3x3 size, but it can be 5x5 - the same with original input area, or even larger, or any other different size depending on the approach).
 
-Short summary about Convolutional Layer:
-* Hyperparameters:
-** number of filters (kernels) denoted as K_number,
-** size of filters (spatial dimension) denoted ad K_size,
-** step for sliding (also known as stride) denoted as Step,
-** processing edges by zero-padding parameter denoted as Pad.
-* Takes an input volume of size Width_In × Height_In × Depth_In
-* Gives an output volume of size Width_Out × Height_Out × Depth_Out, that are calculated by following equations:
-** Width_Out = (Width_In - K_size + 2Pad) / Step + 1
-** Height_Out = (Height_In - K_size + 2Pad) / Step + 1
-** Depth_Out = K_number
+**Short summary about Convolutional Layer:**
+* **Hyperparameters**:
+ * number of filters (kernels) denoted as **K_number**,
+ * size of filters (spatial dimension) denoted ad **K_size**,
+ * step for sliding (also known as stride) denoted as **Step**,
+ * processing edges by zero-padding parameter denoted as **Pad**.
+* Takes an input volume of size **Width_In × Height_In × Depth_In**.
+* Gives an output volume of size **Width_Out × Height_Out × Depth_Out**, that are calculated by following equations:
+ * **Width_Out = (Width_In - K_size + 2Pad) / Step + 1**,
+ * **Height_Out = (Height_In - K_size + 2Pad) / Step + 1**,
+ * **Depth_Out = K_number**.
 
-General setting for hyperparameters are: K_number = 2, K_size = 3, Step = 1, Pad = 1. And we have an input volume of size: Width_In = 5, Height_In = 5, Depth_In = 3, then it means that we have two 3 × 3 filters, and they are applied with step 2. As a result, output volume has a spatial dimension (width and height are equal): (5 - 3 + 2) / 2 + 1 = 3.
+General setting for hyperparameters are:
+<br/>**K_number = 2, K_size = 3, Step = 1, Pad = 1.**
+<br/>And we have an input volume of size:
+<br/>**Width_In = 5, Height_In = 5, Depth_In = 3.**
+<br/>Then it means that we have **two 3 × 3 filters**, and they are applied with **step 2**. As a result, output volume has a spatial dimension (width and height are equal) calculated with described above equation:
+<br/>**(5 - 3 + 2) / 2 + 1 = 3.**
 
 
 ### <a name="Pooling Layer">Pooling Layer</a>
