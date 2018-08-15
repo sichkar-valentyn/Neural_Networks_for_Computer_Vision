@@ -111,7 +111,7 @@ This operation can be described as follows: filter **g**, with its window of giv
 **Short summary about Convolutional Layer:**
 * **Hyperparameters**:
   * number of filters (kernels) denoted as **K_number**,
-  * size of filters (spatial dimension) denoted ad **K_size**,
+  * size of filters (spatial dimension) denoted as **K_size**,
   * step for sliding (also known as stride) denoted as **Step**,
   * processing edges by zero-padding parameter denoted as **Pad**.
 * Takes an input volume of size **Width_In × Height_In × Depth_In**.
@@ -122,7 +122,7 @@ This operation can be described as follows: filter **g**, with its window of giv
 
 General setting for hyperparameters are: **K_number = 2, K_size = 3, Step = 1, Pad = 1.**
 <br/>Suppose that an input volume size is: **Width_In = 5, Height_In = 5, Depth_In = 3.**
-<br/>Then it means that there are **two 3 × 3 filters**, and they are applied with **step 2**. As a result, output volume has a spatial dimension (width and height are equal) calculated with described above equation: **(5 - 3 + 2) / 2 + 1 = 3.**
+<br/>Then it means that there are **two 3 × 3 filters**, and they are applied with **step 1**. As a result, output volume has a spatial dimension (width and height are equal) calculated with described above equation: **(5 - 3 + 2) / 1 + 1 = 5.**
 
 
 ### <a name="Pooling Layer">Pooling Layer</a>
