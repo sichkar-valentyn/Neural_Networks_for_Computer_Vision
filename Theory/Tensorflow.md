@@ -1,5 +1,5 @@
-# Convolutional Neural Network (NN) with Python
-Convolutional Neural Networks in Python using <b>numpy</b> library.
+# Tensorflow with Python
+Building Neural Networks in Python using <b>Tensorflow</b>.
 <br/>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1317904.svg)](https://doi.org/10.5281/zenodo.1317904)
 
 ## Content
