@@ -11,6 +11,8 @@ Theory and experimental results (on this page):
 * <a href="#Results">Results</a>
 * <a href="#Analysis of results">Analysis of results</a>
 
+<br/>
+
 ### <a name="Basic concepts of artificial NN">Basic concepts of artificial NN</a>
 In our brain there are billions of billions neurons that are connected with each other with so called synapses (connectors). When we are thinking, neurons send signals to another neurons and depending on the power of this signals collected by synapses, the neurons can be activated and produce output to another neurons.
 <br/><br/> 
@@ -31,6 +33,8 @@ The Inputs above are called <b>Training sets</b> and the Outputs - <b>Desired re
 <br/>In the mathematical representation of NN we use matrices with numbers and to operate with neurons we provide operations between these matrices as it is shown below on the figure.
 
 ![Matrices](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/matrices.png) 
+
+<br/>
 
 ### <a name="Training of the neuron">Training of the neuron</a>
 Process where we teach our neuron to produce desired results (to 'think') is called <b>Training process</b>.
@@ -67,6 +71,8 @@ where <b>O</b> - is an output of the neuron.
 ![Correct weights](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/correct_weights.png)
 
 where <b>I</b> - is an input value, <b>error</b> - is the difference between the desired output and neuron's output, and <b>O</b> - is an output value.
+
+<br/>
 
 ### <a name="Writing a code in Python">Writing a code in Python</a>
 To write a code in Python for building and training NN we will not use special toolkits or NN libraries. Instead we will use powerful <b>numpy</b> library to deal with matrices. Code with a lot of comments is shown below.
@@ -177,6 +183,8 @@ print(single_neuron_neural_network.run_nn(np.array([1, 0, 0])))
  
 ```
 
+<br/>
+
 ### <a name="Results">Results</a>
 Set of inputs and outputs for the training process:
 <br/><b>input_set_for_training = np.array([[1, 1, 1], [1, 0, 1], [0, 0, 1], [0, 1, 1]])</b>
@@ -198,7 +206,7 @@ The data for testing after training is [1, 0, 0] and the expected output is 1.
 <br/><b>[0.99987151]</b>
 <br/> Congratulations! The output is equal to <b>0.99987</b> which is very close to 1.
 
-
+<br/>
 
 ### <a name="Analysis of results">Analysis of results</a>
 Now we're going to analyse obtained results and build the figure with <b>Outputs</b> and number of <b>Iterations</b> in order to understand the raising accuracy of output and needed amount of iterations for training.
