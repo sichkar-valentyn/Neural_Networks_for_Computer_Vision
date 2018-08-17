@@ -12,6 +12,8 @@ Theory and experimental results (on this page):
 * <a href="#Results">Results</a>
 * <a href="#Analysis of results">Analysis of results</a>
 
+<br/>
+
 ### <a name="Three Layers NN">Three Layers NN</a>
 In order to solve more complex tasks, apart from that was described in the [Introduction](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Introduction.md) part, it is needed to use more layers in the NN. In this case the weights will be updated sequentially from the last layer to the input layer with respect to the confidance of the current results. This approach is called **Backpropagation**.
 <br/><br/>Consider three layers NN.
@@ -35,6 +37,8 @@ In order to solve more complex tasks, apart from that was described in the [Intr
 **Weights 0-1** corresponds to the weights between Layer 0 and Layer 1.
 <br/>**Weights 1-2** corresponds to the weights between Layer 1 and Layer 2.
 
+<br/>
+
 ### <a name="Mathematical calculations">Mathematical calculations</a>
 By using matrices it is possible to calculate the output for each set of inputs.
 <br/>On the figure below operations between matrices are shown.
@@ -42,6 +46,8 @@ By using matrices it is possible to calculate the output for each set of inputs.
 ![Matrices_for_three_layers_NN.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/matrices_for_three_layers_NN.png)
 
 <br/>First matrix corresponds to the inputs (Layer 0) and is multiplied by matrix of weights. As a result, the matrix with values for hidden layer (Layer 1) received which is further multiplied by another matrix of weights. And matrix with outputs (Layer 2) finally received.
+
+<br/>
 
 ### <a name="Backpropagation">Backpropagation</a>
 Updating the weights is the process of adjusting or training the NN in order to get more accurate result. Backpropagation updates weights from last layer to the first layer.
@@ -63,6 +69,8 @@ After the **delta**s for last (Layer 2) and hidden (Layer 1) layers were found, 
 <br/>On the figure below appropriate matrices are shown.
 
 ![Matrices_for_three_layers_NN_1.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/matrices_for_three_layers_NN_1.png)
+
+<br/>
 
 ### <a name="Writing a code in Python">Writing a code in Python</a>
 To write a code in Python for building and training three layers NN we will use <b>numpy</b> library to deal with matrices.
@@ -226,6 +234,8 @@ print('Output result for testing data = ', three_layers_neural_network.run_nn(np
 # [0.99619533]
 ```
 
+<br/>
+
 ### <a name="Results">Results</a>
 Set of inputs and outputs for the training process:
 <br/><b>input_set_for_training = np.array([[1, 1, 1], [1, 0, 1], [0, 0, 1], [0, 1, 1]])</b>
@@ -247,6 +257,8 @@ The data for testing after training is [1, 0, 0] and the expected output is 1.
 <br/>Result is:
 <br/><b>[0.99619533]</b>
 <br/> Congratulations! The output is equal to <b>0.99619533</b> which is very close to 1.
+
+<br/>
 
 ### <a name="Analysis of results">Analysis of results</a>
 Analysing obtained results and building the figure with <b>Outputs</b> and number of <b>Iterations</b> in order to understand the raising accuracy of output and needed amount of iterations for training.
