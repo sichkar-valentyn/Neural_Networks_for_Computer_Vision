@@ -7,6 +7,7 @@ Theory and experimental results (on this page):
 
 * <a href="#Gradient descent">Gradient descent</a>
 
+<br/>
 
 ### <a name="Gradient descent">Gradient descent</a>
 
