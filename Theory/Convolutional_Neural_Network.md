@@ -139,7 +139,7 @@ General setting for hyperparameters are: **K_number = 2, K_size = 3, Step = 1, P
 
 Pooling Layer usually has the most common filters with size 2x2 and step equal to 2. Every filter in Pooling Layer is doing **MAX operation** choosing maximum value from 4 numbers. As an output, there is the same amount of feature maps with its depth from previous Convolutional Layer but with downsampling spatial size 2 times (by width and height). An example is shown on the figure below.
 
-![Pooling_process](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Pooling_process1.png)
+![Pooling_process](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Pooling_process_with_MAX.png)
 
 Apart from MAX operation, other functions can be applied, such as average pooling or normalization pooling, but they are used rarely.
 
