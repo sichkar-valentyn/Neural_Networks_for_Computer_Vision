@@ -135,6 +135,24 @@ General setting for hyperparameters are: **K_number = 2, K_size = 3, Step = 1, P
 <br/>
 
 ### <a name="Pooling Layer">Pooling Layer</a>
+**Pooling Layer** (also known as **subsampling layer** or **downsampling layer**) is inserted between **Convolutional Layers** and aimed to reduce spatial dimension of feature maps (width and height) doing it separately for each map through depth of volume of the previous layer. When some features have already been identified in the previous convolution operation, then a detailed image is no longer needed for further processing, and it is compressed to less detailed. This operation also helps to control overfitting.
+
+Pooling Layer usually has the most common filters with size 2x2 and step equal to 2. Every filter in Pooling Layer is doing **MAX operation** choosing maximum value from 4 numbers. As an output, there is the same amount of feature maps with its depth from previous Convolutional Layer but with downsampling spatial size 2 times (by width and height). An example is shown on the figure below.
+
+![Pooling_process](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Pooling_process.png)
+
+Apart from MAX operation, other functions can be applied, such as average pooling or normalization pooling, but they are used rarely.
+
+**Hyperparameters**:
+* size of filters (spatial dimension) denoted as **K_size**,
+* step for sliding (also known as stride) denoted as **Step**,
+
+Pooling layer takes an input volume of size **Width_In × Height_In × Depth_In** and gives an output volume of size **Width_Out × Height_Out × Depth_Out**, that are calculated by following equations:
+* **Width_Out = (Width_In - K_size) / Step + 1**,
+* **Height_Out = (Height_In - K_size) / Step + 1**,
+* **Depth_Out = Depth_In**.
+
+<br/>
 
 ### <a name="Normalization Layer">Normalization Layer</a>
 
