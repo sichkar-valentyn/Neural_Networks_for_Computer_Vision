@@ -159,7 +159,7 @@ One of the stages of Neural Network development is the choice of neuron activati
 
 ![ReLU_activation_function](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/ReLU_activation_function.png)
 
-Its essence lies in the fact that images becomes with **no negative values** - they are converted to 0.
+Its essence lies in the fact that images become with **no negative values** - they are converted to 0.
 
 The graph of the **ReLU function** is shown on the figure below:
 
