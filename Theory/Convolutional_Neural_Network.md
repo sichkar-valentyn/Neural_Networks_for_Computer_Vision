@@ -163,6 +163,7 @@ Its essence lies in the fact that images become with **no negative values** - th
 
 The graph of the **ReLU function** is shown on the figure below:
 
+![ReLU_activation_function_figure](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/ReLU_activation_function_figure.png)
 
 **Advantages**:
 * derivative of **ReLU function** is either unit or zero, and therefore no growth or attenuation of the gradients can occur. Multiplying unit by the delta of the error, we get the delta error. But if we used another function, for example, a **hyperbolic tangent**, then the delta error could either decrease, or increase. Hyperbolic tangent derivative returns a number with different sign and the magnitude that can greatly affect the attenuation or expansion of the gradient;
