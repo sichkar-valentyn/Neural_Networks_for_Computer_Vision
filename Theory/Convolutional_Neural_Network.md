@@ -10,7 +10,7 @@ Theory and experimental results (on this page):
 * <a href="#Layers of CNN">Layers of CNN</a>
   * <a href="#Convolutional Layer">Convolutional Layer</a>
   * <a href="#Pooling Layer">Pooling Layer</a>
-  * <a href="#Normalization Layer">Normalization Layer</a>
+  * <a href="#ReLU Layer">ReLU Layer</a>
   * <a href="#Fully-Connected Layer">Fully-Connected Layer</a>
 * <a href="#How does it work?">How does it work?</a>
 * <a href="#Architecture of CNN">Architecture of CNN</a>
@@ -154,7 +154,28 @@ Pooling layer takes an input volume of size **Width_In × Height_In × Depth_In*
 
 <br/>
 
-### <a name="Normalization Layer">Normalization Layer</a>
+### <a name="ReLU Layer">ReLU Layer</a>
+One of the stages of Neural Network development is the choice of neuron activation function. The form of the **activation function** largely determines the functionality of the Neural Network and the method of its learning. The classic **Back Propagation** algorithm works well on two-layer and three-layer neural networks, but with further increase in depth, it becomes problematic. One of the reasons is the so-called attenuation of the gradients. As the error propagates from the output layer to the input layer on each layer, the current result is multiplied by the derivative of the activation function. The derivative of the traditional **sigmoid activation function** is less than unity throughout the detection domain, so after several layers the error will be close to zero. If, on the contrary, the activation function has an unbounded derivative (as, for example, a **hyperbolic tangent**), then an explosive increase in error can occur as it spreads, which leads to instability of the learning procedure. That is why **Convolutional Layers** use the **ReLU (Rectified Linear Unit)**, that represents a rectified linear activation function, and is expressed by the following formula:
+
+![ReLU_activation_function](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/ReLU_activation_function.png)
+
+Its essence lies in the fact that images becomes with **no negative values** - they are converted to 0.
+
+The graph of the **ReLU function** is shown on the figure below:
+
+
+**Advantages**:
+* derivative of **ReLU function** is either unit or zero, and therefore no growth or attenuation of the gradients can occur. Multiplying unit by the delta of the error, we get the delta error, but if we used another function, for example, a **hyperbolic tangent**, then the delta error could either decrease, or increase, or remain the same. Hyperbolic tangent derivative returns a number with different sign and the magnitude that can greatly affect the attenuation or expansion of the gradient,
+
+* calculation of sigmoid and hyperbolic tangent requires **large computational operations** such as exponentiation, while ReLU can be implemented using a simple threshold transformation of matrices,
+
+* cuts unnecessary details for negative values in image matrices.
+
+It can be noted that ReLU is not always reliable enough and in the process of learning it can fail for some neurons. For example, a large gradient passing through the ReLU can lead to an update of the weights that the given neuron is never activated again. If this happens, then, from now on, the gradient passing through this neuron will always be zero. Accordingly, this neuron will be disabled. For example, if the learning rate is too high, it may turn out that up to 50% of ReLUs will never be activated. This problem is solved by choosing the proper learning rate.
+
+
+
+<br/>
 
 ### <a name="Fully-Connected Layer">Fully-Connected Layer</a>
 
