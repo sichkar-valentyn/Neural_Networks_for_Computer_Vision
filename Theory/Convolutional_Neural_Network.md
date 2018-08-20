@@ -177,9 +177,9 @@ It can be noted that ReLU is not always reliable enough and in the process of le
 <br/>
 
 ### <a name="Fully-Connected Layer">Fully-Connected Layer</a>
-The last type of layers is Fully Connected Layer. Which is a conventional Multilayer Perceptron. Neurons in the last FC Layer have full connections with all the activations in the previous layer. The calculation of the neuron values in the FC Layer can be described by the formula:
+The last type of layers is **Fully Connected Layer**. Which is a conventional **Multilayer Perceptron**. Neurons in the last FC Layer have full connections with all the activations in the previous layer. The calculation of the neuron values in the FC Layer can be described by the formula:
 
-![FC_neurons_values.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/FC_neurons_values.png)
+![FC_neurons_value](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/FC_neurons_value.png)
 
 where
 <br/>**x** - feature map (activation map) ***j*** of layer ***l***;
@@ -189,7 +189,7 @@ where
 
 After FC Layer, there is the last one - **Output Layer** of network, where **Softmax Function** is used to convert the outputs into probability values for each class as it is shown on the example on the figure below.
 
-![Softmax_function.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Softmax_function.png)
+![Softmax_function](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Softmax_function.png)
 
 <br/>
 
