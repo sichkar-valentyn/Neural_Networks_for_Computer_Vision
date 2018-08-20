@@ -168,7 +168,7 @@ The graph of the **ReLU function** is shown on the figure below:
 **Advantages**:
 * derivative of **ReLU function** is either unit or zero, and therefore no growth or attenuation of the gradients can occur. Multiplying unit by the delta of the error, we get the delta error. But if we used another function, for example, a **hyperbolic tangent**, then the delta error could either decrease, or increase. Hyperbolic tangent derivative returns a number with different sign and the magnitude that can greatly affect the attenuation or expansion of the gradient;
 
-* calculation of sigmoid and hyperbolic tangent requires **large computational operations** such as exponentiation, while ReLU can be implemented using a simple threshold transformation of matrices,
+* calculation of sigmoid and hyperbolic tangent requires **large computational operations** such as exponentiation, while ReLU can be implemented using a simple threshold transformation of matrices;
 
 * cuts unnecessary details for negative values in image matrices.
 
