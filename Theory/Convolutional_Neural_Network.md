@@ -12,8 +12,8 @@ Theory and experimental results (on this page):
   * <a href="#Pooling Layer">Pooling Layer</a>
   * <a href="#ReLU Layer">ReLU Layer</a>
   * <a href="#Fully-Connected Layer">Fully-Connected Layer</a>
-* <a href="#How does it work?">How does it work?</a>
 * <a href="#Architecture of CNN">Architecture of CNN</a>
+* <a href="#Writing a code in Python">Writing a code in Python</a>
 
 <br/>
 
@@ -193,11 +193,12 @@ After FC Layer, there is the last one - **Output Layer** of network, where **Sof
 
 <br/>
 
-### <a name="How does it work?">How does it work?</a>
-
 ### <a name="Architecture of CNN">Architecture of CNN</a>
 
 
+<br/>
+
+### <a name="Writing a code in Python">Writing a code in Python</a>
 
 
 ```py
