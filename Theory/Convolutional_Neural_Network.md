@@ -236,11 +236,7 @@ As it is seen, all three channels are identical as it is shown on the figure bel
 ![GreyScaled_image_with_three_identical_channels](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/GreyScaled_image_with_three_identical_channels.png)
 
 For the further processing it is enough to work only with one channel.
-<br/>Taking so called **'identity'** filter and applying **convolution operation** with it to the one channel of input image.
-
-![Identity_Filter](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Identity_Filter.png)
-
-In order to get **feature map** (convolved output image) in the same size, it is needed to set **Hyperparameters:**
+<br/>In order to get **feature map** (convolved output image) in the same size, it is needed to set **Hyperparameters:**
 * Filter (kernel) size, **K_size** = 3
 * Step for sliding (stride), **Step** = 1
 * Processing edges (zero valued frame around image), **Pad** = 1
@@ -250,6 +246,10 @@ Consequently, output image size is (width and height are the same):
 
 Imagine, that input image is **5x5** spatial size (width and height), then output image:
 * **Width_Out = (5 - 3 + 2 * 1)/1 + 1 = 5**, and this is equal to input image.
+
+Taking so called **'identity'** filter and applying **convolution operation** with it to the one channel of input image.
+
+![Identity_Filter](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Identity_Filter.png)
 
 Consider following part of the code:
 
