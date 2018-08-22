@@ -1,3 +1,17 @@
+# File: Simple_Convolution.py
+# Description: Neural Networks for computer vision in autonomous vehicles and robotics
+# Environment: PyCharm and Anaconda environment
+#
+# MIT License
+# Copyright (c) 2018 Valentyn N Sichkar
+# github.com/sichkar-valentyn
+#
+# Reference to:
+# Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles and robotics // GitHub platform. DOI: 10.5281/zenodo.1317904
+
+
+
+
 # Implementing simple convolution to the GreyScaled image
 
 # Importing needed libraries
