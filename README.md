@@ -24,8 +24,8 @@ The aim of the repository is to study and create complex project on Computer vis
 ## Content
 Codes (it'll send you to appropriate file):
 * Introduction part:
-  * [Code1_simple_NN](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Code1_simple_NN.py)
-  * [Code2_simple_three_layers_NN](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Code2_simple_three_layers_NN.py)
+  * [Code_Intro_simple_NN](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Code_Intro_simple_NN.py)
+  * [Code_Intro_simple_three_layers_NN](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Code_Intro_simple_three_layers_NN.py)
 
 <br/>
 Theory and experimental results (it'll send you to appropriate page):
