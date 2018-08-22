@@ -347,7 +347,7 @@ print('Number of iterations to reach accuracy 0.99 is', i)  # Needed numbers of 
 
 As we can see, to reach the accuracy <b>0.99</b> we need <b>1010</b> iterations.
 
-Full code is available here: [Code2_simple_three_layers_NN.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Code2_simple_three_layers_NN.py)
+Full code is available here: [Code_Intro_simple_three_layers_NN.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Code_Intro_simple_three_layers_NN.py)
 
 <br/>
 
