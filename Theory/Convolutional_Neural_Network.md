@@ -347,9 +347,9 @@ for i in range(input_image_with_pad.shape[0] - 2):
         # Applying elementwise multiplication and summation - this is convolution operation
         # With filter_1
         output_image_1[i, j] = np.sum(patch_from_input_image * filter_1)
-        # With filter_1
+        # With filter_2
         output_image_2[i, j] = np.sum(patch_from_input_image * filter_2)
-        # With filter_1
+        # With filter_3
         output_image_3[i, j] = np.sum(patch_from_input_image * filter_3)
 
 
