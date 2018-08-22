@@ -14,6 +14,7 @@ Theory and experimental results (on this page):
   * <a href="#Fully-Connected Layer">Fully-Connected Layer</a>
 * <a href="#Architecture of CNN">Architecture of CNN</a>
 * <a href="#Writing a code in Python">Writing a code in Python</a>
+ * <a href="#Simple Convolution">Simple Convolution</a>
 
 <br/>
 
@@ -199,13 +200,163 @@ After FC Layer, there is the last one - **Output Layer** of network, where **Sof
 <br/>
 
 ### <a name="Writing a code in Python">Writing a code in Python</a>
+Experimental results on convolution applied to images with different filters.
 
+### <a name="Simple Convolution">Simple Convolution</a>
+Taking greyscale image and slicing it into the channels. Checking if all channels are identical.
+<br/>Consider following part of the code:
 
 ```py
+# Importing needed libraries
 import numpy as np
+from PIL import Image
+import matplotlib.pyplot as plt
+
+# Creating an array from image data
+image_GreyScale = Image.open("images/owl_greyscale.jpg")
+image_np = np.array(image_GreyScale)
+
+# Checking the type of the array
+print(type(image_np))  # <class 'numpy.ndarray'>
+# Checking the shape of the array
+print(image_np.shape)  # (1280, 830, 3)
+
+# Showing image with every channel separately
+channel_0 = image_np[:, :, 0]
+channel_1 = image_np[:, :, 1]
+channel_2 = image_np[:, :, 2]
+
+# Checking if all channels are the same
+print(np.array_equal(channel_0, channel_1))  # True
+print(np.array_equal(channel_1, channel_2))  # True 
 ```
 
-Full code is available here: 
+As it is seen, all three channels are identical as it is shown on the figure below.
+
+![GreyScaled_image_with_three_identical_channels](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/GreyScaled_image_with_three_identical_channels.png)
+
+For the further processing it is enough to work only with one channel.
+<br/>Taking so called **'identity'** filter and applying **convolution operation** with it to the one channel of input image.
+<br/>In order to get **feature map** (convolved input image) in the same size, it is needed to set **Hyperparameters:**
+* Filter (kernel) size, **K_size** = 3
+* Step for sliding (stride), **Step** = 1
+* Processing edges (zero valued frame around image), **Pad** = 1
+
+Consequently, output image size is (width and height are the same):
+* **Width_Out = (Width_In - K_size + 2 * Pad) / Step + 1**
+* Imagine, that input image is **5x5** spatial size (width and height), then output image:
+* **Width_Out = (5 - 3 + 2 * 1)/1 + 1 = 5**, and this is equal to input image
+
+Consider following part of the code:
+
+```py
+# Taking as input image first channel as array
+input_image = image_np[:, :, 0]
+# Checking the shape
+print(input_image.shape)  # (1080, 1920)
+
+# Applying to the input image Pad frame with zero values
+# Using NumPy method 'pad'
+input_image_with_pad = np.pad(input_image, (1, 1), mode='constant', constant_values=0)
+# Checking the shape
+print(input_image_with_pad.shape)  # (1082, 1922)
+
+# Defining so called 'identity' filter with size 3x3
+# By applying this filter resulted convolved image has to be the same with input image
+filter_0 = np.array([[0, 0, 0], [0, 1, 0], [0, 0, 0]])
+# Checking the shape
+print(filter_0.shape)  # (3, 3)
+
+# Preparing zero valued output array for convolved image
+# The shape is the same with input image according to the chosen Hyperparameters
+output_image = np.zeros(input_image.shape)
+
+# Implementing convolution operation
+# Going through all input image with pad frame
+for i in range(input_image_with_pad.shape[0] - 2):
+    for j in range(input_image_with_pad.shape[1] - 2):
+        # Extracting 3x3 patch (the same size with filter) from input image with pad frame
+        patch_from_input_image = input_image_with_pad[i:i+3, j:j+3]
+        # Applying elementwise multiplication and summation - this is convolution operation
+        output_image[i, j] = np.sum(patch_from_input_image * filter_0)
+
+# Checking if output image and input image are the same
+# Because of the filter with only unit in the center (identity filter), convolution operation gives the same image
+print(np.array_equal(input_image, output_image))  # True
+```
+
+As a result output image is identical to the input image, because of the **'identity' filter** that has the only unit in the middle.
+
+Implementing another standard filters for edge detection.
+<br/>Consider following part of the code:
+
+```py
+# Defining standard filters (kernel) with size 3x3 for edge detection
+filter_1 = np.array([[1, 0, -1], [0, 0, 0], [-1, 0, 1]])
+filter_2 = np.array([[0, 1, 0], [1, -4, 1], [0, 1, 0]])
+filter_3 = np.array([[-1, -1, -1], [-1, 8, -1], [-1, -1, -1]])
+# Checking the shape
+print(filter_1.shape, filter_2.shape, filter_3.shape)  # (3, 3) (3, 3) (3, 3)
+```
+
+In order to prevent appearing values that are more than 255 or less than 0, function is defined for corrections.
+<br/>Consider following part of the code:
+
+```py
+# The following function is defined
+def values_for_image_pixels(x_array):
+    # Preparing resulted array
+    result_array = np.zeros(x_array.shape)
+    # Going through all elements of the given array
+    for i in range(x_array.shape[0]):
+        for j in range(x_array.shape[1]):
+            # Checking if the element is in range [0, 255]
+            if 0 <= x_array[i, j] <= 255:
+                result_array[i, j] = x_array[i, j]
+            elif x_array[i, j] < 0:
+                result_array[i, j] = 0
+            else:
+                result_array[i, j] = 255
+    # Returning edited array
+    return result_array
+```
+
+Implementing convolution operations with three different filters separately.
+<br/>Consider following part of the code:
+
+```py
+# Preparing zero valued output arrays for convolved images
+# The shape is the same with input image according to the chosen Hyperparameters
+output_image_1 = np.zeros(input_image.shape)
+output_image_2 = np.zeros(input_image.shape)
+output_image_3 = np.zeros(input_image.shape)
+
+# Implementing convolution operation
+# Going through all input image with pad frame
+for i in range(input_image_with_pad.shape[0] - 2):
+    for j in range(input_image_with_pad.shape[1] - 2):
+        # Extracting 3x3 patch (the same size with filter) from input image with pad frame
+        patch_from_input_image = input_image_with_pad[i:i+3, j:j+3]
+        # Applying elementwise multiplication and summation - this is convolution operation
+        # With filter_1
+        output_image_1[i, j] = np.sum(patch_from_input_image * filter_1)
+        # With filter_1
+        output_image_2[i, j] = np.sum(patch_from_input_image * filter_2)
+        # With filter_1
+        output_image_3[i, j] = np.sum(patch_from_input_image * filter_3)
+
+
+# Applying function to get rid of negative values and values that are more than 255
+output_image_1 = values_for_image_pixels(output_image_1)
+output_image_2 = values_for_image_pixels(output_image_2)
+output_image_3 = values_for_image_pixels(output_image_3)
+```
+
+When convolution process is done, it is possible to see the results on the figures.
+
+![Convolution_with_filters_for_edge_detection](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Convolution_with_filters_for_edge_detection)
+
+Full code is available here: [Simple_Convolution.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Simple_Convolution.py)
 
 <br/>
 
