@@ -22,7 +22,7 @@ The aim of the repository is to study and create complex project on Computer vis
 <img src="images/Simple_Convolution.gif" alt="Simple Convolution" width=315 height=225>
 
 <br/>Project is currently:
-![Under_construction](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/under_construction.png)
+<br/>![Under_construction](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/under_construction.png)
 
 ## Content
 Codes (it'll send you to appropriate file):
