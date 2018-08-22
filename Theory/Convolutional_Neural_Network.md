@@ -237,15 +237,16 @@ As it is seen, all three channels are identical as it is shown on the figure bel
 
 For the further processing it is enough to work only with one channel.
 <br/>Taking so called **'identity'** filter and applying **convolution operation** with it to the one channel of input image.
-<br/>In order to get **feature map** (convolved input image) in the same size, it is needed to set **Hyperparameters:**
+<br/>In order to get **feature map** (convolved output image) in the same size, it is needed to set **Hyperparameters:**
 * Filter (kernel) size, **K_size** = 3
 * Step for sliding (stride), **Step** = 1
 * Processing edges (zero valued frame around image), **Pad** = 1
 
 Consequently, output image size is (width and height are the same):
 * **Width_Out = (Width_In - K_size + 2 * Pad) / Step + 1**
-* Imagine, that input image is **5x5** spatial size (width and height), then output image:
-* **Width_Out = (5 - 3 + 2 * 1)/1 + 1 = 5**, and this is equal to input image
+
+Imagine, that input image is **5x5** spatial size (width and height), then output image:
+* **Width_Out = (5 - 3 + 2 * 1)/1 + 1 = 5**, and this is equal to input image.
 
 Consider following part of the code:
 
