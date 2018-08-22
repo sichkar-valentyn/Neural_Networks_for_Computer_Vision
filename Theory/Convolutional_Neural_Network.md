@@ -355,7 +355,7 @@ output_image_3 = values_for_image_pixels(output_image_3)
 
 When convolution process is done, it is possible to see the results on the figures.
 
-![Convolution_with_filters_for_edge_detection](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Convolution_with_filters_for_edge_detection)
+![Convolution_with_filters_for_edge_detection](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Convolution_with_filters_for_edge_detection.py)
 
 Full code is available here: [Simple_Convolution.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Simple_Convolution.py)
 
