@@ -289,7 +289,7 @@ print(i)  # Needed numbers of iterations is equal to 740
 
 As we can see, to reach the accuracy <b>0.999</b> we need <b>740</b> iterations.
 
-Full code is available here: [Code_Intro_simple_NN.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Code_Intro_simple_NN.py)
+Full code is available here: [Intro_simple_NN.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Intro_simple_NN.py)
 
 <br/>
 
