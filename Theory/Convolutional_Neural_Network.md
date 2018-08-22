@@ -237,7 +237,10 @@ As it is seen, all three channels are identical as it is shown on the figure bel
 
 For the further processing it is enough to work only with one channel.
 <br/>Taking so called **'identity'** filter and applying **convolution operation** with it to the one channel of input image.
-<br/>In order to get **feature map** (convolved output image) in the same size, it is needed to set **Hyperparameters:**
+
+![Identity_Filter](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Identity_Filter.png)
+
+In order to get **feature map** (convolved output image) in the same size, it is needed to set **Hyperparameters:**
 * Filter (kernel) size, **K_size** = 3
 * Step for sliding (stride), **Step** = 1
 * Processing edges (zero valued frame around image), **Pad** = 1
@@ -289,7 +292,10 @@ print(np.array_equal(input_image, output_image))  # True
 As a result output image is identical to the input image, because of the **'identity' filter** that has the only unit in the middle.
 
 Implementing another standard filters for edge detection.
-<br/>Consider following part of the code:
+
+![Filters_for_Edge_detection](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Filters_for_Edge_detection.png)
+
+Consider following part of the code:
 
 ```py
 # Defining standard filters (kernel) with size 3x3 for edge detection
