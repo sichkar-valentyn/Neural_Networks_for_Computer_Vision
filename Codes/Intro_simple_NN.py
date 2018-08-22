@@ -1,4 +1,4 @@
-# File: Code_Intro_simple_NN.py
+# File: Intro_simple_NN.py
 # Description: Neural Networks for computer vision in autonomous vehicles and robotics
 # Environment: PyCharm and Anaconda environment
 #
