@@ -14,7 +14,7 @@ Theory and experimental results (on this page):
   * <a href="#Fully-Connected Layer">Fully-Connected Layer</a>
 * <a href="#Architecture of CNN">Architecture of CNN</a>
 * <a href="#Writing a code in Python">Writing a code in Python</a>
- * <a href="#Simple Convolution">Simple Convolution</a>
+  * <a href="#Simple Convolution">Simple Convolution</a>
 
 <br/>
 
