@@ -26,7 +26,6 @@ The aim of the repository is to study and create complex project on Computer vis
 <br/>
 
 ## Content
-
 **Codes** (it'll send you to appropriate file):
 * Introduction part:
   * [Intro_simple_NN](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Intro_simple_NN.py)
