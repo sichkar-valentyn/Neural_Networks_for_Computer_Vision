@@ -197,6 +197,7 @@ After FC Layer, there is the last one - **Output Layer** of network, where **Sof
 ### <a name="Architecture of CNN">Architecture of CNN</a>
 
 
+
 <br/>
 
 ### <a name="Writing a code in Python">Writing a code in Python</a>
