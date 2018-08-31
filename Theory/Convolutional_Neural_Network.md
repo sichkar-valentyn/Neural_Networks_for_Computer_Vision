@@ -375,7 +375,9 @@ Full code is available here: [CNN_Simple_Convolution.py](https://github.com/sich
 
 ### <a name="More complex example">More complex example</a>
 Consider more complex example of convolving input image with following architecture:
-<br/>`Input --> Conv --> ReLU --> Pool --> Conv --> ReLU --> Pool --> Conv --> ReLU --> Pool`
+<br/>`Input` --> `Conv --> ReLU --> Pool` --> `Conv --> ReLU --> Pool` --> `Conv --> ReLU --> Pool`
+
+Full code is available here: [](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/CNN_Simple_Convolution.py)
 
 <br/>
 
