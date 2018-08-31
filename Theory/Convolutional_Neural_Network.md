@@ -199,7 +199,7 @@ The architecture of CNN is defined by the problem being solved. Below the typica
 
 ![Architecture_of_CNN](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Architecture_of_CNN.png)
 
-In the second example there is one Conv layer before every Pooling layer.
+In the second example there is one **Conv layer** before every **Pooling layer**.
 <br/>There are variety of different architectures that alternate main CNN layers between each other.
 
 <br/>
