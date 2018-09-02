@@ -139,7 +139,7 @@ def relu_layer(maps):
     return result
 
 
-# Creating function for Pool Layer
+# Creating function for Pooling Layer
 def pooling_layer(maps, size=2, step=2):
     # Calculating spatial size of output resulted array - width and height
     # As our image has the same spatial size as input image (270, 480) according to the chosen Hyperparameters
