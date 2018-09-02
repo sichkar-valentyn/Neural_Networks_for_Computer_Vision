@@ -12,8 +12,6 @@ Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles a
   * <a href="#Codes">Codes</a>
   * <a href="#Theory and experimental results">Theory and experimental results</a>
 
-<br/>
-
 ### <a name="Related works">Related works:</a>
 * Sichkar V.N. Comparison analysis of knowledge based systems for navigation of mobile robot and collision avoidance with obstacles in unknown environment. St. Petersburg State Polytechnical University Journal. Computer Science. Telecommunications and Control Systems, 2018, Vol. 11, No. 2, Pp. 64–73. DOI: <a href="https://doi.org/10.18721/JCSTCS.11206" target="_blank">10.18721/JCSTCS.11206</a>
 
@@ -43,10 +41,7 @@ The aim of the repository is to study and create complex project on Computer vis
   * [CNN_Simple_Convolution](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/CNN_Simple_Convolution.py)
   * [CNN_More_complex_example.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/CNN_More_complex_example.py)
 
-<br/>
-
 **<a name="Theory and experimental results">Theory and experimental results</a>** (it'll send you to appropriate page):
-
 * [Introduction into Neural Networks](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Introduction.md)
   * [Backpropagation](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Backpropagation.md)
   * [Gradient descent](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Gradient_descent.md)
