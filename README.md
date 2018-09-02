@@ -5,7 +5,16 @@ Implementing Neural Networks for computer vision in autonomous vehicles and robo
 ### Reference to:
 Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles and robotics // GitHub platform. DOI: 10.5281/zenodo.1317904
 
-### Related works:
+## Structure of repository
+* <a href="#Related works">Related works</a>
+* <a href="#Description">Description</a>
+* <a href="#Content">Content</a>
+  * <a href="#Codes">Codes</a>
+  * <a href="#Theory and experimental results">Theory and experimental results</a>
+
+<br/>
+
+### <a name="Related works">Related works:</a>
 * Sichkar V.N. Comparison analysis of knowledge based systems for navigation of mobile robot and collision avoidance with obstacles in unknown environment. St. Petersburg State Polytechnical University Journal. Computer Science. Telecommunications and Control Systems, 2018, Vol. 11, No. 2, Pp. 64–73. DOI: <a href="https://doi.org/10.18721/JCSTCS.11206" target="_blank">10.18721/JCSTCS.11206</a>
 
 * The study on image processing in Python is put in separate repository and is available here: https://github.com/sichkar-valentyn/Image_processing_in_Python
@@ -18,15 +27,15 @@ Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles a
 
 <br/>
 
-## Description
+## <a name="Description">Description</a>
 The aim of the repository is to study and create complex project on Computer vision in autonomous vehicles and robotics through basics in Neural Networks to advanced learning. Here, later on, will be description of complex project, its stages, animated figures with empirical results. **This repository is currently under construction. Coming soon**
 
 <img src="images/Simple_Convolution.gif" alt="Simple Convolution" width=315 height=225>
 
 <br/>
 
-## Content
-**Codes** (it'll send you to appropriate file):
+## <a name="Content">Content</a>
+**<a name="Codes">Codes</a>** (it'll send you to appropriate file):
 * Introduction part:
   * [Intro_simple_NN](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Intro_simple_NN.py)
   * [Intro_simple_three_layers_NN](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Intro_simple_three_layers_NN.py)
@@ -36,7 +45,7 @@ The aim of the repository is to study and create complex project on Computer vis
 
 <br/>
 
-**Theory and experimental results** (it'll send you to appropriate page):
+**<a name="Theory and experimental results">Theory and experimental results</a>** (it'll send you to appropriate page):
 
 * [Introduction into Neural Networks](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Introduction.md)
   * [Backpropagation](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Backpropagation.md)
