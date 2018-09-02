@@ -32,6 +32,7 @@ The aim of the repository is to study and create complex project on Computer vis
   * [Intro_simple_three_layers_NN](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Intro_simple_three_layers_NN.py)
 * Convolutional Neural Networks:
   * [CNN_Simple_Convolution](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/CNN_Simple_Convolution.py)
+  * [CNN_More_complex_example.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/CNN_More_complex_example.py)
 
 <br/>
 
