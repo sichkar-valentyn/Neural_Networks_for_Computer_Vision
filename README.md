@@ -12,6 +12,8 @@ Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles a
   * <a href="#Codes">Codes</a>
   * <a href="#Theory and experimental results">Theory and experimental results</a>
 
+<br/>
+
 ### <a name="Related works">Related works:</a>
 * Sichkar V.N. Comparison analysis of knowledge based systems for navigation of mobile robot and collision avoidance with obstacles in unknown environment. St. Petersburg State Polytechnical University Journal. Computer Science. Telecommunications and Control Systems, 2018, Vol. 11, No. 2, Pp. 64–73. DOI: <a href="https://doi.org/10.18721/JCSTCS.11206" target="_blank">10.18721/JCSTCS.11206</a>
 
@@ -28,7 +30,12 @@ Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles a
 ### <a name="Description">Description</a>
 The aim of the repository is to study and create complex project on Computer vision in autonomous vehicles and robotics through basics in Neural Networks to advanced learning. Here, later on, will be description of complex project, its stages, animated figures with empirical results. **This repository is currently under construction. Coming soon**
 
-<img src="images/Simple_Convolution.gif" alt="Simple Convolution" width=315 height=225>
+Example of simple convolution of input image with three different filters for edge detection is shown below.
+<br/><img src="images/Simple_Convolution.gif" alt="Simple Convolution" width=315 height=225>
+
+Example of more complex convolving of input image with following architecture:
+<br/>`Input` --> `Conv --> ReLU --> Pool` --> `Conv --> ReLU --> Pool` --> `Conv --> ReLU --> Pool`
+<br/><img src="images/CNN_More_complex_example.png" alt="Conv --> ReLU --> Pool">
 
 <br/>
 
