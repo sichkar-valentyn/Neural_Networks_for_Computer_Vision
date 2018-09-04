@@ -378,14 +378,15 @@ Consider more complex example of convolving input image with following architect
 <br/>`Input` --> `Conv --> ReLU --> Pool` --> `Conv --> ReLU --> Pool` --> `Conv --> ReLU --> Pool`
 
 <br/>**Hyperparameters** is as following:
-<br/>**Filter** (kernel) size, K_size = 3
-<br/>**Step** for sliding (stride), Step = 1
-<br/>**Processing edges** (zero valued frame around image), Pad = 1
-<br/>Consequently, output image size is as following:
-<br/>**Width_Out** = (Width_In - K_size + 2 * Pad) / Step + 1
-<br/>**Height_Out** = (Height_In - K_size + 2 * Pad) / Step + 1
-<br/>If an input image is 50x50 spatial size (width and height), then output image:
-<br/>Width_Out = Height_Out = (50 - 3 + 2 * 1)/1 + 1 = 50
+
+* **Filter** (kernel) size, K_size = 3
+* **Step** for sliding (stride), Step = 1
+* **Processing edges** (zero valued frame around image), Pad = 1
+Consequently, output image size is as following:
+* **Width_Out** = (Width_In - K_size + 2 * Pad) / Step + 1
+* **Height_Out** = (Height_In - K_size + 2 * Pad) / Step + 1
+If an input image is 50x50 spatial size (width and height), then output image:
+* Width_Out = Height_Out = (50 - 3 + 2 * 1)/1 + 1 = 50
 
 <br/>Input image is **GrayScale** with three identical channels.
 <br/>Preparing function for **2D Convolution** - just one image and one filter.
