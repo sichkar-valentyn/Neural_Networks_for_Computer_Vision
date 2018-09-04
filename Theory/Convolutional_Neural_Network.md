@@ -377,6 +377,192 @@ Full code is available here: [CNN_Simple_Convolution.py](https://github.com/sich
 Consider more complex example of convolving input image with following architecture:
 <br/>`Input` --> `Conv --> ReLU --> Pool` --> `Conv --> ReLU --> Pool` --> `Conv --> ReLU --> Pool`
 
+<br/>**Hyperparameters** is as following:
+<br/>**Filter** (kernel) size, K_size = 3
+<br/>**Step** for sliding (stride), Step = 1
+<br/>**Processing edges** (zero valued frame around image), Pad = 1
+<br/>Consequently, output image size is as following:
+<br/>**Width_Out** = (Width_In - K_size + 2 * Pad) / Step + 1
+<br/>**Height_Out** = (Height_In - K_size + 2 * Pad) / Step + 1
+<br/>If an input image is 50x50 spatial size (width and height), then output image:
+<br/>Width_Out = Height_Out = (50 - 3 + 2 * 1)/1 + 1 = 50
+
+<br/>Input image is **GrayScale** with three identical channels.
+<br/>Preparing function for **2D Convolution** - just one image and one filter.
+<br/>In this example **for** loops are used in order to deeply understand the process itself. But this approach is computationally expensive and in further examples **Fast Fourier Transform** will be used instead.  
+<br/>Consider following part of the code:
+
+```py
+# Creating function for 2D convolution operation
+def convolution_2d(image, filter, pad, step):
+    # Size of the filter
+    k_size = filter.shape[0]
+
+    # Calculating spatial size - width and height
+    width_out = int((image.shape[0] - k_size + 2 * pad) / step + 1)
+    height_out = int((image.shape[1] - k_size + 2 * pad) / step + 1)
+
+    # Preparing zero valued output array for convolved image
+    output_image = np.zeros((width_out - 2 * pad, height_out - 2 * pad))
+
+    # Implementing 2D convolution operation
+    # Going through all input image
+    for i in range(image.shape[0] - k_size + 1):
+        for j in range(image.shape[1] - k_size + 1):
+            # Extracting patch (the same size with filter) from input image
+            patch_from_image = image[i:i+k_size, j:j+k_size]
+            # Applying elementwise multiplication and summation - this is convolution operation
+            output_image[i, j] = np.sum(patch_from_image * filter)
+
+    # Returning result
+    return output_image
+```
+
+Preparing function for **CNN Layer**.
+<br/>Firstly, as input there is an image with three identical channels. That means every filter has to have three channels in depth also.
+<br/>If we consider second CNN Layer, then as input there is a set of feature maps produced by the first CNN Layer. It can be understood easier if we imagine that that set of feature maps is one image with its channels in depth. For example, first CNN Layer with four filters produces four feature maps that are input as one image with four channels for the second CNN Layer. Consequently, every filter for the second CNN Layer has to have four channels in depth also. Figure below shows process.
+
+![Convolution_Process](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Convolution_Process.png)
+
+<br/>Every filter with its channels in depth is convolved with input image (feature maps) with its depth appropriately. For example, first channel of the filter is convolving appropriate area in the first channel of input image, and second channel of the filter is convolving appropriate area (spatially the same as in the first channel) in the second channel of input image and so on. Result is summed up and written in appropriate cell of output feature map.
+
+<br/>Consider following part of the code:
+
+```py
+# Creating function for CNN Layer
+def cnn_layer(image_volume, filter, pad=1, step=1):
+    # Note: image here can be a volume of feature maps, obtained in the previous layer
+
+    # Applying to the input image volume Pad frame with zero values for all channels
+    # Preparing zero valued array
+    image = np.zeros((image_volume.shape[0] + 2 * pad, image_volume.shape[1] + 2 * pad, image_volume.shape[2]))
+
+    # Going through all channels from input volume
+    for p in range(image_volume.shape[2]):
+        # Using NumPy method 'pad'
+        # If Pad=0 the resulted image will be the same as input image
+        image[:, :, p] = np.pad(image_volume[:, :, p], (pad, pad), mode='constant', constant_values=0)
+
+    # Using following equations for calculating spatial size of output image volume:
+    # Width_Out = (Width_In - K_size + 2*Pad) / Step + 1
+    # Height_Out = (Height_In - K_size + 2*Pad) / Step + 1
+    # Depth_Out = K_number
+    # Size of the filter
+    k_size = filter.shape[1]
+    # Depth (number) of output feature maps - is the same with number of filters
+    # Note: this depth will also be as number of channels for input image for the next layer
+    depth_out = filter.shape[0]
+    # Calculating spatial size - width and height
+    width_out = int((image_volume.shape[0] - k_size + 2 * pad) / step + 1)
+    height_out = int((image_volume.shape[1] - k_size + 2 * pad) / step + 1)
+
+    # Creating zero valued array for output feature maps
+    feature_maps = np.zeros((width_out, height_out, depth_out))  # has to be tuple with numbers
+
+    # Implementing convolution of image with filters
+    # Note: or convolving volume of feature maps, obtained in the previous layer, with new filters
+    n_filters = filter.shape[0]
+
+    # For every filter
+    for i in range(n_filters):
+        # Initializing convolved image
+        convolved_image = np.zeros((width_out, height_out))  # has to be tuple with numbers
+
+        # For every channel of the image
+        # Note: or for every feature map from its volume, obtained in the previous layer
+        for j in range(image.shape[-1]):
+            # Convolving every channel (depth) of the image with every channel (depth) of the current filter
+            # Result is summed up
+            convolved_image += convolution_2d(image[:, :, j], filter[i, :, :, j], pad, step)
+        # Writing results into current output feature map
+        feature_maps[:, :, i] = convolved_image
+
+    # Returning resulted feature maps array
+    return feature_maps
+```
+
+Preparing function for that substitute pixel values that are more than 255.
+<br/>Consider following part of the code:
+
+```py
+# Creating function for replacing pixel values that are more than 255 with 255
+def image_pixels_255(maps):
+    # Preparing array for output result
+    r = np.zeros(maps.shape)
+    # Replacing all elements that are more than 255 with 255
+    # Going through all channels
+    for c in range(r.shape[2]):
+        # Going through all elements
+        for i in range(r.shape[0]):
+            for j in range(r.shape[1]):
+                # Checking if the element is less than 255
+                if maps[i, j, c] <= 255:
+                    r[i, j, c] = maps[i, j, c]
+                else:
+                    r[i, j, c] = 255
+    # Returning resulted array
+    return r
+```
+
+Preparing function for **ReLU Layer**. Here, all values that are negative is substituted with 0.
+<br/>Consider following part of the code:
+
+```py
+# Creating function for ReLU Layer
+def relu_layer(maps):
+    # Preparing array for output result
+    r = np.zeros_like(maps)
+    # Using 'np.where' setting condition that every element in 'maps' has to be more than appropriate element in 'r'
+    result = np.where(maps > r, maps, r)
+    # Returning resulted array
+    return result
+```
+
+Preparing function for **Pooling Layer**. Obtained feature maps are downsampled in twice spatially with following parameters:
+<br/>**Size** of the filter is 2.
+<br/>**Step** for sliding is 2.
+<br/>**MaxPooling** operation is implemented that means that among four numbers (filter size 2x2) the maximum is chosen and is written in output feature map.
+<br/>Consider following part of the code:
+
+```py
+# Creating function for Pooling Layer
+def pooling_layer(maps, size=2, step=2):
+    # Calculating spatial size of output resulted array - width and height
+    # As our image has the same spatial size as input image (270, 480) according to the chosen Hyperparameters
+    # Then we can use following equations
+    width_out = int((maps.shape[0] - size) / step + 1)
+    height_out = int((maps.shape[1] - size) / step + 1)
+
+    # As filter size for pooling operation is 2x2 and step is 2
+    # Then spatial size of pooling image will be twice less (135, 240)
+    # Preparing zero valued output array for pooling image
+    pooling_image = np.zeros((width_out, height_out, maps.shape[2]))
+
+    # Implementing pooling operation
+    # For all channels
+    for c in range(maps.shape[2]):
+        # Going through all image with step=2
+        # Preparing indexes for pooling array
+        ii = 0
+        for i in range(0, maps.shape[0] - size + 1, step):
+            # Preparing indexes for pooling array
+            jj = 0
+            for j in range(0, maps.shape[1] - size + 1, step):
+                # Extracting patch (the same size with filter) from input image
+                patch_from_image = maps[i:i+size, j:j+size, c]
+                # Applying max pooling operation - choosing maximum element from the current patch
+                pooling_image[ii, jj, c] = np.max(patch_from_image)
+                # Increasing indexing for polling array
+                jj += 1
+            # Increasing indexing for polling array
+            ii += 1
+
+    # Returning resulted array
+    return pooling_image
+```
+
+When convolution process is done, it is possible to see the results on the figure.
+
 ![CNN_More_complex_example](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/CNN_More_complex_example.gif)
 
 Full code is available here: [CNN_More_complex_example.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/CNN_More_complex_example.py)
