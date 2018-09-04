@@ -426,7 +426,7 @@ Next, preparing function for **CNN Layer**.
 
 ![Convolution_Process](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Convolution_Process.png)
 
-<br/>Every filter with its channels in depth is convolved with input image (feature maps) with its depth appropriately. For example, first channel of the filter is convolving appropriate area in the first channel of input image, and second channel of the filter is convolving appropriate area (spatially the same as in the first channel) in the second channel of input image and so on. Result is summed up and written in appropriate cell of output feature map.
+Every filter with its channels in depth is convolved with input image (feature maps) with its depth appropriately. For example, first channel of the filter is convolving appropriate area in the first channel of input image, and second channel of the filter is convolving appropriate area (spatially the same as in the first channel) in the second channel of input image and so on. Result is summed up and written in appropriate cell of output feature map.
 
 Consider following part of the code:
 
