@@ -428,7 +428,7 @@ Next, preparing function for **CNN Layer**.
 
 <br/>Every filter with its channels in depth is convolved with input image (feature maps) with its depth appropriately. For example, first channel of the filter is convolving appropriate area in the first channel of input image, and second channel of the filter is convolving appropriate area (spatially the same as in the first channel) in the second channel of input image and so on. Result is summed up and written in appropriate cell of output feature map.
 
-<br/>Consider following part of the code:
+Consider following part of the code:
 
 ```py
 # Creating function for CNN Layer
@@ -521,9 +521,10 @@ def relu_layer(maps):
 ```
 
 Finally, preparing function for **Pooling Layer**. Obtained feature maps are downsampled in twice spatially with following parameters:
-<br/>**Size** of the filter is 2.
-<br/>**Step** for sliding is 2.
-<br/>**MaxPooling** operation is implemented that means that among four numbers (filter size 2x2) the maximum is chosen and is written in output feature map.
+* **Size** of the filter is 2.
+* **Step** for sliding is 2.
+
+**MaxPooling** operation is implemented, that means that among four numbers (filter size 2x2) the maximum is chosen and is written in output feature map.
 <br/>Consider following part of the code:
 
 ```py
