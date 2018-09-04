@@ -377,7 +377,7 @@ Full code is available here: [CNN_Simple_Convolution.py](https://github.com/sich
 Consider more complex example of convolving input image with following architecture:
 <br/>`Input` --> `Conv --> ReLU --> Pool` --> `Conv --> ReLU --> Pool` --> `Conv --> ReLU --> Pool`
 
-<br/>**Hyperparameters** is as following:
+**Hyperparameters** is as following:
 
 * **Filter** (kernel) size, K_size = 3
 * **Step** for sliding (stride), Step = 1
@@ -390,7 +390,7 @@ Consequently, output image size is as following:
 If an input image is 50x50 spatial size (width and height), then output image:
 * Width_Out = Height_Out = (50 - 3 + 2 * 1)/1 + 1 = 50
 
-<br/>Input image is **GrayScale** with three identical channels.
+Input image is **GrayScale** with three identical channels.
 <br/>Preparing function for **2D Convolution** - just one image and one filter.
 <br/>In this example **for** loops are used in order to deeply understand the process itself. But this approach is computationally expensive and in further examples **Fast Fourier Transform** will be used instead.  
 <br/>Consider following part of the code:
@@ -421,9 +421,8 @@ def convolution_2d(image, filter, pad, step):
     return output_image
 ```
 
-Preparing function for **CNN Layer**.
-<br/>Firstly, as input there is an image with three identical channels. That means every filter has to have three channels in depth also.
-<br/>If we consider second CNN Layer, then as input there is a set of feature maps produced by the first CNN Layer. It can be understood easier if we imagine that that set of feature maps is one image with its channels in depth. For example, first CNN Layer with four filters produces four feature maps that are input as one image with four channels for the second CNN Layer. Consequently, every filter for the second CNN Layer has to have four channels in depth also. Figure below shows process.
+Next, preparing function for **CNN Layer**.
+<br/>Firstly, as input there is an image with three identical channels. That means every filter has to have three channels in depth also. If we consider second CNN Layer, then as input there is a set of feature maps produced by the first CNN Layer. It can be understood easier if we imagine that that set of feature maps is one image with its channels in depth. For example, first CNN Layer with four filters produces four feature maps that are input as one image with four channels for the second CNN Layer. Consequently, every filter for the second CNN Layer has to have four channels in depth also. Figure below shows process.
 
 ![Convolution_Process](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Convolution_Process.png)
 
@@ -484,7 +483,7 @@ def cnn_layer(image_volume, filter, pad=1, step=1):
     return feature_maps
 ```
 
-Preparing function for that substitute pixel values that are more than 255.
+Next, preparing function for that substitute pixel values that are more than 255.
 <br/>Consider following part of the code:
 
 ```py
@@ -507,7 +506,7 @@ def image_pixels_255(maps):
     return r
 ```
 
-Preparing function for **ReLU Layer**. Here, all values that are negative is substituted with 0.
+Next, preparing function for **ReLU Layer**. Here, all values that are negative is substituted with 0.
 <br/>Consider following part of the code:
 
 ```py
@@ -521,7 +520,7 @@ def relu_layer(maps):
     return result
 ```
 
-Preparing function for **Pooling Layer**. Obtained feature maps are downsampled in twice spatially with following parameters:
+Finally, preparing function for **Pooling Layer**. Obtained feature maps are downsampled in twice spatially with following parameters:
 <br/>**Size** of the filter is 2.
 <br/>**Step** for sliding is 2.
 <br/>**MaxPooling** operation is implemented that means that among four numbers (filter size 2x2) the maximum is chosen and is written in output feature map.
