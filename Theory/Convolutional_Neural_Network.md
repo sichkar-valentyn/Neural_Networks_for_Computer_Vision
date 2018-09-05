@@ -564,7 +564,7 @@ def pooling_layer(maps, size=2, step=2):
     return pooling_image
 ```
 
-When following architecture is done **[ Conv - ReLU - Pool ] * 3** is done, it is possible to see the results on the figure.
+When following architecture **[ Conv - ReLU - Pool ] * 3** is implemented, it is possible to see the results on the figure.
 
 ![CNN_More_complex_example](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/CNN_More_complex_example.gif)
 
