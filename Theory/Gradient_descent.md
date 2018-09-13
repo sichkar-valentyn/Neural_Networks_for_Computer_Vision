@@ -1,5 +1,5 @@
 # Gradient descent with Python
-Explaining Gradient descent in Python. **Coming soon. Will be released at 23th September.**
+Explaining Gradient descent in Python. **Coming soon. Release at 23th September.**
 <br/>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1317904.svg)](https://doi.org/10.5281/zenodo.1317904)
 
 ## Content
