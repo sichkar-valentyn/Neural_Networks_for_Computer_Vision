@@ -49,8 +49,9 @@ The task of classifying images is the obtaining initial image as input and outpu
 <br/>
 
 ### <a name="Layers of CNN">Layers of CNN</a>
-CNN is a sequence of layers. Each layer converts one volume of activations into another by means of a differentiable function. In the CNN, 3 main layers are used:
+CNN is a sequence of layers. Each layer converts one volume of activations into another by means of a differentiable function. In the CNN, several main layers are used:
 * **Convolutional Layer**
+* **ReLU Layer**
 * **Pooling Layer (also known as subsampling layer)**
 * **Fully Connected Layer**
 
