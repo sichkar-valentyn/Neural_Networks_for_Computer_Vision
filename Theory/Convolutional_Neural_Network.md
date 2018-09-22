@@ -186,8 +186,8 @@ The last type of layers is **Fully Connected Layer**. Which is a conventional **
 ![FC_neurons_value](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/FC_neurons_value.png)
 
 where
-<br/>**x** - feature map (activation map) ***j*** of layer ***l***;
 <br/>**f()** - activation function;
+<br/>**x** - feature map (activation map) ***j*** of layer ***l***;
 <br/>**w** - weights of layer ***l***;
 <br/>**b** - bias offset of layer ***l***.
 
