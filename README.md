@@ -42,9 +42,8 @@ The aim of the repository is to study and create complex project on Computer vis
 
 <br/>
 
-* **Video Introduction into CNN**:
-<br/>https://www.youtube.com/watch?v=04G3kRFI7pc
-<br/><a href="https://www.youtube.com/watch?v=04G3kRFI7pc"><img src="https://img.youtube.com/vi/04G3kRFI7pc/0.jpg" alt="Convolutional NN from scratch" /></a>
+* **Example #2** - video introduction into Convolutional NN with Python from scratch:
+<br/><a href="https://www.youtube.com/watch?v=04G3kRFI7pc" target="_blank"><img src="https://img.youtube.com/vi/04G3kRFI7pc/0.jpg" alt="Convolutional NN from scratch" width="300" /></a>
 
 <br/>
 
