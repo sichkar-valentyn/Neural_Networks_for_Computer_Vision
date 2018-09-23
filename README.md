@@ -43,7 +43,7 @@ The aim of the repository is to study and create complex project on Computer vis
 <br/>
 
 * **Example #2** - video introduction into Convolutional NN with Python from scratch:
-<br/><a href="https://www.youtube.com/watch?v=04G3kRFI7pc" target="_blank"><img src="https://img.youtube.com/vi/04G3kRFI7pc/0.jpg" alt="Convolutional NN from scratch" width=400 height=300 /></a>
+<br/><a href="https://www.youtube.com/watch?v=04G3kRFI7pc" target="_blank"><img src="https://img.youtube.com/vi/04G3kRFI7pc/0.jpg" alt="Convolutional NN from scratch" width=400 height=200 /></a>
 
 <br/>
 
