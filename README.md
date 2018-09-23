@@ -42,6 +42,12 @@ The aim of the repository is to study and create complex project on Computer vis
 
 <br/>
 
+* **Video Introduction into CNN**:
+<br/>https://www.youtube.com/watch?v=04G3kRFI7pc
+<br/><a href="https://www.youtube.com/watch?v=04G3kRFI7pc"><img src="https://img.youtube.com/vi/04G3kRFI7pc/0.jpg" alt="Convolutional NN from scratch" /></a>
+
+<br/>
+
 ### <a name="Content">Content</a>
 **<a name="Codes">Codes</a>** (it'll send you to appropriate file):
 * Introduction part:
