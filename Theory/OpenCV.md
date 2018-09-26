@@ -5,12 +5,31 @@ Implementing OpenCV in Python for Computer Vision tasks. **Coming soon. Release 
 ## Content
 Theory and experimental results (on this page):
 
-* <a href="#OpenCV">OpenCV</a>
+* <a href="#The easiest ways to install OpenCV for Linux Ubuntu">The easiest ways to install OpenCV for Linux Ubuntu</a>
+* <a href="#OpenCV code example">OpenCV code example</a>
 
 <br/>
 
-### <a name="OpenCV">OpenCV</a>
+### <a name="The easiest ways to install OpenCV for Linux Ubuntu">The easiest ways to install OpenCV for Linux Ubuntu</a>
+There are few the most simple ways to install OpenCV for Linux, and they are:
+* by using `conda`;
+* by using `pip3` for python 3;
 
+With first one it's needed to have `conda` been installed and to use one of the following commands:
+<br/>`conda install -c conda-forge opencv`
+<br/>`conda install -c conda-forge/label/broken opencv`
+
+<br/>With second one use following command:
+<br/>`pip3 install opencv-python`
+
+<br/>OpenCV will be installed in choosen environment.
+<br/>To check if OpenCV was installed, run python in any form and try this command:
+<br/>`import cv2`
+<br/>`print(cv2.__version__)`
+
+<br/>
+
+### <a name="OpenCV code example">OpenCV code example</a>
 
 ```py
 import numpy as np
