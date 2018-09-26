@@ -11,7 +11,7 @@ Theory and experimental results (on this page):
 <br/>
 
 ### <a name="The easiest ways to install OpenCV for Linux Ubuntu">The easiest ways to install OpenCV for Linux Ubuntu</a>
-There are few the most simple ways to install OpenCV for Linux, and they are:
+There are few the most simple ways to install OpenCV for Linux Ubuntu, and they are:
 * by using `conda`;
 * by using `pip3` for python 3.
 
