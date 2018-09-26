@@ -29,7 +29,7 @@ import cv2
 print(cv2.__version__)
 ```
 
-<br/>As a result the version of installed OpenCV has to be shown, like this:
+As a result the version of installed OpenCV has to be shown, like this:
 <br/>`3.4.3`
 
 <br/>
