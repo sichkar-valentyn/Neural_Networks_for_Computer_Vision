@@ -16,6 +16,7 @@ Theory and experimental results (on this page):
 * <a href="#Writing a code in Python">Writing a code in Python</a>
   * <a href="#Simple Convolution">Simple Convolution</a>
   * <a href="#More complex example">More complex example</a>
+  * <a href="#CIFAR-10 Image Classification">CIFAR-10 Image Classification</a>
 
 <br/>
 
@@ -571,6 +572,14 @@ When following architecture **[ Conv - ReLU - Pool ] * 3** is implemented, it is
 ![CNN_More_complex_example](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/CNN_More_complex_example.gif)
 
 Full code is available here: [CNN_More_complex_example.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/CNN_More_complex_example.py)
+
+<br/>
+
+### <a name="CIFAR-10 Image Classification">CIFAR-10 Image Classification</a>
+In this example we'll test CNN for Image Classification with the help of CIFAR-10 dataset.
+<br/>First step is to prepare data from CIFAR-10 dataset.
+
+Full code is available here: 
 
 <br/>
 
