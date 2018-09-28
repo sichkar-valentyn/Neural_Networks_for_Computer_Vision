@@ -13,7 +13,7 @@ Theory and experimental results (on this page):
   * <a href="#ReLU Layer">ReLU Layer</a>
   * <a href="#Fully-Connected Layer">Fully-Connected Layer</a>
 * <a href="#Architecture of CNN">Architecture of CNN</a>
-* <a href="#Writing a code in Python">Writing a code in Python</a>
+* <a href="#Writing code in Python">Writing code in Python</a>
   * <a href="#Simple Convolution">Simple Convolution</a>
   * <a href="#More complex example">More complex example</a>
   * <a href="#CIFAR-10 Image Classification">CIFAR-10 Image Classification</a>
@@ -208,7 +208,7 @@ In the second example there is one **Conv layer** before every **Pooling layer**
 
 <br/>
 
-### <a name="Writing a code in Python">Writing a code in Python</a>
+### <a name="Writing code in Python">Writing code in Python</a>
 Experimental results on convolution applied to images with different filters.
 
 ### <a name="Simple Convolution">Simple Convolution</a>
@@ -579,7 +579,7 @@ Full code is available here: [CNN_More_complex_example.py](https://github.com/si
 In this example we'll test CNN for Image Classification with the help of CIFAR-10 dataset.
 <br/>First step is to prepare data from CIFAR-10 dataset.
 
-Full code is available here: 
+Full code is available here: in few days...
 
 <br/>
 
