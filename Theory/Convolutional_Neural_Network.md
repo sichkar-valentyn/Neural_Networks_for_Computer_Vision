@@ -577,8 +577,8 @@ Full code is available here: [CNN_More_complex_example.py](https://github.com/si
 
 ### <a name="CIFAR-10 Image Classification with numpy only">CIFAR-10 Image Classification with `numpy` only</a>
 In this example we'll test CNN for Image Classification with the help of CIFAR-10 dataset.
-<br/>First step is to prepare data from CIFAR-10 dataset under **Linux Ubuntu**.
-<br/>Getting datasets CIFAR-10 by running file `get_CIFAR-10.sh`:
+<br/>First step is to prepare data from CIFAR-10 dataset.
+<br/>Getting datasets CIFAR-10 for **Linux Ubuntu** by running file `get_CIFAR-10.sh`:
 * From terminal moving to the directory `Image_Classification/datasets`
 * Running file with following command: `./get_CIFAR-10.sh`
   * If there is error that `permission denied` change permission by following command `sudo chmod +x get_CIFAR-10.sh`
