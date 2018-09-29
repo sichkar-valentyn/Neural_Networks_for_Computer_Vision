@@ -578,6 +578,91 @@ Full code is available here: [CNN_More_complex_example.py](https://github.com/si
 ### <a name="CIFAR-10 Image Classification">CIFAR-10 Image Classification</a>
 In this example we'll test CNN for Image Classification with the help of CIFAR-10 dataset.
 <br/>First step is to prepare data from CIFAR-10 dataset.
+<br/>Getting datasets CIFAR-10 by running this file `get_CIFAR-10.sh`:
+* Open terminal and move to this directory `Image_Classification/datasets`
+* Run file with following command: `./get_CIFAR-10.sh`
+** If there is error that `permission denied` change permission by following command `sudo chmod +x get_CIFAR-10.sh`
+** And run again `./get_CIFAR-10.sh`
+
+File will download archive from official resource, unzip archive and delete non-needed anymore archive.
+<br/>As a result there has to appear new folder `cifar-10-batches-py` with following files:
+* data_batch_1
+* data_batch_2
+* data_batch_3
+* data_batch_4
+* data_batch_5
+* batches.meta
+* test_batch
+
+<br/>Importing needed libraries:
+
+```py
+"""Importing library for object serialization
+which we'll use for saving and loading serialized models"""
+import pickle
+
+# Importing other standard libraries
+import numpy as np
+import os
+import matplotlib.pyplot as plt
+from scipy.misc import imread
+```
+
+Creating function for loading single batch of CIFAR-10 dataset:
+
+```py
+def single_batch_cifar10(file):
+    # Opening file for reading in binary mode
+    with open(file, 'rb') as f:
+        d = pickle.load(f, encoding='latin1')  # dictionary type
+        x = d['data']  # numpy.ndarray type, (10000, 3072)
+        y = d['labels']  # list type
+        """Initially every batch's dictionary with key 'data' has shape (10000, 3072)
+        Where, 10000 - number of image samples
+        3072 - three channels of image (red + green + blue)
+        Every row contains an image 32x32 pixels with its three channels"""
+        # Here we reshape and transpose ndarray for further use
+        x = x.reshape(10000, 3, 32, 32).transpose(0, 2, 3, 1)  # (10000, 32, 32, 3)
+        # Making numpy array from list of labels
+        y = np.array(y)
+
+        # Returning ready data
+        return x, y
+```
+
+Creating function for loading whole CIFAR-10 dataset:
+
+```py
+def whole_cifar10():
+    # Defining lists for adding all batch's data all together
+    x_collect = []
+    y_collect = []
+
+    # Loading all 5 batches for training and appending them together
+    for i in range(1, 6):
+        # Preparing current filename
+        filename = os.path.join('../datasets/cifar-10-batches-py', 'data_batch_' + str(i))
+        # Loading current batch
+        x, y = single_batch_cifar10(filename)
+        # Appending data from current batch to lists
+        x_collect.append(x)
+        y_collect.append(y)
+
+    # Concatenating collected data as list of lists as one list
+    x_train = np.concatenate(x_collect)  # (50000, 32, 32, 3)
+    y_train = np.concatenate(y_collect)  # (50000,)
+
+    # Releasing memory from non-needed anymore arrays
+    del x, y
+
+    # Loading data for testing
+    filename = os.path.join('../datasets/cifar-10-batches-py', 'test_batch')
+    x_test, y_test = single_batch_cifar10(filename)
+
+    # Returning whole CIFAR-10 data for training and testing
+    return x_train, y_train, x_test, y_test
+```
+
 
 Full code is available here: in few days...
 
