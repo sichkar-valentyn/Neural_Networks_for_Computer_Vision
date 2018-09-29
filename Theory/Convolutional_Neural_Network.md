@@ -578,11 +578,11 @@ Full code is available here: [CNN_More_complex_example.py](https://github.com/si
 ### <a name="CIFAR-10 Image Classification">CIFAR-10 Image Classification</a>
 In this example we'll test CNN for Image Classification with the help of CIFAR-10 dataset.
 <br/>First step is to prepare data from CIFAR-10 dataset.
-<br/>Getting datasets CIFAR-10 by running this file `get_CIFAR-10.sh`:
-* Open terminal and move to this directory `Image_Classification/datasets`
-* Run file with following command: `./get_CIFAR-10.sh`
-** If there is error that `permission denied` change permission by following command `sudo chmod +x get_CIFAR-10.sh`
-** And run again `./get_CIFAR-10.sh`
+<br/>Getting datasets CIFAR-10 by running file `get_CIFAR-10.sh`:
+* From terminal moving to the directory `Image_Classification/datasets`
+* Running file with following command: `./get_CIFAR-10.sh`
+  * If there is error that `permission denied` change permission by following command `sudo chmod +x get_CIFAR-10.sh`
+  * And run again `./get_CIFAR-10.sh`
 
 File will download archive from official resource, unzip archive and delete non-needed anymore archive.
 <br/>As a result there has to appear new folder `cifar-10-batches-py` with following files:
@@ -594,6 +594,7 @@ File will download archive from official resource, unzip archive and delete non-
 * batches.meta
 * test_batch
 
+<br/>Writing code in Python.
 <br/>Importing needed libraries:
 
 ```py
@@ -663,6 +664,9 @@ def whole_cifar10():
     return x_train, y_train, x_test, y_test
 ```
 
+After all batches were load and concatenated all together it is possible to show examples of training images.
+
+![CIFAR-10_examples](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/CIFAR-10_examples.png)
 
 Full code is available here: in few days...
 
