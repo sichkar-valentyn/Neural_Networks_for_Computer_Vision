@@ -14,9 +14,9 @@ Theory and experimental results (on this page):
   * <a href="#Fully-Connected Layer">Fully-Connected Layer</a>
 * <a href="#Architecture of CNN">Architecture of CNN</a>
 * <a href="#Writing code in Python">Writing code in Python</a>
-  * <a href="#Simple Convolution">Simple Convolution</a>
-  * <a href="#More complex example">More complex example</a>
-  * <a href="#CIFAR-10 Image Classification">CIFAR-10 Image Classification</a>
+  * <a href="#Simple Convolution with numpy only">Simple Convolution with numpy only</a>
+  * <a href="#More complex example with numpy only">More complex example with numpy only</a>
+  * <a href="#CIFAR-10 Image Classification with numpy only">CIFAR-10 Image Classification with numpy only</a>
 
 <br/>
 
@@ -211,7 +211,7 @@ In the second example there is one **Conv layer** before every **Pooling layer**
 ### <a name="Writing code in Python">Writing code in Python</a>
 Experimental results on convolution applied to images with different filters.
 
-### <a name="Simple Convolution">Simple Convolution</a>
+### <a name="Simple Convolution with numpy only">Simple Convolution with `numpy` only</a>
 Taking greyscale image and slicing it into the channels. Checking if all channels are identical.
 <br/>Consider following part of the code:
 
@@ -376,7 +376,7 @@ Full code is available here: [CNN_Simple_Convolution.py](https://github.com/sich
 
 <br/>
 
-### <a name="More complex example">More complex example</a>
+### <a name="More complex example with numpy only">More complex example with numpy only</a>
 Consider more complex example of convolving input image with following architecture:
 <br/>`Input` --> `Conv --> ReLU --> Pool` --> `Conv --> ReLU --> Pool` --> `Conv --> ReLU --> Pool`
 
@@ -575,7 +575,7 @@ Full code is available here: [CNN_More_complex_example.py](https://github.com/si
 
 <br/>
 
-### <a name="CIFAR-10 Image Classification">CIFAR-10 Image Classification</a>
+### <a name="CIFAR-10 Image Classification with numpy only">CIFAR-10 Image Classification with numpy only</a>
 In this example we'll test CNN for Image Classification with the help of CIFAR-10 dataset.
 <br/>First step is to prepare data from CIFAR-10 dataset.
 <br/>Getting datasets CIFAR-10 by running file `get_CIFAR-10.sh`:
