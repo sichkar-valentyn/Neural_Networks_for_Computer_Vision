@@ -595,7 +595,8 @@ File will download archive from official resource, unzip archive and delete non-
 * test_batch
 
 <br/>Writing code in Python.
-<br/>Importing needed libraries:
+<br/>Importing needed libraries.
+<br/>Consider following part of the code:
 
 ```py
 """Importing library for object serialization
@@ -609,7 +610,8 @@ import matplotlib.pyplot as plt
 from scipy.misc import imread
 ```
 
-Creating function for loading single batch of CIFAR-10 dataset:
+Creating function for loading single batch of CIFAR-10 dataset.
+<br/>Consider following part of the code:
 
 ```py
 def single_batch_cifar10(file):
@@ -631,7 +633,8 @@ def single_batch_cifar10(file):
         return x, y
 ```
 
-Creating function for loading whole CIFAR-10 dataset:
+Creating function for loading whole CIFAR-10 dataset.
+<br/>Consider following part of the code:
 
 ```py
 def whole_cifar10():
