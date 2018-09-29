@@ -15,8 +15,8 @@ Theory and experimental results (on this page):
 * <a href="#Architecture of CNN">Architecture of CNN</a>
 * <a href="#Writing code in Python">Writing code in Python</a>
   * <a href="#Simple Convolution with numpy only">Simple Convolution with `numpy` only</a>
-  * <a href="#More complex example with numpy only">More complex example with numpy only</a>
-  * <a href="#CIFAR-10 Image Classification with numpy only">CIFAR-10 Image Classification with numpy only</a>
+  * <a href="#More complex example with numpy only">More complex example with `numpy` only</a>
+  * <a href="#CIFAR-10 Image Classification with numpy only">CIFAR-10 Image Classification with `numpy` only</a>
 
 <br/>
 
