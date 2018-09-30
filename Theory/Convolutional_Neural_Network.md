@@ -675,7 +675,8 @@ Next, creating function for pre-processing CIFAR-10 datasets for further use in 
 * Normalizing data by subtracting mean image and dividing by standard deviation.
 * Transposing every dataset to make channels come first.
 * Returning result as dictionary.
-<br/>Consider following part of the code:
+
+Consider following part of the code:
 
 ```py
 def pre_process_cifar10():
