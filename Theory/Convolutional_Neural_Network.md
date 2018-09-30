@@ -671,10 +671,10 @@ After all batches were load and concatenated all together it is possible to show
 
 ![CIFAR-10_examples](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/CIFAR-10_examples.png)
 
-Creating function for pre-processing CIFAR-10 datasets for further use in classifier.
-<br/>Normalizing data by subtracting mean image and dividing by standard deviation.
-<br/>Transposing every dataset to make channels come first.
-<br/>Returning result as dictionary.
+Next, creating function for pre-processing CIFAR-10 datasets for further use in classifier.
+* Normalizing data by subtracting mean image and dividing by standard deviation.
+* Transposing every dataset to make channels come first.
+* Returning result as dictionary.
 <br/>Consider following part of the code:
 
 ```py
@@ -734,14 +734,15 @@ for i, j in data.items():
 ```
 
 As a result there will be following:
+* `x_train: (49000, 3, 32, 32)`
+* `y_train: (49000,)`
 * `x_validation: (1000, 3, 32, 32)`
 * `y_validation: (1000,)`
 * `x_test: (1000, 3, 32, 32)`
 * `y_test: (1000,)`
-* `x_train: (49000, 3, 32, 32)`
-* `y_train: (49000,)`
 
-Full code is available here: in few days...
+
+<br/>Full code is available here: in few days...
 
 <br/>
 
