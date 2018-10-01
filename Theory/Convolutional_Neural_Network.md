@@ -625,7 +625,10 @@ def single_batch_cifar10(file):
         3072 - three channels of image (red + green + blue)
         Every row contains an image 32x32 pixels with its three channels"""
         # Here we reshape and transpose ndarray for further use
-        x = x.reshape(10000, 3, 32, 32).transpose(0, 2, 3, 1)  # (10000, 32, 32, 3)
+        # At the same time method 'astype()' used for converting ndarray from int to float
+        # It is used further in function 'pre_process_cifar10' as it is needed to subtract float from float
+        # And for standard deviation as it is needed to divide float by float
+        x = x.reshape(10000, 3, 32, 32).transpose(0, 2, 3, 1).astype('float')  # (10000, 32, 32, 3)
         # Making numpy array from list of labels
         y = np.array(y)
 
