@@ -732,8 +732,8 @@ For plotting images consider following part of the code:
 
 ```py
 # Plotting 100 examples of training images from 10 classes
-# x, y, x1, y1 = whole_cifar10()
-# plot_cifar10_examples(x.astype('int'), y.astype('int'))
+x, y, x1, y1 = whole_cifar10()
+plot_cifar10_examples(x.astype('int'), y.astype('int'))
 ```
 
 Result can be seen on the image below.
