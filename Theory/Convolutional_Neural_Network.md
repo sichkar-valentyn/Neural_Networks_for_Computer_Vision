@@ -671,6 +671,72 @@ def whole_cifar10():
 ```
 
 After all batches were load and concatenated all together it is possible to show examples of training images.
+<br/>Creating function for showing first 100 unique example of images from CIFAR-10 dataset.
+<br/>Consider following part of the code:
+
+```py
+# Creating function for plotting examples from CIFAR-10 dataset
+def plot_cifar10_examples(x_train, y_train):
+    # Preparing labels for each class
+    # CIFAR-10 has 10 classes from 0 to 9
+    labels = ['plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
+
+    # Taking first ten different (unique) training images from training set
+    # Going through labels and putting their indexes into list
+    # Starting from '0' index
+    i = 0
+    # Defining variable for counting total amount of examples
+    m = 0
+    # Defining dictionary for storing unique label numbers and their indexes
+    # As key there is unique label
+    # As value there is a list with indexes of this label
+    d = {}
+    while True:
+        # Checking if label is already in dictionary
+        if y_train[i] not in d:
+            d[y_train[i]] = [i]
+            m += 1
+        # Else if label is already in dictionary adding index to the list
+        elif len(d[y_train[i]]) < 10:
+            d[y_train[i]] += [i]
+            m += 1
+        # Checking if there is already ten labels for all labels
+        if m == 100:
+            break
+        # Increasing 'i'
+        i += 1
+
+    # Preparing figures for plotting
+    figure_1, ax = plt.subplots(nrows=10, ncols=10)
+    # 'ax 'is as (2, 5) np array and we can call each time ax[0, 0]
+
+    # Plotting first ten labels of training examples
+    for i in range(10):
+        ax[0, i].imshow(x_train[d[i][0]])
+        ax[0, i].set_axis_off()
+        ax[0, i].set_title(labels[i])
+
+    # Plotting 90 rest of training examples
+    for i in range(1, 10):
+        for j in range(10):
+            ax[i, j].imshow(x_train[d[j][i]])
+            ax[i, j].set_axis_off()
+
+    # Giving the name to the window with figure
+    figure_1.canvas.set_window_title('CIFAR-10 examples')
+    # Showing the plots
+    plt.show()
+```
+
+For plotting images consider following part of the code:
+
+```py
+# Plotting 100 examples of training images from 10 classes
+# x, y, x1, y1 = whole_cifar10()
+# plot_cifar10_examples(x.astype('int'), y.astype('int'))
+```
+
+Result can be seen on the image below.
 
 ![CIFAR-10_examples](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/CIFAR-10_examples.png)
 
