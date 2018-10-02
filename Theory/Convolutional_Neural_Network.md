@@ -607,7 +607,6 @@ import pickle
 import numpy as np
 import os
 import matplotlib.pyplot as plt
-from scipy.misc import imread
 ```
 
 Creating function for loading single batch of CIFAR-10 dataset.
