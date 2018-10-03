@@ -18,6 +18,7 @@ Theory and experimental results (on this page):
   * <a href="#More complex example with numpy only">More complex example with `numpy` only</a>
   * <a href="#CIFAR-10 Image Classification with numpy only">CIFAR-10 Image Classification with `numpy` only</a>
     * <a href="#Loading batches of CIFAR-10 dataset">Loading batches of CIFAR-10 dataset</a>
+    * <a href="#Plotting examples of images from CIFAR-10 dataset">Plotting examples of images from CIFAR-10 dataset</a>
 
 <br/>
 
@@ -673,6 +674,9 @@ def whole_cifar10():
     return x_train, y_train, x_test, y_test
 ```
 
+<br/>
+
+### <a name="Plotting examples of images from CIFAR-10 dataset">Plotting examples of images from CIFAR-10 dataset</a>
 After all batches were load and concatenated all together it is possible to show examples of training images.
 <br/>Creating function for showing first 100 unique example of images from CIFAR-10 dataset.
 <br/>Consider following part of the code:
