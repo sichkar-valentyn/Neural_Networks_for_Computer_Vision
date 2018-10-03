@@ -17,6 +17,7 @@ Theory and experimental results (on this page):
   * <a href="#Simple Convolution with numpy only">Simple Convolution with `numpy` only</a>
   * <a href="#More complex example with numpy only">More complex example with `numpy` only</a>
   * <a href="#CIFAR-10 Image Classification with numpy only">CIFAR-10 Image Classification with `numpy` only</a>
+    * <a href="#Loading batches of CIFAR-10 dataset">Loading batches of CIFAR-10 dataset</a>
 
 <br/>
 
@@ -594,7 +595,8 @@ File will download archive from official resource, unzip archive and delete non-
 * batches.meta
 * test_batch
 
-<br/>Writing code in Python.
+### <a name="Loading batches of CIFAR-10 dataset">Loading batches of CIFAR-10 dataset</a>
+Writing code in Python.
 <br/>Importing needed libraries.
 <br/>Consider following part of the code:
 
