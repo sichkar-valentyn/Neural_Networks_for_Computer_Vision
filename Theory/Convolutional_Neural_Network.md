@@ -19,6 +19,7 @@ Theory and experimental results (on this page):
   * <a href="#CIFAR-10 Image Classification with numpy only">CIFAR-10 Image Classification with `numpy` only</a>
     * <a href="#Loading batches of CIFAR-10 dataset">Loading batches of CIFAR-10 dataset</a>
     * <a href="#Plotting examples of images from CIFAR-10 dataset">Plotting examples of images from CIFAR-10 dataset</a>
+    * <a href="#Preprocessing loaded CIFAR-10 dataset">Preprocessing loaded CIFAR-10 dataset</a>
 
 <br/>
 
@@ -747,7 +748,10 @@ Result can be seen on the image below.
 
 ![CIFAR-10_examples](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/CIFAR-10_examples.png)
 
-Next, creating function for pre-processing CIFAR-10 datasets for further use in classifier.
+<br/>
+
+### <a name="Preprocessing loaded CIFAR-10 dataset">Preprocessing loaded CIFAR-10 dataset</a>
+Next, creating function for preprocessing CIFAR-10 datasets for further use in classifier.
 * Normalizing data by subtracting mean image and dividing by standard deviation.
 * Transposing every dataset to make channels come first.
 * Returning result as dictionary.
@@ -801,7 +805,7 @@ def pre_process_cifar10():
     return d
 ```
 
-After running created function, it is possible to see loaded, prepared and pre-processed CIFAR-10 datasets.
+After running created function, it is possible to see loaded, prepared and preprocessed CIFAR-10 datasets.
 <br/>Consider following part of the code:
 
 ```py
