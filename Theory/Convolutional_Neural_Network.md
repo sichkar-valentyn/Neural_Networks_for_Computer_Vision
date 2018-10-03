@@ -595,6 +595,8 @@ File will download archive from official resource, unzip archive and delete non-
 * batches.meta
 * test_batch
 
+<br/>
+
 ### <a name="Loading batches of CIFAR-10 dataset">Loading batches of CIFAR-10 dataset</a>
 Writing code in Python.
 <br/>Importing needed libraries.
