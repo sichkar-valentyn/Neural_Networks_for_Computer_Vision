@@ -20,6 +20,7 @@ Theory and experimental results (on this page):
     * <a href="#Loading batches of CIFAR-10 dataset">Loading batches of CIFAR-10 dataset</a>
     * <a href="#Plotting examples of images from CIFAR-10 dataset">Plotting examples of images from CIFAR-10 dataset</a>
     * <a href="#Preprocessing loaded CIFAR-10 dataset">Preprocessing loaded CIFAR-10 dataset</a>
+    * <a href="#Saving and Loading serialized models">Saving and Loading serialized models</a>
 
 <br/>
 
@@ -821,6 +822,26 @@ As a result there will be following:
 * `y_validation: (1000,)`
 * `x_test: (1000, 3, 32, 32)`
 * `y_test: (1000,)`
+
+<br/>
+
+### <a name="Saving and Loading serialized models">Saving and Loading serialized models</a>
+Checking `pickle` library for saving and loading serialized models.
+<br/>In order to test how it works, we'll save simple dictionary into file and load it after.
+<br/>Consider following part of the code:
+
+```py
+# Writing dictionary into file in binary mode with 'pickle' library
+# Defining simple dictionary for testing
+d = {'data': 'image', 'class': 'cat'}
+with open('test.pickle', 'wb') as f:
+    pickle.dump(d, f)
+
+# Opening file for reading in binary mode
+with open('test.pickle', 'rb') as f:
+    d = pickle.load(f, encoding='latin1')  # dictionary type
+print(d)  # {'class': 'cat', 'data': 'image'}
+```
 
 
 <br/>Full code is available here: in few days...
