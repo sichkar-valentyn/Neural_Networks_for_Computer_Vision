@@ -827,7 +827,7 @@ As a result there will be following:
 
 ### <a name="Saving and Loading serialized models">Saving and Loading serialized models</a>
 Checking `pickle` library for saving and loading serialized models.
-<br/>In order to test how it works, we'll save simple dictionary into file and load it after.
+<br/>In order to test how it works, we'll save simple dictionary into file and will load it after.
 <br/>Consider following part of the code:
 
 ```py
