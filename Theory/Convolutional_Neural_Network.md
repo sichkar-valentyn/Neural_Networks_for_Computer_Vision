@@ -860,7 +860,7 @@ print(d)  # {'class': 'cat', 'data': 'image'}
 
 
 <br/>Full codes are available here:
-<br/>![datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/helper_functions/datasets_preparing.py)
+<br/>[datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/helper_functions/datasets_preparing.py)
 
 <br/>
 
