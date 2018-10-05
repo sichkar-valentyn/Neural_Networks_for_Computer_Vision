@@ -13,6 +13,7 @@ Theory and experimental results (on this page):
   * <a href="#ReLU Layer">ReLU Layer</a>
   * <a href="#Fully-Connected Layer">Fully-Connected Layer</a>
 * <a href="#Architecture of CNN">Architecture of CNN</a>
+* <a href="#Video Summary for Introduction into CNN">Video Summary for Introduction into CNN</a>
 * <a href="#Writing code in Python">Writing code in Python</a>
   * <a href="#Simple Convolution with numpy only">Simple Convolution with `numpy` only</a>
   * <a href="#More complex example with numpy only">More complex example with `numpy` only</a>
@@ -209,6 +210,12 @@ The architecture of CNN is defined by the problem being solved. Below the typica
 
 In the second example there is one **Conv layer** before every **Pooling layer**.
 <br/>There are variety of different architectures that alternate main CNN layers between each other.
+
+<br/>
+
+### <a name="Video Summary for Introduction into CNN">Video Summary for Introduction into CNN</a>
+Video Introduction into Convolutional NN with Python from scratch (summary):
+<br/><a href="https://www.youtube.com/watch?v=04G3kRFI7pc" target="_blank"><img src="images/Video_Introduction_into_ConvNet.bmp" alt="Convolutional NN from scratch" /></a>
 
 <br/>
 
