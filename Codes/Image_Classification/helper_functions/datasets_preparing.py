@@ -212,3 +212,38 @@ def pre_process_cifar10():
 #     d = pickle.load(f, encoding='latin1')  # dictionary type
 #
 # print(d)  # {'class': 'cat', 'data': 'image'}
+
+
+# Saving loaded and preprocessed data into 'pickle' file
+# data = pre_process_cifar10()
+# with open('data.pickle', 'wb') as f:
+#     pickle.dump(data, f)
+
+
+# Checking if preprocessed data is the same with saved data into file
+# Opening file for reading in binary mode
+# with open('data.pickle', 'rb') as f:
+#     d = pickle.load(f, encoding='latin1')  # dictionary type
+
+
+# Showing loaded data from file
+# for i, j in d.items():
+#     print(i + ':', j.shape)
+
+# y_validation: (1000,)
+# y_test: (1000,)
+# x_test: (1000, 3, 32, 32)
+# x_validation: (1000, 3, 32, 32)
+# y_train: (49000,)
+# x_train: (49000, 3, 32, 32)
+
+# Loading preprocessed data
+# data = pre_process_cifar10()
+
+# Comparing if they are the same
+# print(np.array_equal(data['x_train'], d['x_train']))  # True
+# print(np.array_equal(data['y_train'], d['y_train']))  # True
+# print(np.array_equal(data['x_test'], d['x_test']))  # True
+# print(np.array_equal(data['y_test'], d['y_test']))  # True
+# print(np.array_equal(data['x_validation'], d['x_validation']))  # True
+# print(np.array_equal(data['y_validation'], d['y_validation']))  # True
