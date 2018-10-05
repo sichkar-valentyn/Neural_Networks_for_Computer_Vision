@@ -858,6 +858,30 @@ with open('test.pickle', 'rb') as f:
 print(d)  # {'class': 'cat', 'data': 'image'}
 ```
 
+Saving loaded, prepared and preprocessed CIFAR-10 datasets into 'pickle' file.
+<br/>Loading saved into file data and comparing if it is the same with original one.
+<br/>Consider following part of the code:
+<br/>(related file: [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/helper_functions/datasets_preparing.py))
+
+```py
+# Saving loaded and preprocessed data into 'pickle' file
+data = pre_process_cifar10()
+with open('data.pickle', 'wb') as f:
+    pickle.dump(data, f)
+
+# Checking if preprocessed data is the same with saved data into file
+# Opening file for reading in binary mode
+with open('data.pickle', 'rb') as f:
+    d = pickle.load(f, encoding='latin1')  # dictionary type
+
+# Comparing if they are the same
+print(np.array_equal(data['x_train'], d['x_train']))  # True
+print(np.array_equal(data['y_train'], d['y_train']))  # True
+print(np.array_equal(data['x_test'], d['x_test']))  # True
+print(np.array_equal(data['y_test'], d['y_test']))  # True
+print(np.array_equal(data['x_validation'], d['x_validation']))  # True
+print(np.array_equal(data['y_validation'], d['y_validation']))  # True
+```
 
 <br/>Full codes are available here:
 * Image_Classification/helper_functions:
