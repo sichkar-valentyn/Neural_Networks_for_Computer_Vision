@@ -858,7 +858,7 @@ with open('test.pickle', 'rb') as f:
 print(d)  # {'class': 'cat', 'data': 'image'}
 ```
 
-Saving loaded, prepared and preprocessed CIFAR-10 datasets into 'pickle' file.
+Saving loaded, prepared and preprocessed CIFAR-10 datasets into `pickle` file.
 <br/>Loading saved into file data and comparing if it is the same with original one.
 <br/>Consider following part of the code:
 <br/>(related file: [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/helper_functions/datasets_preparing.py))
