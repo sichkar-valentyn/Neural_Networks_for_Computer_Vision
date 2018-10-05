@@ -215,7 +215,7 @@ In the second example there is one **Conv layer** before every **Pooling layer**
 
 ### <a name="Video Summary for Introduction into CNN">Video Summary for Introduction into CNN</a>
 Video Introduction into Convolutional NN with Python from scratch (summary):
-<br/><a href="https://www.youtube.com/watch?v=04G3kRFI7pc" target="_blank"><img src="images/Video_Introduction_into_ConvNet.bmp" alt="Convolutional NN from scratch" /></a>
+<br/><a href="https://www.youtube.com/watch?v=04G3kRFI7pc" target="_blank"><img src="https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Video_Introduction_into_ConvNet.bmp" alt="Convolutional NN from scratch" /></a>
 
 <br/>
 
