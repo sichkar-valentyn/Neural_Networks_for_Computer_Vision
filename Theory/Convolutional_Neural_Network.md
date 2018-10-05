@@ -611,6 +611,7 @@ File will download archive from official resource, unzip archive and delete non-
 Writing code in Python.
 <br/>Importing needed libraries.
 <br/>Consider following part of the code:
+<br/>(related file: Image_Classification/helper_functions/datasets_preparing.py)
 
 ```py
 """Importing library for object serialization
@@ -625,6 +626,7 @@ import matplotlib.pyplot as plt
 
 Creating function for loading single batch of CIFAR-10 dataset.
 <br/>Consider following part of the code:
+<br/>(related file: Image_Classification/helper_functions/datasets_preparing.py)
 
 ```py
 def single_batch_cifar10(file):
@@ -651,6 +653,7 @@ def single_batch_cifar10(file):
 
 Creating function for loading whole CIFAR-10 dataset.
 <br/>Consider following part of the code:
+<br/>(related file: Image_Classification/helper_functions/datasets_preparing.py)
 
 ```py
 def whole_cifar10():
@@ -689,6 +692,7 @@ def whole_cifar10():
 After all batches were load and concatenated all together it is possible to show examples of training images.
 <br/>Creating function for showing first 100 unique example of images from CIFAR-10 dataset.
 <br/>Consider following part of the code:
+<br/>(related file: Image_Classification/helper_functions/datasets_preparing.py)
 
 ```py
 # Creating function for plotting examples from CIFAR-10 dataset
@@ -745,6 +749,7 @@ def plot_cifar10_examples(x_train, y_train):
 ```
 
 For plotting images consider following part of the code:
+<br/>(related file: Image_Classification/helper_functions/datasets_preparing.py)
 
 ```py
 # Plotting 100 examples of training images from 10 classes
@@ -765,6 +770,7 @@ Next, creating function for preprocessing CIFAR-10 datasets for further use in c
 * Returning result as dictionary.
 
 Consider following part of the code:
+<br/>(related file: Image_Classification/helper_functions/datasets_preparing.py)
 
 ```py
 def pre_process_cifar10():
@@ -815,6 +821,7 @@ def pre_process_cifar10():
 
 After running created function, it is possible to see loaded, prepared and preprocessed CIFAR-10 datasets.
 <br/>Consider following part of the code:
+<br/>(related file: Image_Classification/helper_functions/datasets_preparing.py)
 
 ```py
 data = pre_process_cifar10()
@@ -836,6 +843,7 @@ As a result there will be following:
 Checking `pickle` library for saving and loading serialized models.
 <br/>In order to test how it works, we'll save simple dictionary into file and will load it after.
 <br/>Consider following part of the code:
+<br/>(related file: Image_Classification/helper_functions/datasets_preparing.py)
 
 ```py
 # Writing dictionary into file in binary mode with 'pickle' library
@@ -851,7 +859,8 @@ print(d)  # {'class': 'cat', 'data': 'image'}
 ```
 
 
-<br/>Full code is available here: in few days...
+<br/>Full codes are available here:
+<br/>![datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/helper_functions/datasets_preparing.py)
 
 <br/>
 
