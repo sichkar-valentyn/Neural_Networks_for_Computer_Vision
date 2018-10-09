@@ -886,7 +886,7 @@ print(np.array_equal(data['y_validation'], d['y_validation']))  # True
 <br/>Full codes are available here:
 * `Image_Classification/helper_functions`:
   * [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/helper_functions/datasets_preparing.py)
-  * soon...
+  * layers.py - soon...
 
 <br/>
 
