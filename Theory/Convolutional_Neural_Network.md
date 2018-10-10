@@ -1,5 +1,5 @@
 # Convolutional Neural Networks with Python
-Convolutional Neural Networks in Python using `numpy` library.
+Convolutional Neural Networks in Python using only pure `numpy` library.
 <br/>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1317904.svg)](https://doi.org/10.5281/zenodo.1317904)
 
 ## Content
