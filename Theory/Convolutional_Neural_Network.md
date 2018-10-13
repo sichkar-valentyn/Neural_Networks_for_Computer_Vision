@@ -854,7 +854,7 @@ with open('test.pickle', 'wb') as f:
 
 # Opening file for reading in binary mode
 with open('test.pickle', 'rb') as f:
-    d = pickle.load(f, encoding='latin1')  # dictionary type
+    d = pickle.load(f, encoding='latin1')  # dictionary type, we use 'latin1' for python3
 print(d)  # {'class': 'cat', 'data': 'image'}
 ```
 
