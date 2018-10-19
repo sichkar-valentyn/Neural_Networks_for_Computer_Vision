@@ -163,6 +163,15 @@ def pre_process_cifar10():
     mean_image = np.mean(x_train, axis=0)  # numpy.ndarray (32, 32, 3)
     # Calculating standard deviation from training dataset along the rows by specifying 'axis=0'
     std = np.std(x_train, axis=0)  # numpy.ndarray (32, 32, 3)
+    
+    # Saving calculated 'mean_image' and 'std' into 'pickle' file
+    # We will use them when preprocess input data for classifying
+    # We will need to subtract and divide input image for classifying
+    # As we're doing now for training, validation and testing data
+    dictionary = {'mean_image': mean_image, 'std': std}
+    with open('mean_and_std.pickle', 'wb') as f:
+        pickle.dump(dictionary, f)
+        
     # Subtracting calculated mean image from pre-processed datasets
     x_train -= mean_image
     x_validation -= mean_image
