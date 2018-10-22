@@ -606,6 +606,9 @@ In this example we'll test CNN for Image Classification with the help of CIFAR-1
 * Adam - Adaptive Moment Estimation,
 * SVM - Support Vector Machine.
 
+<br/>Following architectures will be used:
+<br/>`Input` --> `Conv` --> `ReLU` --> `Pool` --> `Affine` --> `ReLU` --> `Affine` --> `Softmax`
+
 <br/>First step is to prepare data from CIFAR-10 dataset.
 <br/>Getting datasets CIFAR-10 under **Linux Ubuntu** by running file `get_CIFAR-10.sh`:
 * From terminal moving to the directory `Image_Classification/datasets`
