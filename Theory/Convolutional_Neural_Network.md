@@ -600,8 +600,8 @@ In this example we'll test CNN for Image Classification with the help of CIFAR-1
 | Loss Functions | Softmax, SVM |
 
 <br/>Contractions:
-* Vanilla SGD - stochastic gradient descent,
-* Momentum SGD - stochastic gradient descent,
+* Vanilla SGD - Vanilla Stochastic Gradient Descent,
+* Momentum SGD - Stochastic Gradient Descent with Momentum,
 * RMSProp - Root Mean Square Propagation,
 * Adam - Adaptive Moment Estimation,
 * SVM - Support Vector Machine.
