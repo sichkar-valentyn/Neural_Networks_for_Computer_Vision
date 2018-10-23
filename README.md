@@ -67,7 +67,8 @@ The aim of the repository is to study and create complex project on Computer vis
   * Serialized_Models
     * model1.pickle
   * Solver.py
-  
+
+<br/>
 
 **<a name="Theory and experimental results">Theory and experimental results</a>** (it'll send you to appropriate page):
 * [Introduction into Neural Networks](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Introduction.md)
