@@ -914,7 +914,7 @@ print(np.array_equal(data['y_validation'], d['y_validation']))  # True
 ```
 
 <br/>Full codes are available here (soon):
-* `Image_Classification/helper_functions`:
+* CIFAR-10 Image Classification with `numpy` only::
   * `Data_Preprocessing`
     * [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Data_Preprocessing/datasets_preparing.py)
   * `Helper_Functions`
