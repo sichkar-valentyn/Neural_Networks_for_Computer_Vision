@@ -915,15 +915,15 @@ print(np.array_equal(data['y_validation'], d['y_validation']))  # True
 
 <br/>Full codes are available here (soon):
 * `Image_Classification/helper_functions`:
-  * Data_Preprocessing
+  * Data_Preprocessing:
     * datasets_preparing.py
-  * Helper_Functions
+  * Helper_Functions:
     * layers.py
     * optimize_rules.py
     * gradient_check.py    
-  * Classifiers
+  * Classifiers:
     * ConvNet1.py
-  * Serialized_Models
+  * Serialized_Models:
     * model1.pickle
   * Solver.py
 
