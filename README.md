@@ -56,7 +56,17 @@ The aim of the repository is to study and create complex project on Computer vis
   * [CNN_Simple_Convolution.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/CNN_Simple_Convolution.py)
   * [CNN_More_complex_example.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/CNN_More_complex_example.py)  
 * CIFAR-10 Image Classification with `numpy` only:
-
+  * Data_Preprocessing
+   * datasets_preparing.py
+  * Helper_Functions
+   * layers.py
+   * optimize_rules.py
+   * gradient_check.py    
+  * Classifiers
+   * ConvNet1.py
+  * Serialized_Models
+   * model1.pickle
+  * Solver.py
 
 <br/>
 
