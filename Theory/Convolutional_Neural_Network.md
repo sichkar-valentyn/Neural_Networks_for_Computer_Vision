@@ -588,7 +588,7 @@ Full code is available here: [CNN_More_complex_example.py](https://github.com/si
 
 ### <a name="CIFAR-10 Image Classification with numpy only">CIFAR-10 Image Classification with `numpy` only</a>
 In this example we'll test CNN for Image Classification with the help of CIFAR-10 dataset.
-<br/>Following parameters will be used and tested:
+<br/>Following standard parameters can be used and tested:
 
 | Parameter | Description |
 | --- | --- |
@@ -606,7 +606,7 @@ In this example we'll test CNN for Image Classification with the help of CIFAR-1
 * Adam - Adaptive Moment Estimation,
 * SVM - Support Vector Machine.
 
-<br/>Following architectures will be used:
+<br/>Following architecture will be used:
 <br/>`Input` --> `Conv` --> `ReLU` --> `Pool` --> `Affine` --> `ReLU` --> `Affine` --> `Softmax`
 
 <br/>First step is to prepare data from CIFAR-10 dataset.
@@ -632,7 +632,7 @@ File will download archive from official resource, unzip archive and delete non-
 Writing code in Python.
 <br/>Importing needed libraries.
 <br/>Consider following part of the code:
-<br/>(related file: [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/helper_functions/datasets_preparing.py))
+<br/>(related file: [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Data_Preprocessing/datasets_preparing.py))
 
 ```py
 """Importing library for object serialization
@@ -647,7 +647,7 @@ import matplotlib.pyplot as plt
 
 Creating function for loading single batch of CIFAR-10 dataset.
 <br/>Consider following part of the code:
-<br/>(related file: [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/helper_functions/datasets_preparing.py))
+<br/>(related file: [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Data_Preprocessing/datasets_preparing.py))
 
 ```py
 def single_batch_cifar10(file):
@@ -674,7 +674,7 @@ def single_batch_cifar10(file):
 
 Creating function for loading whole CIFAR-10 dataset.
 <br/>Consider following part of the code:
-<br/>(related file: [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/helper_functions/datasets_preparing.py))
+<br/>(related file: [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Data_Preprocessing/datasets_preparing.py))
 
 ```py
 def whole_cifar10():
@@ -713,7 +713,7 @@ def whole_cifar10():
 After all batches were load and concatenated all together it is possible to show examples of training images.
 <br/>Creating function for showing first 100 unique example of images from CIFAR-10 dataset.
 <br/>Consider following part of the code:
-<br/>(related file: [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/helper_functions/datasets_preparing.py))
+<br/>(related file: [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Data_Preprocessing/datasets_preparing.py))
 
 ```py
 # Creating function for plotting examples from CIFAR-10 dataset
@@ -770,7 +770,7 @@ def plot_cifar10_examples(x_train, y_train):
 ```
 
 For plotting images consider following part of the code:
-<br/>(related file: [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/helper_functions/datasets_preparing.py))
+<br/>(related file: [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Data_Preprocessing/datasets_preparing.py))
 
 ```py
 # Plotting 100 examples of training images from 10 classes
@@ -791,7 +791,7 @@ Next, creating function for preprocessing CIFAR-10 datasets for further use in c
 * Returning result as dictionary.
 
 Consider following part of the code:
-<br/>(related file: [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/helper_functions/datasets_preparing.py))
+<br/>(related file: [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Data_Preprocessing/datasets_preparing.py))
 
 ```py
 def pre_process_cifar10():
@@ -851,7 +851,7 @@ def pre_process_cifar10():
 
 After running created function, it is possible to see loaded, prepared and preprocessed CIFAR-10 datasets.
 <br/>Consider following part of the code:
-<br/>(related file: [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/helper_functions/datasets_preparing.py))
+<br/>(related file: [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Data_Preprocessing/datasets_preparing.py))
 
 ```py
 data = pre_process_cifar10()
@@ -873,7 +873,7 @@ As a result there will be following:
 Checking `pickle` library for saving and loading serialized models.
 <br/>In order to test how it works, we'll save simple dictionary into file and will load it after.
 <br/>Consider following part of the code:
-<br/>(related file: [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/helper_functions/datasets_preparing.py))
+<br/>(related file: [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Data_Preprocessing/datasets_preparing.py))
 
 ```py
 # Writing dictionary into file in binary mode with 'pickle' library
@@ -891,7 +891,7 @@ print(d)  # {'class': 'cat', 'data': 'image'}
 Saving loaded, prepared and preprocessed CIFAR-10 datasets into `pickle` file.
 <br/>Loading saved into file data and comparing if it is the same with original one.
 <br/>Consider following part of the code:
-<br/>(related file: [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/helper_functions/datasets_preparing.py))
+<br/>(related file: [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Data_Preprocessing/datasets_preparing.py))
 
 ```py
 # Saving loaded and preprocessed data into 'pickle' file
