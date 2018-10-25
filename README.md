@@ -6,7 +6,7 @@ Implementing Neural Networks for Computer Vision in autonomous vehicles and robo
 Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles and robotics // GitHub platform. DOI: 10.5281/zenodo.1317904
 
 ### Structure of repository
-* [Related](#Related_works)
+* [Related works](#Related)
 * <a href="#Description">Description</a>
 * <a href="#Content">Content</a>
   * <a href="#Codes">Codes</a>
