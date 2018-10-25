@@ -5,11 +5,11 @@ Explaining Gradient descent in Python. **Coming soon. Release in December 2018**
 ## Content
 Theory and experimental results (on this page):
 
-* <a href="#Gradient descent">Gradient descent</a>
+* [Gradient descent](#gradient-descent)
 
 <br/>
 
-### <a name="Gradient descent">Gradient descent</a>
+### <a id="gradient-descent">Gradient descent</a>
 
 
 ```py
