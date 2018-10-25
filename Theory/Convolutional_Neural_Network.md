@@ -5,27 +5,27 @@ Convolutional Neural Networks in Python using only pure `numpy` library.
 ## Content
 Theory and experimental results (on this page):
 
-* <a href="#Brief Introduction into Convolutional Neural Network">Brief Introduction into Convolutional Neural Network</a>
-* <a href="#Task">Task</a>
-* <a href="#Layers of CNN">Layers of CNN</a>
-  * <a href="#Convolutional Layer">Convolutional Layer</a>
-  * <a href="#Pooling Layer">Pooling Layer</a>
-  * <a href="#ReLU Layer">ReLU Layer</a>
-  * <a href="#Fully-Connected Layer">Fully-Connected Layer</a>
-* <a href="#Architecture of CNN">Architecture of CNN</a>
-* <a href="#Video Summary for Introduction into CNN">Video Summary for Introduction into CNN</a>
-* <a href="#Writing code in Python">Writing code in Python</a>
-  * <a href="#Simple Convolution with numpy only">Simple Convolution with `numpy` only</a>
-  * <a href="#More complex example with numpy only">More complex example with `numpy` only</a>
-  * <a href="#CIFAR-10 Image Classification with numpy only">CIFAR-10 Image Classification with `numpy` only</a>
-    * <a href="#Loading batches of CIFAR-10 dataset">Loading batches of CIFAR-10 dataset</a>
-    * <a href="#Plotting examples of images from CIFAR-10 dataset">Plotting examples of images from CIFAR-10 dataset</a>
-    * <a href="#Preprocessing loaded CIFAR-10 dataset">Preprocessing loaded CIFAR-10 dataset</a>
-    * <a href="#Saving and Loading serialized models">Saving and Loading serialized models</a>
+* [Brief Introduction into Convolutional Neural Network](#brief-introduction-into-convolutional-neural-network)
+* [Task](#task)
+* [Layers of CNN](#layers-of-cnn)
+  * [Convolutional Layer](#convolutional-layer)
+  * [Pooling Layer](#pooling-layer)
+  * [ReLU Layer](#relu-layer)
+  * [Fully-Connected Layer](#fully-connected-layer)
+* [Architecture of CNN](#architecture-of-cnn)
+* [Video Summary for Introduction into CNN](#video-summary-for-introduction-into-cnn)
+* [Writing code in Python](#writing-code-in-python)
+  * [Simple Convolution with `numpy` only](#simple-convolution-with-numpy-only)
+  * [More complex example with `numpy` only](#more-complex-example-with-numpy-only)
+  * [CIFAR-10 Image Classification with `numpy` only](#cifar10-image-classification-with-numpy-only)
+    * [Loading batches of CIFAR-10 dataset](#loading-batches-of-cifar19-dataset)
+    * [Plotting examples of images from CIFAR-10 dataset](#plotting-examples-of-images-from-cifar10-dataset)
+    * [Preprocessing loaded CIFAR-10 dataset](#preprocessing-loaded-cifar10-dataset)
+    * [Saving and Loading serialized models](#saving-and-loading-serialized-models)
 
 <br/>
 
-### <a name="Brief Introduction into Convolutional Neural Network">Brief Introduction into Convolutional Neural Network</a>
+### <a id="brief-introduction-into-convolutional-neural-network">Brief Introduction into Convolutional Neural Network</a>
 **Definition**. **Convolutional Neural Network** (CNN, ConvNet) is a special architecture of artificial neural networks, aimed at effective image recognition, and it is a part of deep learning technologies. The working principle of **CNN** uses the features of the simple cells of the human visual cortex, responding to straight lines from different angles, as well as complex cells, whose reaction is associated with the activation of a certain set of simple cells. The idea of **CNN** is to alternate convolution layers and subsampling layers. The network structure is **feedforward** (without feedbacks), essentially multilayered. For training, standard methods are used, most often the method of **back propagation** of the error. The function of activation of neurons (transfer function) is any, at the choice of the researcher. The name of the network architecture is due to the existence of a convolution operation, the essence of which is that each fragment of the image is multiplied by the matrix (core) of convolution elementwise, and the result is summed and written to the same position of the output image.
 
 **CNN** is very similar to conventional neural networks. They are also built on the basis of neurons that have learnable weights and biases. Each neuron receives some input data, performs a dot product of information and in some situations accompanies it by non-linearity. As in the case of conventional neural networks, the whole **CNN** expresses one differentiable score function: on the one hand it is raw pixels of the image, on the other - probability of the class or group of possible classes that characterize the picture.
@@ -49,12 +49,12 @@ At the moment, **CNN** and its modifications are considered the best in accuracy
 
 <br/>
 
-### <a name="Task">Task</a>
+### <a id="task">Task</a>
 The task of classifying images is the obtaining initial image as input and output its class (cat, dog, etc.) or a group of likely classes that best characterizes the image. When the computer gets the image (takes the input data), it sees an array of pixels. Depending on the resolution and size of the image, for example, the size of the array can be **32x32x3** (where 3 are the values of the **RGB channels**). Each of these numbers is assigned a value from **0 to 255**, which describes the intensity of the pixel at that point. These numbers are the only input data for the computer. The computer receives this matrix and displays numbers that describe the probability of the image class (**75%** for the cat, **20%** for the dog, **10%** for the bird, etc.).
 
 <br/>
 
-### <a name="Layers of CNN">Layers of CNN</a>
+### <a id="layers-of-cnn">Layers of CNN</a>
 CNN is a sequence of layers. Each layer converts one volume of activations into another by means of a differentiable function. In the CNN, several main layers are used:
 * **Input Layer**
 * **Convolutional Layer**
@@ -80,7 +80,7 @@ Eventually, described CNN architecture, with its set of layers, converts an inpu
 
 <br/>
 
-### <a name="Convolutional Layer">Convolutional Layer</a>
+### <a id="convolutional-layer">Convolutional Layer</a>
 A convolutional layer is a set of **learnable filters** (known also as **core** or **kernel**) and with the help of which a set of **feature maps** (known also as **activation maps**) are obtained. Every filter produces its own feature map, or in other words - every feature map has its own filter. Consequently, convolutional layer consists of feature maps and corresponding filters.
 
 The number of feature maps is determined by the requirements for the task. If we take a large number of maps, then the quality of recognition will increase, but the computational complexity will also increase. Analysis of scientific articles shows that it is recommended to take the ratio of one to two - each map of the previous layer is associated with two maps of the convolutional layer. For the first convolutional layer, the previous one is the input layer. If the input layer has three channels **R, G and B**, then each channel will be assosiated with two feature maps in convolutional layer, and first convolutional layer will have six feauture maps. The size of all maps in convolutional layer is the same and are calculated by the formula (although it can be different if there is a special rule to processes edges):
@@ -144,7 +144,7 @@ General setting for hyperparameters are: **K_number = 2, K_size = 3, Step = 1, P
 
 <br/>
 
-### <a name="Pooling Layer">Pooling Layer</a>
+### <a id="pooling-layer">Pooling Layer</a>
 **Pooling Layer** (also known as **subsampling layer** or **downsampling layer**) is inserted between **Convolutional Layers** and aimed to reduce spatial dimension of feature maps (width and height) doing it separately for each map through depth of volume of the previous layer. When some features have already been identified in the previous convolution operation, then a detailed image is no longer needed for further processing, and it is compressed to less detailed. This operation also helps to control overfitting.
 
 Pooling Layer usually has the most common filters with size 2x2 and step equal to 2. Every filter in Pooling Layer is doing **MAX operation** choosing maximum value from 4 numbers. As an output, there is the same amount of feature maps with its depth from previous Convolutional Layer but with downsampling spatial size 2 times (by width and height). An example is shown on the figure below.
@@ -164,7 +164,7 @@ Pooling layer takes an input volume of size **Width_In × Height_In × Depth_In*
 
 <br/>
 
-### <a name="ReLU Layer">ReLU Layer</a>
+### <a id="relu-layer">ReLU Layer</a>
 One of the stages of Neural Network development is the choice of neuron activation function. The form of the **activation function** largely determines the functionality of the Neural Network and the method of its learning. The classic **Back Propagation** algorithm works well on two-layer and three-layer neural networks, but with further increase in depth, it becomes problematic. One of the reasons is the so-called attenuation of the gradients. As the error propagates from the output layer to the input layer on each layer, the current result is multiplied by the derivative of the activation function. The derivative of the traditional **sigmoid activation function** is less than unit, so after several layers the error will be close to zero. If, on the contrary, the activation function has an unbounded derivative (as, for example, a **hyperbolic tangent**), then an explosive increase in error can occur as it spreads, which leads to instability of the learning procedure. That is why **Convolutional Layers** use the **ReLU (Rectified Linear Unit)**, that represents a rectified linear activation function, and is expressed by the following formula:
 
 ![ReLU_activation_function](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/ReLU_activation_function.png)
@@ -186,7 +186,7 @@ It can be noted that ReLU is not always reliable enough and in the process of le
 
 <br/>
 
-### <a name="Fully-Connected Layer">Fully-Connected Layer</a>
+### <a id="fully-connected-layer">Fully-Connected Layer</a>
 The last type of layers is **Fully Connected Layer**. Which is a conventional **Multilayer Perceptron**. Neurons in the last FC Layer have full connections with all the activations in the previous layer. The calculation of the neuron values in the FC Layer can be described by the formula:
 
 ![FC_neurons_value](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/FC_neurons_value.png)
@@ -203,7 +203,7 @@ After FC Layer, there is the last one - **Output Layer** of network, where **Sof
 
 <br/>
 
-### <a name="Architecture of CNN">Architecture of CNN</a>
+### <a id="architecture-of-cnn">Architecture of CNN</a>
 The architecture of CNN is defined by the problem being solved. Below the typical architectures are shown.
 
 ![Architecture_of_CNN](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Architecture_of_CNN.png)
@@ -213,16 +213,16 @@ In the second example there is one **Conv layer** before every **Pooling layer**
 
 <br/>
 
-### <a name="Video Summary for Introduction into CNN">Video Summary for Introduction into CNN</a>
+### <a id="video-summary-for-introduction-into-cnn">Video Summary for Introduction into CNN</a>
 Video Introduction into Convolutional NN with Python from scratch (summary):
 <br/><a href="https://www.youtube.com/watch?v=04G3kRFI7pc" target="_blank"><img src="https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Video_Introduction_into_ConvNet.bmp" alt="Convolutional NN from scratch" /></a>
 
 <br/>
 
-### <a name="Writing code in Python">Writing code in Python</a>
+### <a id="writing-code-in-python">Writing code in Python</a>
 Experimental results on convolution applied to images with different filters.
 
-### <a name="Simple Convolution with numpy only">Simple Convolution with `numpy` only</a>
+### <a id="simple-convolution-with-numpy-only">Simple Convolution with `numpy` only</a>
 Taking greyscale image and slicing it into the channels. Checking if all channels are identical.
 <br/>Consider following part of the code:
 
@@ -387,7 +387,7 @@ Full code is available here: [CNN_Simple_Convolution.py](https://github.com/sich
 
 <br/>
 
-### <a name="More complex example with numpy only">More complex example with `numpy` only</a>
+### <a id="more-complex-example-with-numpy-only">More complex example with `numpy` only</a>
 Consider more complex example of convolving input image with following architecture:
 <br/>`Input` --> `Conv --> ReLU --> Pool` --> `Conv --> ReLU --> Pool` --> `Conv --> ReLU --> Pool`
 
@@ -586,7 +586,7 @@ Full code is available here: [CNN_More_complex_example.py](https://github.com/si
 
 <br/>
 
-### <a name="CIFAR-10 Image Classification with numpy only">CIFAR-10 Image Classification with `numpy` only</a>
+### <a id="cifar10-image-classification-with-numpy-only">CIFAR-10 Image Classification with `numpy` only</a>
 In this example we'll test CNN for Image Classification with the help of CIFAR-10 dataset.
 <br/>Following standard parameters can be used and tested:
 
@@ -628,7 +628,7 @@ File will download archive from official resource, unzip archive and delete non-
 
 <br/>
 
-### <a name="Loading batches of CIFAR-10 dataset">Loading batches of CIFAR-10 dataset</a>
+### <a id="loading-batches-of-cifar19-dataset">Loading batches of CIFAR-10 dataset</a>
 Writing code in Python.
 <br/>Importing needed libraries.
 <br/>Consider following part of the code:
@@ -709,7 +709,7 @@ def whole_cifar10():
 
 <br/>
 
-### <a name="Plotting examples of images from CIFAR-10 dataset">Plotting examples of images from CIFAR-10 dataset</a>
+### <a id="plotting-examples-of-images-from-cifar10-dataset">Plotting examples of images from CIFAR-10 dataset</a>
 After all batches were load and concatenated all together it is possible to show examples of training images.
 <br/>Creating function for showing first 100 unique example of images from CIFAR-10 dataset.
 <br/>Consider following part of the code:
@@ -784,7 +784,7 @@ Result can be seen on the image below.
 
 <br/>
 
-### <a name="Preprocessing loaded CIFAR-10 dataset">Preprocessing loaded CIFAR-10 dataset</a>
+### <a id="preprocessing-loaded-cifar10-dataset">Preprocessing loaded CIFAR-10 dataset</a>
 Next, creating function for preprocessing CIFAR-10 datasets for further use in classifier.
 * Normalizing data by subtracting mean image and dividing by standard deviation.
 * Transposing every dataset to make channels come first.
@@ -869,7 +869,7 @@ As a result there will be following:
 
 <br/>
 
-### <a name="Saving and Loading serialized models">Saving and Loading serialized models</a>
+### <a id="saving-and-loading-serialized-models">Saving and Loading serialized models</a>
 Checking `pickle` library for saving and loading serialized models.
 <br/>In order to test how it works, we'll save simple dictionary into file and will load it after.
 <br/>Consider following part of the code:
