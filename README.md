@@ -7,10 +7,10 @@ Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles a
 
 ### Structure of repository
 * [Related works](#related_works)
-* <a href="#Description">Description</a>
-* <a href="#Content">Content</a>
-  * <a href="#Codes">Codes</a>
-  * <a href="#Theory and experimental results">Theory and experimental results</a>
+* <a href="#description">Description</a>
+* <a href="#content">Content</a>
+  * <a href="#codes">Codes</a>
+  * <a href="#theory and experimental results">Theory and experimental results</a>
 
 <br/>
 
@@ -27,7 +27,7 @@ Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles a
 
 <br/>
 
-### <a name="Description">Description</a>
+### <a name="description">Description</a>
 The aim of the repository is to study and create complex project on Computer vision in autonomous vehicles and robotics through basics in Neural Networks to advanced learning. Here is brief description of repository, its stages of development, animated figures with empirical results. To get full content scroll down or click <a href="#Content">here</a>. **This repository is currently under construction, coming soon, will be released in December 2018.**
 
 * **Example #1** - simple convolving of input image with three different filters for **edge detection**.
@@ -47,8 +47,8 @@ The aim of the repository is to study and create complex project on Computer vis
 
 <br/>
 
-### <a name="Content">Content</a>
-**<a name="Codes">Codes</a>** (it'll send you to appropriate file):
+### <a name="content">Content</a>
+**<a name="codes">Codes</a>** (it'll send you to appropriate file):
 * Introduction part:
   * [Intro_simple_NN.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Intro_simple_NN.py)
   * [Intro_simple_three_layers_NN.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Intro_simple_three_layers_NN.py)
@@ -72,7 +72,7 @@ The aim of the repository is to study and create complex project on Computer vis
 
 <br/>
 
-**<a name="Theory and experimental results">Theory and experimental results</a>** (it'll send you to appropriate page):
+**<a name="theory and experimental results">Theory and experimental results</a>** (it'll send you to appropriate page):
 * [Introduction into Neural Networks](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Introduction.md)
   * [Gradient descent](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Gradient_descent.md)
   * [Backpropagation](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Backpropagation.md)
