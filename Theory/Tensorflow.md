@@ -5,7 +5,7 @@ Building Neural Networks in Python using <b>Tensorflow</b>. **Coming soon. Will 
 ## Content
 Theory and experimental results (on this page):
 
-* [Tensorflow](#tensorflow)<a href="#Tensorflow">Tensorflow</a>
+* [Tensorflow](#tensorflow)
 
 <br/>
 
