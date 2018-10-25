@@ -5,16 +5,16 @@ Explaining backpropagation on the three layer NN in Python using <b>numpy</b> li
 ## Content
 Theory and experimental results (on this page):
 
-* <a href="#Three Layers NN">Three Layers NN</a>
-* <a href="#Mathematical calculations">Mathematical calculations</a>
-* <a href="#Backpropagation">Backpropagation</a>
-* <a href="#Writing a code in Python">Writing a code in Python</a>
-* <a href="#Results">Results</a>
-* <a href="#Analysis of results">Analysis of results</a>
+* [Three Layers NN](#three-layers-nn)
+* [Mathematical calculations](#mathematical-calculations)
+* [Backpropagation](#backpropagation)
+* [Writing a code in Python](#writing-a-code-in-python)
+* [Results](#results)
+* [Analysis of results](#analysis-of-results)
 
 <br/>
 
-### <a name="Three Layers NN">Three Layers NN</a>
+### <a id="three-layers-nn">Three Layers NN</a>
 In order to solve more complex tasks, apart from that was described in the [Introduction](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Introduction.md) part, it is needed to use more layers in the NN. In this case the weights will be updated sequentially from the last layer to the input layer with respect to the confidance of the current results. This approach is called **Backpropagation**.
 <br/><br/>Consider three layers NN.
 <br/>On the figure below the NN is shown.
@@ -39,7 +39,7 @@ In order to solve more complex tasks, apart from that was described in the [Intr
 
 <br/>
 
-### <a name="Mathematical calculations">Mathematical calculations</a>
+### <a id="mathematical-calculations">Mathematical calculations</a>
 By using matrices it is possible to calculate the output for each set of inputs.
 <br/>On the figure below operations between matrices are shown.
 
@@ -49,7 +49,7 @@ By using matrices it is possible to calculate the output for each set of inputs.
 
 <br/>
 
-### <a name="Backpropagation">Backpropagation</a>
+### <a id="backpropagation">Backpropagation</a>
 Updating the weights is the process of adjusting or training the NN in order to get more accurate result. Backpropagation updates weights from last layer to the first layer.
 * Firstly, the **error** for the output **Layer 2** is calculated, which is the difference between desired output and received output, and this is the error for the last output layer (Layer 2): <br/>**layer_2_error = Desired data - Received data**
 * Secondly, the **delta** for the output **Layer 2** is calculated, which is used for correction the **Weights 1-2** and for finding the error for the hidden layer (Layer 1). The adjustments will be done in proportion to the value of error by using **Sigmoid Gradient** that was described in the [Introduction](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Introduction.md) part and with respect to [Gradient descent](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Gradient_descent.md): <br/>**delta_2 = layer_2_error * layer_2 * (1 - layer_2)**
@@ -72,7 +72,7 @@ After the **delta**s for last (Layer 2) and hidden (Layer 1) layers were found, 
 
 <br/>
 
-### <a name="Writing a code in Python">Writing a code in Python</a>
+### <a id="writing-a-code-in-python">Writing a code in Python</a>
 To write a code in Python for building and training three layers NN we will use <b>numpy</b> library to deal with matrices.
 
 ```py
@@ -236,7 +236,7 @@ print('Output result for testing data = ', three_layers_neural_network.run_nn(np
 
 <br/>
 
-### <a name="Results">Results</a>
+### <a id="results">Results</a>
 Set of inputs and outputs for the training process:
 <br/><b>input_set_for_training = np.array([[1, 1, 1], [1, 0, 1], [0, 0, 1], [0, 1, 1]])</b>
 <br/>The output set we transposes into the vector with function 'T':
@@ -260,7 +260,7 @@ The data for testing after training is [1, 0, 0] and the expected output is 1.
 
 <br/>
 
-### <a name="Analysis of results">Analysis of results</a>
+### <a id="analysis-of-results">Analysis of results</a>
 Analysing obtained results and building the figure with <b>Outputs</b> and number of <b>Iterations</b> in order to understand the raising accuracy of output and needed amount of iterations for training.
 <br/>Consider following part of the code:
 
