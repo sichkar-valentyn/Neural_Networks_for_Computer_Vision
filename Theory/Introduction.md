@@ -5,15 +5,15 @@ Explaining basic concepts on how NN works and implementing simple, kind of class
 ## Content
 Theory and experimental results (on this page):
 
-* <a href="#Basic concepts of artificial NN">Basic concepts of artificial NN</a>
-* <a href="#Training of the neuron">Training of the neuron</a>
-* <a href="#Writing a code in Python">Writing a code in Python</a>
-* <a href="#Results">Results</a>
-* <a href="#Analysis of results">Analysis of results</a>
+* [Related works](#basic-concepts-of-artificial-nn)
+* [Training of the neuron](#training-of-the-neuron)
+* [Writing a code in Python](#writing-a-code-in-python)
+* [Results](#results)
+* [Analysis of results](#analysis-of-results)
 
 <br/>
 
-### <a name="Basic concepts of artificial NN">Basic concepts of artificial NN</a>
+### <a id="basic-concepts-of-artificial-nn">Basic concepts of artificial NN</a>
 In our brain there are billions of billions neurons that are connected with each other with so called synapses (connectors). When we are thinking, neurons send signals to another neurons and depending on the power of this signals collected by synapses, the neurons can be activated and produce output to another neurons.
 <br/><br/> 
 On the figure below the simple one neuron is shown.
@@ -36,7 +36,7 @@ The Inputs above are called <b>Training sets</b> and the Outputs - <b>Desired re
 
 <br/>
 
-### <a name="Training of the neuron">Training of the neuron</a>
+### <a id="training-of-the-neuron">Training of the neuron</a>
 Process where we teach our neuron to produce desired results (to 'think') is called <b>Training process</b>.
 <br/>In order to begin the training process we need firstly to give the synapses (our input lines) weights. These weights will influence the output of the neuron.
 * So, we set the weights randomly, usually between 0 and 1.
@@ -74,7 +74,7 @@ where <b>I</b> - is an input value, <b>error</b> - is the difference between the
 
 <br/>
 
-### <a name="Writing a code in Python">Writing a code in Python</a>
+### <a id="writing-a-code-in-python">Writing a code in Python</a>
 To write a code in Python for building and training NN we will not use special toolkits or NN libraries. Instead we will use powerful <b>numpy</b> library to deal with matrices. Code with a lot of comments is shown below.
 
 ```py
@@ -185,7 +185,7 @@ print(single_neuron_neural_network.run_nn(np.array([1, 0, 0])))
 
 <br/>
 
-### <a name="Results">Results</a>
+### <a id="results">Results</a>
 Set of inputs and outputs for the training process:
 <br/><b>input_set_for_training = np.array([[1, 1, 1], [1, 0, 1], [0, 0, 1], [0, 1, 1]])</b>
 <br/>The output set we transposes into the vector with function 'T':
@@ -208,7 +208,7 @@ The data for testing after training is [1, 0, 0] and the expected output is 1.
 
 <br/>
 
-### <a name="Analysis of results">Analysis of results</a>
+### <a id="analysis-of-results">Analysis of results</a>
 Now we're going to analyse obtained results and build the figure with <b>Outputs</b> and number of <b>Iterations</b> in order to understand the raising accuracy of output and needed amount of iterations for training.
 <br/>Let's consider following part of the code:
 
