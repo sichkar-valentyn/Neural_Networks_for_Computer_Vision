@@ -5,7 +5,7 @@ Explaining basic concepts on how NN works and implementing simple, kind of class
 ## Content
 Theory and experimental results (on this page):
 
-* [Related works](#basic-concepts-of-artificial-nn)
+* [Basic concepts of artificial NN](#basic-concepts-of-artificial-nn)
 * [Training of the neuron](#training-of-the-neuron)
 * [Writing a code in Python](#writing-a-code-in-python)
 * [Results](#results)
