@@ -1,4 +1,4 @@
-# File: datasets_preparing.py
+# File: layers.py
 # Description: Neural Networks for computer vision in autonomous vehicles and robotics
 # Environment: PyCharm and Anaconda environment
 #
