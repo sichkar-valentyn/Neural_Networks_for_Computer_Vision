@@ -589,6 +589,7 @@ Full code is available here: [CNN_More_complex_example.py](https://github.com/si
 ### <a id="cifar10-image-classification-with-numpy-only">CIFAR-10 Image Classification with `numpy` only</a>
 In this example we'll test CNN for Image Classification with the help of CIFAR-10 dataset.
 <br/>Following standard and most common parameters can be used and tested:
+
 | Parameter | Description |
 | --- | --- |
 | Weights Initialization | HE Normal |
@@ -608,6 +609,7 @@ In this example we'll test CNN for Image Classification with the help of CIFAR-1
 <br/>**For current example** following architecture will be used:
 <br/>`Input` --> `Conv` --> `ReLU` --> `Pool` --> `Affine` --> `ReLU` --> `Affine` --> `Softmax`
 <br/>**For current example** following parameters will be used:
+
 | Parameter | Description |
 | --- | --- |
 | Weights Initialization | `HE Normal` |
