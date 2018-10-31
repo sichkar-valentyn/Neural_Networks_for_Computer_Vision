@@ -608,6 +608,7 @@ In this example we'll test CNN for Image Classification with the help of CIFAR-1
 
 <br/>**For current example** following architecture will be used:
 <br/>`Input` --> `Conv` --> `ReLU` --> `Pool` --> `Affine` --> `ReLU` --> `Affine` --> `Softmax`
+
 <br/>**For current example** following parameters will be used:
 
 | Parameter | Description |
