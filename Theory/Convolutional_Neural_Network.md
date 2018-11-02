@@ -924,7 +924,7 @@ print(np.array_equal(data['x_validation'], d['x_validation']))  # True
 print(np.array_equal(data['y_validation'], d['y_validation']))  # True
 ```
 
-<br/>Full codes are available here (soon...):
+<br/>Full codes are available here (will be soon...):
 * CIFAR-10 Image Classification with `numpy` only:
   * `Data_Preprocessing`
     * `datasets`
