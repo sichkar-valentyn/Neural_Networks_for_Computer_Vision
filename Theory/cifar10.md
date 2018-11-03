@@ -2,6 +2,18 @@
 Example on Image Classification with the help of CIFAR-10 dataset and Convolutional Neural Network.
 <br/>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1317904.svg)](https://doi.org/10.5281/zenodo.1317904)
 
+## Content
+Theory and experimental results (on this page):
+
+* [CIFAR-10 Image Classification with `numpy` only](#cifar10-image-classification-with-numpy-only)
+  * [Loading batches of CIFAR-10 dataset](#loading-batches-of-cifar19-dataset)
+  * [Plotting examples of images from CIFAR-10 dataset](#plotting-examples-of-images-from-cifar10-dataset)
+  * [Preprocessing loaded CIFAR-10 dataset](#preprocessing-loaded-cifar10-dataset)
+  * [Saving and Loading serialized models](#saving-and-loading-serialized-models)
+
+<br/>
+
+### <a id="cifar10-image-classification-with-numpy-only">
 In this example we'll test CNN for Image Classification with the help of CIFAR-10 dataset.
 <br/>Following standard and most common parameters can be used and tested:
 
