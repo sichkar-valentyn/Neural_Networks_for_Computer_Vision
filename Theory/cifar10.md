@@ -13,7 +13,7 @@ Theory and experimental results (on this page):
 
 <br/>
 
-### <a id="cifar10-image-classification-with-numpy-only">
+### <a id="cifar10-image-classification-with-numpy-only">CIFAR-10 Image Classification with `numpy` only</a>
 In this example we'll test CNN for Image Classification with the help of CIFAR-10 dataset.
 <br/>Following standard and most common parameters can be used and tested:
 
