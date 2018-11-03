@@ -17,11 +17,6 @@ Theory and experimental results (on this page):
 * [Writing code in Python](#writing-code-in-python)
   * [Simple Convolution with `numpy` only](#simple-convolution-with-numpy-only)
   * [More complex example with `numpy` only](#more-complex-example-with-numpy-only)
-  * [CIFAR-10 Image Classification with `numpy` only](#cifar10-image-classification-with-numpy-only)
-    * [Loading batches of CIFAR-10 dataset](#loading-batches-of-cifar19-dataset)
-    * [Plotting examples of images from CIFAR-10 dataset](#plotting-examples-of-images-from-cifar10-dataset)
-    * [Preprocessing loaded CIFAR-10 dataset](#preprocessing-loaded-cifar10-dataset)
-    * [Saving and Loading serialized models](#saving-and-loading-serialized-models)
 
 <br/>
 
