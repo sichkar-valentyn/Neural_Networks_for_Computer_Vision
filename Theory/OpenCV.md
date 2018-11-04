@@ -19,8 +19,13 @@ With first one it's needed to have `conda` been installed and to use one of the 
 * `conda install -c conda-forge opencv`
 * `conda install -c conda-forge/label/broken opencv`
 
-With second one use following command:
+With second one use on of the following commands:
 * `pip3 install opencv-python`
+* `pip install opencv-contrib-python`
+
+Also, might need to be install following, if there is mistake arise:
+* `sudo apt-get install libsm6` - only main modules
+* `sudo apt-get install -y libxrender-dev` - both main and contrib modules
 
 OpenCV will be installed in choosen environment.
 <br/>To check if OpenCV was installed, run python in any form and run following two lines of code:
