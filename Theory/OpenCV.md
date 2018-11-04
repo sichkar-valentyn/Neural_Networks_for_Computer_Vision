@@ -23,7 +23,7 @@ With second one use on of the following commands:
 * `pip3 install opencv-python`
 * `pip install opencv-contrib-python`
 
-Also, might need to be install following, if there is mistake arise:
+Also, might need to be installed following, if there is mistake arise:
 * `sudo apt-get install libsm6` - only main modules
 * `sudo apt-get install -y libxrender-dev` - both main and contrib modules
 
