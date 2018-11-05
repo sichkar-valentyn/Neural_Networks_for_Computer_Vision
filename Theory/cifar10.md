@@ -47,6 +47,10 @@ In this example we'll test CNN for Image Classification with the help of CIFAR-1
 | Pooling | `Max` |
 | Loss Functions | `Softmax` |
 
+<br/>**File structure** with their functions can be seen on the figure below.
+
+![Image_Classification_File_Structure.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Image_Classification_File_Structure.png)
+
 <br/>First step is to prepare data from CIFAR-10 dataset.
 <br/>Getting datasets CIFAR-10 under **Linux Ubuntu** by running file `get_CIFAR-10.sh`:
 * From terminal moving to the directory `Image_Classification/datasets`
