@@ -12,20 +12,20 @@ Theory and experimental results (on this page):
 
 ### <a id="the-easiest-ways-to-install-opencv-for-linux-ubuntu">The easiest ways to install OpenCV for Linux Ubuntu</a>
 There are few the most simple ways to install OpenCV for Linux Ubuntu, and they are:
-* by using `conda`;
+* by using `conda`,
 * by using `pip3` for python 3.
 
 With first one it's needed to have `conda` been installed and to use one of the following commands:
-* `conda install -c conda-forge opencv`
-* `conda install -c conda-forge/label/broken opencv`
+* `conda install -c conda-forge opencv`,
+* `conda install -c conda-forge/label/broken opencv`.
 
 With second one use on of the following commands:
-* `pip3 install opencv-python` - only main modules
-* `pip install opencv-contrib-python` - both main and contrib modules
+* `pip3 install opencv-python` - only main modules,
+* `pip install opencv-contrib-python` - both main and contrib modules.
 
 Also, might need to be installed following, if there is mistake arise:
-* `sudo apt-get install libsm6`
-* `sudo apt-get install -y libxrender-dev`
+* `sudo apt-get install libsm6`,
+* `sudo apt-get install -y libxrender-dev`.
 
 OpenCV will be installed in choosen environment.
 <br/>To check if OpenCV was installed, run python in any form and run following two lines of code:
