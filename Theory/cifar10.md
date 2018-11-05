@@ -47,11 +47,30 @@ In this example we'll test CNN for Image Classification with the help of CIFAR-1
 | Pooling | `Max` |
 | Loss Functions | `Softmax` |
 
-<br/>**File structure** with their functions can be seen on the figure below.
+<br/>**File structure** with functions can be seen on the figure below:
 
 ![Image_Classification_File_Structure.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Image_Classification_File_Structure.png)
 
-<br/>First step is to prepare data from CIFAR-10 dataset.
+<br/>**Also file structure** can be seen below:
+* CIFAR-10 Image Classification with `numpy` only:
+  * `Data_Preprocessing`
+    * `datasets`
+      * [get_CIFAR-10.sh](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Data_Preprocessing/datasets/get_CIFAR-10.sh)
+    * [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Data_Preprocessing/datasets_preparing.py)
+    * [mean_and_std.pickle](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Data_Preprocessing/mean_and_std.pickle)    
+  * `Helper_Functions`
+    * [layers.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Helper_Functions/layers.py)
+    * optimize_rules.py
+  * `Classifiers`
+    * [ConvNet1.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Classifiers/ConvNet1.py) 
+  * `Serialized_Models`
+    * model1.pickle
+  * Solver.py
+  
+<br/>
+
+### <a id="loading-batches-of-cifar19-dataset">Loading batches of CIFAR-10 dataset</a>
+First step is to prepare data from CIFAR-10 dataset.
 <br/>Getting datasets CIFAR-10 under **Linux Ubuntu** by running file `get_CIFAR-10.sh`:
 * From terminal moving to the directory `Image_Classification/datasets`
 * Running file with following command: `./get_CIFAR-10.sh`
@@ -68,9 +87,6 @@ File will download archive from official resource, unzip archive and delete non-
 * batches.meta
 * test_batch
 
-<br/>
-
-### <a id="loading-batches-of-cifar19-dataset">Loading batches of CIFAR-10 dataset</a>
 Writing code in Python.
 <br/>Importing needed libraries.
 <br/>Consider following part of the code:
