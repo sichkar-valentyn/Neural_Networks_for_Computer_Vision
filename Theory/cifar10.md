@@ -49,7 +49,7 @@ In this example we'll test CNN for Image Classification with the help of CIFAR-1
 
 <br/>**File structure** with functions can be seen on the figure below:
 
-![Image_Classification_File_Structure.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Image_Classification_File_Structure.png)
+![Image_Classification_File_Structure.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Image_Classification_Structure.png)
 
 <br/>Also, **file structure** can be seen below:
 * CIFAR-10 Image Classification with `numpy` only:
