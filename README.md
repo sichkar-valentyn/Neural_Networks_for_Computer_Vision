@@ -47,7 +47,7 @@ The aim of the repository is to study and create complex project on Computer vis
 
 <br/>
 
-* **Example #4** - image classification with Convolutional NN and CIFAR-10 datasets in pure `numpy`, algorithm and file structure:
+* **Example #4** - image classification with CNN and CIFAR-10 datasets in pure `numpy`, algorithm and file structure:
 <br/>![Image_Classification_File_Structure.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Image_Classification_Files_Structure.png)
 
 <br/>
