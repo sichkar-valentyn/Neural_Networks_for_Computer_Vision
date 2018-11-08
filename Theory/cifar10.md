@@ -11,6 +11,15 @@ Theory and experimental results (on this page):
   * [Preprocessing loaded CIFAR-10 dataset](#preprocessing-loaded-cifar10-dataset)
   * [Saving and Loading serialized models](#saving-and-loading-serialized-models)
   * [Functions for dealing with CNN layers](#functions-for-dealing-with-cnn-layers)
+    * [Naive Forward Pass for Convolutional layer](#naive-forward-pass-for-convolutional-layer)
+    * [Naive Backward Pass for Convolutional layer](#naive-backward-pass-for-convolutional-layer)
+    * [Naive Forward Pass for Max Pooling layer](#naive-forward-pass-for-max-pooling-layer)
+    * [Naive Backward Pass for Max Pooling layer](#naive-backward-pass-for-max-pooling-layer)
+    * [Forward Pass for Affine layer](#forward-pass-for-affine-layer)
+    * [Backward Pass for Affine layer](#backward-pass-for-affine-layer)
+    * [Forward Pass for ReLU layer](#forward-pass-for-relu-layer)
+    * [Backward Pass for ReLU layer](#backward-pass-for-relu-layer)
+    * [Softmax Classification loss](#softmax-classification-loss)
 
 <br/>
 
@@ -375,8 +384,19 @@ print(np.array_equal(data['y_validation'], d['y_validation']))  # True
 <br/>
 
 ### <a id="functions-for-dealing-with-cnn-layers">Functions for dealing with CNN layers</a>
-Creating functions for CNN layers.
-<br/>Defining function for naive forward pass for convolutional layer.
+Creating functions for CNN layers:
+* 1
+* 2
+* 3
+* 4
+* 5
+* 6
+* 7
+* 8
+* 9
+
+#### <a id="naive-forward-pass-for-convolutional-layer">Naive Forward Pass for Convolutional layer</a>
+Defining function for naive forward pass for convolutional layer.
 ```py
 """
 Input consists of following:
@@ -405,8 +425,111 @@ Consider following part of the code:
 
 ```
 
+#### <a id="naive-backward-pass-for-convolutional-layer">Naive Backward Pass for Convolutional layer</a>
+Defining function for naive backward pass for convolutional layer.
+```py
+"""
+```
 
+Consider following part of the code:
+<br/>(related file: [layers.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Helper_Functions/layers.py))
 
+```py
+
+```
+
+#### <a id="naive-forward-pass-for-max-pooling-layer">Naive Forward Pass for Max Pooling layer</a>
+Defining function for naive forward pass for convolutional layer.
+```py
+"""
+```
+
+Consider following part of the code:
+<br/>(related file: [layers.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Helper_Functions/layers.py))
+
+```py
+
+```
+
+#### <a id="naive-backward-pass-for-max-pooling-layer">Naive Backward Pass for Max Pooling layer</a>
+Defining function for naive forward pass for convolutional layer.
+```py
+"""
+```
+
+Consider following part of the code:
+<br/>(related file: [layers.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Helper_Functions/layers.py))
+
+```py
+
+```
+
+#### <a id="forward-pass-for-affine-layer">Forward Pass for Affine layer</a>
+Defining function for naive forward pass for convolutional layer.
+```py
+"""
+```
+
+Consider following part of the code:
+<br/>(related file: [layers.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Helper_Functions/layers.py))
+
+```py
+
+```
+
+#### <a id="backward-pass-for-affine-layer">Backward Pass for Affine layer</a>
+Defining function for naive forward pass for convolutional layer.
+```py
+"""
+```
+
+Consider following part of the code:
+<br/>(related file: [layers.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Helper_Functions/layers.py))
+
+```py
+
+```
+
+#### <a id="forward-pass-for-relu-layer">Forward Pass for ReLU layer</a>
+Defining function for naive forward pass for convolutional layer.
+```py
+"""
+```
+
+Consider following part of the code:
+<br/>(related file: [layers.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Helper_Functions/layers.py))
+
+```py
+
+```
+
+#### <a id="backward-pass-for-relu-layer">Backward Pass for ReLU layer</a>
+Defining function for naive forward pass for convolutional layer.
+```py
+"""
+```
+
+Consider following part of the code:
+<br/>(related file: [layers.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Helper_Functions/layers.py))
+
+```py
+
+```
+
+#### <a id="softmax-classification-loss">Softmax Classification loss</a>
+Defining function for naive forward pass for convolutional layer.
+```py
+"""
+```
+
+Consider following part of the code:
+<br/>(related file: [layers.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Helper_Functions/layers.py))
+
+```py
+
+```
+
+<br/>
 
 <br/>Full codes are available here (will be soon...):
 * CIFAR-10 Image Classification with `numpy` only:
