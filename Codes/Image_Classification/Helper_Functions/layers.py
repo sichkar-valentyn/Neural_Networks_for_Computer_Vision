@@ -235,7 +235,7 @@ def max_pooling_forward_naive(x, pooling_params):
 
 
 """
-Defining function for naive forward pass for Max Pooling layer.
+Defining function for naive backward pass for Max Pooling layer.
 
 Input consists of following:
     derivatives_out - Upstream derivatives.
