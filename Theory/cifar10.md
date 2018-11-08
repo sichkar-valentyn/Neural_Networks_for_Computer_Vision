@@ -375,7 +375,35 @@ print(np.array_equal(data['y_validation'], d['y_validation']))  # True
 <br/>
 
 ### <a id="functions-for-dealing-with-cnn-layers">Functions for dealing with CNN layers</a>
+Creating functions for CNN layers.
+<br/>Defining function for naive forward pass for convolutional layer.
+```py
+"""
+Input consists of following:
+    x of shape (N, C, H, W) - N data, each with C channels, height H and width W.
+    w of shape (F, C, HH, WW) - We convolve each input with F different filters,
+        where each filter spans all C channels; each filter has height HH and width WW.
+    'cnn_params' is a dictionary with following keys:
+        'stride' - step for sliding,
+        'pad' - zero-pad frame around input.
+Function returns a tuple of (out, cash):
+    feature_maps - output data of feature maps of shape (N, F, H', W') where:
+        H' = 1 + (H + 2 * pad - HH) / stride
+        W' = 1 + (W + 2 * pad - WW) / stride
+            where,
+            N here is the same as we have it as number of input images,
+            F here is as number of channels of each N (that are now as feature maps).
+    cache - is a tuple of (x, w, b, cnn_params), needed in backward pass.
+    
+"""
+```
 
+Consider following part of the code:
+<br/>(related file: [layers.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Helper_Functions/layers.py))
+
+```py
+
+```
 
 
 
