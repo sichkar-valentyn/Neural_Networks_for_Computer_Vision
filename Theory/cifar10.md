@@ -10,6 +10,7 @@ Theory and experimental results (on this page):
   * [Plotting examples of images from CIFAR-10 dataset](#plotting-examples-of-images-from-cifar10-dataset)
   * [Preprocessing loaded CIFAR-10 dataset](#preprocessing-loaded-cifar10-dataset)
   * [Saving and Loading serialized models](#saving-and-loading-serialized-models)
+  * [Functions for dealing with CNN layers](#functions-for-dealing-with-cnn-layers)
 
 <br/>
 
@@ -370,6 +371,14 @@ print(np.array_equal(data['y_test'], d['y_test']))  # True
 print(np.array_equal(data['x_validation'], d['x_validation']))  # True
 print(np.array_equal(data['y_validation'], d['y_validation']))  # True
 ```
+
+<br/>
+
+### <a id="functions-for-dealing-with-cnn-layers">Functions for dealing with CNN layers</a>
+
+
+
+
 
 <br/>Full codes are available here (will be soon...):
 * CIFAR-10 Image Classification with `numpy` only:
