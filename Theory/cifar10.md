@@ -1148,7 +1148,7 @@ Consider following part of the code:
 <br/>(related file: [ConvNet1.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Classifiers/ConvNet1.py))
 ```py
 """
-    Evaluating scores for predicting ConvNet1.
+    Calculating scores for predicting ConvNet1.
     Input consists of following:
         x of shape (N, C, H, W) - N data, each with C channels, height H and width W.
     Function returns:
