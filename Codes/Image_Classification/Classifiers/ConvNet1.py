@@ -226,7 +226,7 @@ class ConvNet1(object):
         return loss, gradients
 
     """
-    Evaluating loss for predicting ConvNet1.
+    Calculating scores for predicting ConvNet1.
     Input consists of following:
         x of shape (N, C, H, W) - N data, each with C channels, height H and width W.
 
