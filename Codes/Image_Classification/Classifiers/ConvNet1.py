@@ -14,7 +14,6 @@
 
 # Creating Convolutional Neural Network Model
 
-
 """""""""
 Initializing ConvNet1 with following architecture:
 Conv - ReLU - Pooling - Affine - ReLU - Affine - Softmax
