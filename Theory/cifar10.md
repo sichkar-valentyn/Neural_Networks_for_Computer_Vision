@@ -1176,7 +1176,7 @@ Consider following part of the code:
 
 <br/>
 
-<br/>Full codes are available here (will be soon...):
+<br/>Full codes are available here (will be released soon...):
 * CIFAR-10 Image Classification with `numpy` only:
   * `Data_Preprocessing`
     * `datasets`
