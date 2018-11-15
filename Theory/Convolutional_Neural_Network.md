@@ -433,7 +433,7 @@ def convolution_2d(image, filter, pad, step):
 Next, preparing function for **CNN Layer**.
 <br/>Firstly, as input there is an image with three identical channels. That means every filter has to have three channels in depth also. If we consider second CNN Layer, then as input there is a set of feature maps produced by the first CNN Layer. It can be understood easier if we imagine that that set of feature maps is one image with its channels in depth. For example, first CNN Layer with four filters produces four feature maps that are input as one image with four channels for the second CNN Layer. Consequently, every filter for the second CNN Layer has to have four channels in depth also. Figure below shows process.
 
-![Convolution_Process](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Convolution_Process.png)
+![Convolution_Process_P](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Convolution_Process_P.png)
 
 Every filter with its channels in depth is convolved with input image (feature maps) with its depth appropriately. For example, first channel of the filter is convolving appropriate area in the first channel of input image, and second channel of the filter is convolving appropriate area (spatially the same as in the first channel) in the second channel of input image and so on. Result is summed up and written in appropriate cell of output feature map.
 
