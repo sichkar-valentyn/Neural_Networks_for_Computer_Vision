@@ -234,7 +234,7 @@ class ConvNet1(object):
                  where scores[i, C] is the classification score for x[i] and class C.
 
     """
-    def loss_for_predicting(self, x):
+    def scores_for_predicting(self, x):
         # Getting weights and biases
         w1, b1 = self.params['w1'], self.params['b1']
         w2, b2 = self.params['w2'], self.params['b2']
