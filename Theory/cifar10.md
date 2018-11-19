@@ -258,7 +258,7 @@ Result can be seen on the image below.
 
 ### <a id="preprocessing-loaded-cifar10-dataset">Preprocessing loaded CIFAR-10 dataset</a>
 Next, creating function for preprocessing CIFAR-10 datasets for further use in classifier.
-* Normalizing data by subtracting mean image and dividing by standard deviation.
+* Normalizing data by subtracting mean image.
 * Transposing every dataset to make channels come first.
 * Returning result as dictionary.
 
@@ -281,19 +281,17 @@ def pre_process_cifar10():
     x_train = x_train[range(49000)]  # (49000, 32, 32, 3)
     y_train = y_train[range(49000)]  # (49000,)
 
-    # Normalizing data by subtracting mean image and dividing by standard deviation
+    # Normalizing data by subtracting mean image.
     # Subtracting the dataset by mean image serves to center the data.
     # It helps for each feature to have a similar range and gradients don't go out of control.
     # Calculating mean image from training dataset along the rows by specifying 'axis=0'
     mean_image = np.mean(x_train, axis=0)  # numpy.ndarray (32, 32, 3)
-    # Calculating standard deviation from training dataset along the rows by specifying 'axis=0'
-    std = np.std(x_train, axis=0)  # numpy.ndarray (32, 32, 3)
     
-    # Saving calculated 'mean_image' and 'std' into 'pickle' file
-    # We will use them when preprocess input data for classifying
-    # We will need to subtract and divide input image for classifying
+    # Saving calculated 'mean_image' into 'pickle' file
+    # We will use it when preprocess input data for classifying
+    # We will need to subtract input image for classifying
     # As we're doing now for training, validation and testing data
-    dictionary = {'mean_image': mean_image, 'std': std}
+    dictionary = {'mean_image': mean_image}
     with open('mean_and_std.pickle', 'wb') as f:
         pickle.dump(dictionary, f)
         
@@ -301,10 +299,6 @@ def pre_process_cifar10():
     x_train -= mean_image
     x_validation -= mean_image
     x_test -= mean_image
-    # Dividing then every dataset by standard deviation
-    x_train /= std
-    x_validation /= std
-    x_test /= std
 
     # Transposing every dataset to make channels come first
     # With method copy()
