@@ -494,7 +494,7 @@ def softmax_loss(x, y):
     loss = -np.sum(np.log(probabilities[np.arange(N), y])) / N
 
     # Calculating gradient
-    dx = probabilities.copy()
+    dx = probabilities
     dx[np.arange(N), y] -= 1
     dx /= N
 
