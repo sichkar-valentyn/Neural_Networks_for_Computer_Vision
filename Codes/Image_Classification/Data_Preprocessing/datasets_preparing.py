@@ -137,10 +137,9 @@ def pre_process_cifar10():
     x_test /= std
 
     # Transposing every dataset to make channels come first
-    # With method copy()
-    x_train = x_train.transpose(0, 3, 1, 2).copy()  # (49000, 3, 32, 32)
-    x_test = x_test.transpose(0, 3, 1, 2).copy()  # (1000, 3, 32, 32)
-    x_validation = x_validation.transpose(0, 3, 1, 2).copy()  # (1000, 3, 32, 32)
+    x_train = x_train.transpose(0, 3, 1, 2)  # (49000, 3, 32, 32)
+    x_test = x_test.transpose(0, 3, 1, 2)  # (1000, 3, 32, 32)
+    x_validation = x_validation.transpose(0, 3, 1, 2)  # (1000, 3, 32, 32)
 
     # Returning result as dictionary
     d = {'x_train': x_train, 'y_train': y_train,
