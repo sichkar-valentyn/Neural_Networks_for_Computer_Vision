@@ -90,6 +90,12 @@ def whole_cifar10():
 def pre_process_cifar10():
     # Loading whole CIFAR-10 datasets
     x_train, y_train, x_test, y_test = whole_cifar10()
+    
+    # Normalizing whole data by dividing /255.0
+    # (!) Pay attention, that this step is up to researcher and can be omitted
+    # In my case I study all possible option, however it takes time for training and analyzing
+    x_train /= 255.0
+    x_test /= 255.0
 
     # Preparing data for training, validation and testing
     # Data for testing is taken with first 1000 examples from testing dataset
@@ -102,24 +108,33 @@ def pre_process_cifar10():
     x_train = x_train[range(49000)]  # (49000, 32, 32, 3)
     y_train = y_train[range(49000)]  # (49000,)
 
-    # Normalizing data by subtracting mean image.
+    # Normalizing data by subtracting mean image and dividing by standard deviation
     # Subtracting the dataset by mean image serves to center the data.
     # It helps for each feature to have a similar range and gradients don't go out of control.
     # Calculating mean image from training dataset along the rows by specifying 'axis=0'
     mean_image = np.mean(x_train, axis=0)  # numpy.ndarray (32, 32, 3)
 
-    # Saving calculated 'mean_image' into 'pickle' file
-    # We will use it when preprocess input data for classifying
-    # We will need to subtract input image for classifying
+    # Calculating standard deviation from training dataset along the rows by specifying 'axis=0'
+    std = np.std(x_train, axis=0)  # numpy.ndarray (32, 32, 3)
+    # Saving calculated 'mean_image' and 'std' into 'pickle' file
+    # We will use them when preprocess input data for classifying
+    # We will need to subtract and divide input image for classifying
     # As we're doing now for training, validation and testing data
-    dictionary = {'mean_image': mean_image}
-    with open('mean_and_std.pickle', 'wb') as f:
-        pickle.dump(dictionary, f)
+    dictionary = {'mean_image': mean_image, 'std': std}
+    with open('mean_and_std.pickle', 'wb') as f_mean_std:
+        pickle.dump(dictionary, f_mean_std)
 
     # Subtracting calculated mean image from pre-processed datasets
+    # (!) Pay attention, that this step is up to researcher and can be omitted
     x_train -= mean_image
     x_validation -= mean_image
     x_test -= mean_image
+    
+    # Dividing then every dataset by standard deviation
+    # (!) Pay attention, that this step is up to researcher and can be omitted
+    x_train /= std
+    x_validation /= std
+    x_test /= std
 
     # Transposing every dataset to make channels come first
     # With method copy()
