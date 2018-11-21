@@ -273,7 +273,7 @@ def pre_process_cifar10():
     
     # Normalizing whole data by dividing /255.0
     # (!) Pay attention, that this step is up to researcher and can be omitted
-    # In my case I study all possible option, however it takes time for training and analyzing
+    # In my case I study all possible options, however it takes time for training and analyzing
     x_train /= 255.0
     x_test /= 255.0
 
