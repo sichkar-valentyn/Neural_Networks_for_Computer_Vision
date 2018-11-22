@@ -258,8 +258,8 @@ Result can be seen on the image below.
 
 ### <a id="preprocessing-loaded-cifar10-dataset">Preprocessing loaded CIFAR-10 dataset</a>
 Next, creating function for preprocessing CIFAR-10 datasets for further use in classifier.
-* Normalizing data by dividing /255.0 (!) - up to researcher
-* Normalizing data by subtracting mean image and dividing by standard deviation (!) - up to researcher
+* Normalizing data by `dividing / 255.0` (!) - up to researcher
+* Normalizing data by `subtracting mean image` and `dividing by standard deviation` (!) - up to researcher
 * Transposing every dataset to make channels come first
 * Returning result as dictionary
 
