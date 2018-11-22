@@ -88,7 +88,7 @@ First step is to prepare data from CIFAR-10 dataset.
 <br/>Getting datasets CIFAR-10 under **Linux Ubuntu** by running file `get_CIFAR-10.sh`:
 * From terminal moving to the directory `Image_Classification/datasets`
 * Running file with following command: `./get_CIFAR-10.sh`
-  * If there is error that `permission denied` change permission by following command `sudo chmod +x get_CIFAR-10.sh`
+  * If there is an error that `permission denied` change permission by following command `sudo chmod +x get_CIFAR-10.sh`
   * And run again `./get_CIFAR-10.sh`
 
 File will download archive from official resource, unzip archive and delete non-needed anymore archive.
