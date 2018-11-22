@@ -2,7 +2,7 @@
 Example on Image Classification with the help of CIFAR-10 dataset and Convolutional Neural Network.
 <br/>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1317904.svg)](https://doi.org/10.5281/zenodo.1317904)
 
-## Test online [here](https://valentynsichkar.name/uploader_cifar10)
+## Test online [here](https://valentynsichkar.name/uploader_cifar10.html)
 
 ## Content
 Theory and experimental results (on this page):
