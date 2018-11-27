@@ -52,6 +52,11 @@ The aim of the repository is to study and create complex project on Computer Vis
 
 <br/>
 
+* **Example #5** - training of Model #1:
+<br/>![Training Model 1](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/training_model_1.png)
+
+<br/>
+
 ### <a id="content">Content</a>
 **<a name="codes">Codes</a>** (it'll send you to appropriate file):
 * Introduction part:
