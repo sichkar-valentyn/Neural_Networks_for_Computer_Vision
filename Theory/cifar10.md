@@ -26,6 +26,9 @@ Theory and experimental results (on this page):
     * [Initializing new Network](#initializing-new-network)
     * [Evaluating loss for training ConvNet1](#evaluating-loss-for-training-convnet1)
     * [Calculating scores for predicting ConvNet1](#calculating-scores-for-predicting-convnet1)
+   * [Creating Solver Class](#creating-solver-class)
+   * [Training Results](#training-results)
+
   
 <br/>
 
@@ -1184,6 +1187,18 @@ Consider following part of the code:
         # Returning scores
         return scores
  ```
+
+<br/>
+
+### <a id="creating-solver-class">Creating Solver Class</a>
+
+
+<br/>
+
+### <a id="training-results">Training Results</a>
+
+![Training Model 1](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/training_model_1.png)
+
 
 <br/>
 
