@@ -28,7 +28,7 @@ Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles a
 <br/>
 
 ### <a id="description">Description</a>
-The aim of the repository is to study and create complex project on Computer Vision in autonomous vehicles and robotics through basics in Neural Networks to advanced learning. Here is brief description of repository, its stages of development, animated figures with empirical results. To get full content scroll down or click [here](#content). **This repository is currently under construction, coming soon, will be released in December 2018.**
+The aim of the repository is to study and create complex project on Computer Vision in autonomous vehicles and robotics through basics in Neural Networks to advanced learning. Here is brief description of repository, its stages of development, animated figures with empirical results. To get full content scroll down or click [here](#content).
 
 * **Example #1** - simple convolving of input image with three different filters for **edge detection**.
 <br/><img src="images/Simple_Convolution.gif" alt="Simple Convolution" width=315 height=225>
