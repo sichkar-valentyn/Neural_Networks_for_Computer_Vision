@@ -1200,26 +1200,26 @@ Consider following part of the code:
 
 ### <a id="optimization-functions">Defining Functions for Optimization</a>
 
-### <a id="vanilla-sgd">Vanilla SGD updating method</a>
+#### <a id="vanilla-sgd">Vanilla SGD updating method</a>
 
-### <a id="momentum-sgd">Momentum SGD updating method</a>
+#### <a id="momentum-sgd">Momentum SGD updating method</a>
 
-### <a id="rms-propagation">RMS Propagation updating method</a>
+#### <a id="rms-propagation">RMS Propagation updating method</a>
 
-### <a id="adam">Adam updating method</a>
+#### <a id="adam">Adam updating method</a>
 
 <br/>
 
 
 ### <a id="creating-solver-class">Creating Solver Class</a>
 
-### <a id="reset">Defining function with additional variables</a>
+#### <a id="reset">Defining function with additional variables</a>
 
-### <a id="step">Defining function for making single step</a>
+#### <a id="step">Defining function for making single step</a>
 
-### <a id="accuracy">Defining function for checking accuracy</a>
+#### <a id="accuracy">Defining function for checking accuracy</a>
 
-### <a id="train">Defining function for running training procedure</a>
+#### <a id="train">Defining function for running training procedure</a>
 
 
 <br/>
