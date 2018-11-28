@@ -1244,7 +1244,7 @@ Consider following part of the code:
   * `Classifiers`
     * [ConvNet1.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Classifiers/ConvNet1.py) 
   * `Serialized_Models`
-    * model1.pickle
+    * [model1.pickle](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Serialized_Models/model1.pickle)
   * Solver.py
 
 <br/>
