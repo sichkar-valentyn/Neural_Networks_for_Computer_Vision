@@ -26,10 +26,18 @@ Theory and experimental results (on this page):
     * [Initializing new Network](#initializing-new-network)
     * [Evaluating loss for training ConvNet1](#evaluating-loss-for-training-convnet1)
     * [Calculating scores for predicting ConvNet1](#calculating-scores-for-predicting-convnet1)
-   * [Creating Solver Class](#creating-solver-class)
-   * [Training Results](#training-results)
-
-  
+  * [Functions for Optimization](#optimization-functions)
+    * [Vanilla SGD](#vanilla-sgd)
+    * [Momentum SGD](#momentum-sgd)
+    * [RMS Propagation](#rms-propagation)
+    * [Adam](#adam)
+  * [Creating Solver Class](#creating-solver-class)
+    * [Reset](#reset)
+    * [Step](#step)
+    * [Checking Accuracy](#accuracy)
+    * [Train](#train)
+  * [Training Results](#training-results)
+ 
 <br/>
 
 ### <a id="cifar10-image-classification-with-numpy-only">CIFAR-10 Image Classification with `numpy` only</a>
@@ -1190,7 +1198,28 @@ Consider following part of the code:
 
 <br/>
 
+### <a id="optimization-functions">Defining Functions for Optimization</a>
+
+### <a id="vanilla-sgd">Vanilla SGD updating method</a>
+
+### <a id="momentum-sgd">Momentum SGD updating method</a>
+
+### <a id="rms-propagation">RMS Propagation updating method</a>
+
+### <a id="adam">Adam updating method</a>
+
+<br/>
+
+
 ### <a id="creating-solver-class">Creating Solver Class</a>
+
+### <a id="reset">Defining function with additional variables</a>
+
+### <a id="step">Defining function for making single step</a>
+
+### <a id="accuracy">Defining function for checking accuracy</a>
+
+### <a id="train">Defining function for running training procedure</a>
 
 
 <br/>
