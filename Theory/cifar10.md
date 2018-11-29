@@ -37,6 +37,7 @@ Theory and experimental results (on this page):
     * [Checking Accuracy](#accuracy)
     * [Train](#train)
   * [Training Results](#training-results)
+  * [Full Codes](#full-codes)
  
 <br/>
 
@@ -1231,7 +1232,7 @@ Consider following part of the code:
 
 <br/>
 
-<br/>Full codes are available here:
+### <a id="full-codes">Full codes are available here:</a>
 * CIFAR-10 Image Classification with `numpy` only:
   * `Data_Preprocessing`
     * `datasets`
