@@ -1528,6 +1528,16 @@ Consider following part of the code:
 
 <br/>
 
+### <a id="overfitting-small-data">Overfitting Small Data</a>
+
+```jupyter
+import numpy as np
+```
+
+![Overfitting Small Data](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/overfitting_small_data_model_1.png)
+
+<br/>
+
 ### <a id="training-results">Training Results</a>
 
 ![Training Model 1](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/training_model_1.png)
