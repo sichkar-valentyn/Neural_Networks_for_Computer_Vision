@@ -1532,7 +1532,79 @@ Consider following part of the code:
 ### <a id="overfitting-small-data">Overfitting Small Data</a>
 
 ```ipynb
-import numpy as np
+  {
+   "source": [
+    "import numpy as np\n",
+    "import sys\n",
+    "# Adding path to look for modules when calling 'import'\n",
+    "sys.path.append('/home/valentyn/PycharmProjects/tensorflow/CNN/Image_Classification/Helper_Functions')\n",
+    "sys.path.append('/home/valentyn/PycharmProjects/tensorflow/CNN/Image_Classification/Classifiers')\n",
+    "sys.path.append('/home/valentyn/PycharmProjects/tensorflow/CNN/Image_Classification/')\n",
+    "sys.path.append('/home/valentyn/PycharmProjects/tensorflow/CNN/')\n",
+    "sys.path.append('/home/valentyn/PycharmProjects/tensorflow/')\n",
+    "\n",
+    "# Importing module 'ConvNet1.py'\n",
+    "from ConvNet1 import *\n",
+    "\n",
+    "# Importing module 'Solver.py'\n",
+    "from Solver import *\n",
+    "\n",
+    "%load_ext autoreload\n",
+    "%autoreload 2\n",
+    "\n",
+    "# np.random.seed(231)\n",
+    "\n",
+    "# Number of training examples\n",
+    "number_of_training_data = 100\n",
+    "\n",
+    "# Preparing data by slicing in 'data' dictionary appropriate array\n",
+    "small_data = {\n",
+    "    'x_train':d1['x_train'][:number_of_training_data],\n",
+    "    'y_train':d1['y_train'][:number_of_training_data],\n",
+    "    'x_validation':d1['x_validation'],\n",
+    "    'y_validation':d1['y_validation']\n",
+    "}\n",
+    "\n",
+    "# Creating instance of class for 'ConvNet1' and initializing model\n",
+    "model = ConvNet1(weight_scale=1e-2, hidden_dimension=100)\n",
+    "\n",
+    "# Creating instance of class for 'Solver' and initializing model\n",
+    "solver = Solver(model,\n",
+    "                small_data,\n",
+    "                update_rule='adam',\n",
+    "                optimization_config={'learning_rate':1e-3},\n",
+    "                learning_rate_decay=1.0,\n",
+    "                batch_size=50,\n",
+    "                number_of_epochs=500,\n",
+    "                print_every=1,\n",
+    "                verbose_mode=True\n",
+    "               )\n",
+    "\n",
+    "# Running training process\n",
+    "solver.train()"
+   ],
+  "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
 ```
 
 ![Overfitting Small Data](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/overfitting_small_data_model_1.png)
