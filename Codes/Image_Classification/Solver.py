@@ -1,9 +1,23 @@
+# File: Solver.py
+# Description: Neural Networks for computer vision in autonomous vehicles and robotics
+# Environment: PyCharm and Anaconda environment
+#
+# MIT License
+# Copyright (c) 2018 Valentyn N Sichkar
+# github.com/sichkar-valentyn
+#
+# Reference to:
+# Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles and robotics // GitHub platform. DOI: 10.5281/zenodo.1317904
+
+
+
+
 # Creating Solver class for training classification models and for predicting
 
 # Importing needed library
 import numpy as np
 import pickle
-from CNN.Image_Classification.Helper_Functions import optimize_rules
+from Image_Classification.Helper_Functions import optimize_rules
 
 """
 Solver encapsulates all the logic necessary for training classification models.
