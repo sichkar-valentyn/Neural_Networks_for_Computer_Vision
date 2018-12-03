@@ -1531,7 +1531,7 @@ Consider following part of the code:
 
 ### <a id="overfitting-small-data">Overfitting Small Data</a>
 
-```ipynb
+```jupyter
   {
    "source": [
     "import numpy as np\n",
