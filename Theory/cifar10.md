@@ -36,6 +36,7 @@ Theory and experimental results (on this page):
     * [_Step](#step)
     * [Checking Accuracy](#accuracy)
     * [Train](#train)
+  * [Overfitting Small Data](#overfitting-small-data)
   * [Training Results](#training-results)
   * [Full Codes](#full-codes)
  
@@ -1530,7 +1531,7 @@ Consider following part of the code:
 
 ### <a id="overfitting-small-data">Overfitting Small Data</a>
 
-```jupyter
+```ipynb
 import numpy as np
 ```
 
