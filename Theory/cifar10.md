@@ -1532,11 +1532,17 @@ Consider following part of the code:
 ### <a id="overfitting-small-data">Overfitting Small Data</a>
 ```py
 import numpy as np
+
 # Importing module 'ConvNet1.py'
-from ConvNet1 import *
+from Helper_Functions.ConvNet1 import *
 
 # Importing module 'Solver.py'
 from Solver import *
+
+# Loading data
+# Opening file for reading in binary mode
+with open('Data_Preprocessing/data.pickle', 'rb') as f:
+    d = pickle.load(f, encoding='latin1')  # dictionary type
 
 # Number of training examples
 number_of_training_data = 100
@@ -1575,11 +1581,17 @@ solver.train()
 ### <a id="training-results">Training Results</a>
 ```py
 import numpy as np
+
 # Importing module 'ConvNet1.py'
-from ConvNet1 import *
+from Helper_Functions.ConvNet1 import *
 
 # Importing module 'Solver.py'
 from Solver import *
+
+# Loading data
+# Opening file for reading in binary mode
+with open('Data_Preprocessing/data.pickle', 'rb') as f:
+    d = pickle.load(f, encoding='latin1')  # dictionary type
 
 # Creating instance of class for 'ConvNet1' and initializing model
 model = ConvNet1(weight_scale=1e-3, hidden_dimension=500, regularization=1-e3)
