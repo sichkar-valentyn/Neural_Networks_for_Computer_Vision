@@ -1549,10 +1549,10 @@ number_of_training_data = 100
 
 # Preparing data by slicing in 'data' dictionary appropriate array
 small_data = {
-             'x_train':d1['x_train'][:number_of_training_data],
-             'y_train':d1['y_train'][:number_of_training_data],
-             'x_validation':d1['x_validation'],
-             'y_validation':d1['y_validation']
+             'x_train':d['x_train'][:number_of_training_data],
+             'y_train':d['y_train'][:number_of_training_data],
+             'x_validation':d['x_validation'],
+             'y_validation':d['y_validation']
              }
 
 # Creating instance of class for 'ConvNet1' and initializing model
@@ -1598,7 +1598,7 @@ model = ConvNet1(weight_scale=1e-3, hidden_dimension=500, regularization=1-e3)
 
 # Creating instance of class for 'Solver' and initializing model
 solver = Solver(model,
-                d1,
+                d,
                 update_rule='adam',
                 optimization_config={'learning_rate':1e-3},
                 learning_rate_decay=1.0,
