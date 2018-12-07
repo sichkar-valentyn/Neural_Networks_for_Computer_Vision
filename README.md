@@ -62,6 +62,16 @@ The aim of the repository is to study and create complex project on Computer Vis
 
 <br/>
 
+* **Example #7** - training of Model #1 for MNIST Digits Classification:
+<br/>![Training Model 1](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/training_model_1_mnist.png)
+
+<br/>
+
+* **Example #8** - Initialized Filters and Trained Filters for ConvNet Layer for MNIST Digits Classification:
+<br/>![Filters Cifar10](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/filters_mnist.png)
+
+<br/>
+
 ### <a id="content">Content</a>
 **<a name="codes">Codes</a>** (it'll send you to appropriate file):
 * Introduction part:
