@@ -52,8 +52,13 @@ The aim of the repository is to study and create complex project on Computer Vis
 
 <br/>
 
-* **Example #5** - training of Model #1:
+* **Example #5** - training of Model #1 for CIFAR10 Image Classification:
 <br/>![Training Model 1](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/training_model_1.png)
+
+<br/>
+
+* **Example #6** - Filters Visualization of the first ConvNet Layer:
+<br/>![Filters Cifar10](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/filters_cifar10.png)
 
 <br/>
 
