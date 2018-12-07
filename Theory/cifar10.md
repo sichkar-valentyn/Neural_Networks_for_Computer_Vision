@@ -1612,13 +1612,15 @@ solver = Solver(model,
 solver.train()
 ```
 
+Training process of Model #1 with 50 000 iterations is shown on the figure below: 
+
 ![Training Model 1](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/training_model_1.png)
 
-Filters Visualization of the first ConvNet Layer is shown on the figure below.
+Initialized Filters and Trained Filters for ConvNet Layer is shown on the figure below:
 
 ![Filters Cifar10](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/filters_cifar10.png)
 
-Training process for Filters of the first ConvNet Layer is shown on the figure below.
+Training process for Filters of ConvNet Layer is shown on the figure below:
 
 ![Training Filters Cifar10](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/cifar10_filters_training.gif)
 
