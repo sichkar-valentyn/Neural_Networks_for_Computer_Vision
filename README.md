@@ -94,6 +94,7 @@ The aim of the repository is to study and create complex project on Computer Vis
   * `Serialized_Models`
     * model1.pickle
   * [Solver.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Solver.py)
+* MNIST Digits Classification with `numpy` only:
 
 <br/>
 
