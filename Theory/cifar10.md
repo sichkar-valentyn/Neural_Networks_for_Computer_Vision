@@ -1614,7 +1614,7 @@ solver.train()
 
 ![Training Model 1](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/training_model_1.png)
 
-Visualization Filters of the first ConvNet Layer is shown on the figure below.
+Filters Visualization of the first ConvNet Layer is shown on the figure below.
 
 ![Filters Cifar10](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/filters_cifar10.png)
 
