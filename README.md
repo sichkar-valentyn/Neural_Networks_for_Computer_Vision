@@ -57,7 +57,7 @@ The aim of the repository is to study and create complex project on Computer Vis
 
 <br/>
 
-* **Example #6** - Filters Visualization of the first ConvNet Layer:
+* **Example #6** - Filters Visualization of the first ConvNet Layer for CIFAR10 Image Classification:
 <br/>![Filters Cifar10](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/filters_cifar10.png)
 
 <br/>
