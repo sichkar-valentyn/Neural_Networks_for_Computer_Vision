@@ -133,9 +133,6 @@ The aim of the repository is to study and create complex project on Computer Vis
 <br/>
 
 * [OpenCV](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/OpenCV.md)
-
-<br/>
-
 * [Tensorflow](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Tensorflow.md)
 
 <br/>
