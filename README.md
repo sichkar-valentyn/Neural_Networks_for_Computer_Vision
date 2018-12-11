@@ -79,11 +79,13 @@ The aim of the repository is to study and create complex project on Computer Vis
   * [Intro_simple_three_layers_NN.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Intro_simple_three_layers_NN.py)
 
 <br/>
+
 * Convolutional Neural Networks in Python with `numpy` only:
   * [CNN_Simple_Convolution.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/CNN_Simple_Convolution.py)
   * [CNN_More_complex_example.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/CNN_More_complex_example.py)  
 
 <br/>
+
 * CIFAR-10 Image Classification with `numpy` only:
   * `Data_Preprocessing`
     * `datasets`
@@ -100,6 +102,7 @@ The aim of the repository is to study and create complex project on Computer Vis
   * [Solver.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Solver.py)
 
 <br/>
+
 * MNIST Digits Classification with `numpy` only:
   * `Data_Preprocessing`
     * `datasets`
