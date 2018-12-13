@@ -4,6 +4,8 @@ Example on Digits Classification with the help of MNIST dataset and Convolutiona
 
 ## Test online [here](https://valentynsichkar.name/mnist.html)
 
+## Content
+Theory and experimental results (on this page)
 
 
 <br/>
