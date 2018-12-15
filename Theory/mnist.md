@@ -7,6 +7,7 @@ Example on Digits Classification with the help of MNIST dataset and Convolutiona
 ## Content
 Theory and experimental results (on this page)
 
+<br/>
 
 <br/>
 
