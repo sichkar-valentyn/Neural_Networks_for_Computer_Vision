@@ -13,6 +13,8 @@ Theory and experimental results (on this page)
 
 <br/>
 
+<br/>
+
 ### MIT License
 ### Copyright (c) 2018 Valentyn N Sichkar
 ### github.com/sichkar-valentyn
