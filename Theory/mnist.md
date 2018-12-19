@@ -7,7 +7,7 @@ Example on Digits Classification with the help of MNIST dataset and Convolutiona
 ## Content
 Theory and experimental results (on this page)
 
-* [MNIST Digits Classification with `numpy` only](#mnist-digits-classification-with-numpy-only)
+* [MNIST Digits Classification with `numpy` only](#mnist-digits-classification-with-numpy-library-only)
   * [Loading MNIST dataset](#loading-mnist-dataset)
   * [Plotting examples of digits from MNIST dataset](#plotting-examples-of-digits-from-mnist-dataset)
   * [Preprocessing loaded MNIST dataset](#preprocessing-loaded-mnist-dataset)
@@ -42,7 +42,7 @@ Theory and experimental results (on this page)
  
 <br/>
 
-### <a id="mnist-digits-classification-with-numpy-only">MNIST Digits Classification with `numpy` only</a>
+### <a id="mnist-digits-classification-with-numpy-library-only">MNIST Digits Classification with `numpy` only</a>
 
 <br/>
 
