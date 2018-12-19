@@ -7,6 +7,43 @@ Example on Digits Classification with the help of MNIST dataset and Convolutiona
 ## Content
 Theory and experimental results (on this page)
 
+* [MNIST Difits Classification with `numpy` only](#mnist-digits-classification-with-numpy-only)
+  * [Loading MNIST dataset](#loading-mnist-dataset)
+  * [Plotting examples of digits from MNIST dataset](#plotting-examples-of-digits-from-mnist-dataset)
+  * [Preprocessing loaded MNIST dataset](#preprocessing-loaded-mnist-dataset)
+  * [Saving and Loading serialized models](#saving-and-loading-serialized-models)
+  * [Functions for dealing with CNN layers](#functions-for-dealing-with-cnn-layers)
+    * [Naive Forward Pass for Convolutional layer](#naive-forward-pass-for-convolutional-layer)
+    * [Naive Backward Pass for Convolutional layer](#naive-backward-pass-for-convolutional-layer)
+    * [Naive Forward Pass for Max Pooling layer](#naive-forward-pass-for-max-pooling-layer)
+    * [Naive Backward Pass for Max Pooling layer](#naive-backward-pass-for-max-pooling-layer)
+    * [Forward Pass for Affine layer](#forward-pass-for-affine-layer)
+    * [Backward Pass for Affine layer](#backward-pass-for-affine-layer)
+    * [Forward Pass for ReLU layer](#forward-pass-for-relu-layer)
+    * [Backward Pass for ReLU layer](#backward-pass-for-relu-layer)
+    * [Softmax Classification loss](#softmax-classification-loss)
+  * [Creating Classifier - model of CNN](#creating-classifier-model-of-cnn)
+    * [Initializing new Network](#initializing-new-network)
+    * [Evaluating loss for training ConvNet1](#evaluating-loss-for-training-convnet1)
+    * [Calculating scores for predicting ConvNet1](#calculating-scores-for-predicting-convnet1)
+  * [Functions for Optimization](#optimization-functions)
+    * [Vanilla SGD](#vanilla-sgd)
+    * [Momentum SGD](#momentum-sgd)
+    * [RMS Propagation](#rms-propagation)
+    * [Adam](#adam)
+  * [Creating Solver Class](#creating-solver-class)
+    * [_Reset](#reset)
+    * [_Step](#step)
+    * [Checking Accuracy](#accuracy)
+    * [Train](#train)
+  * [Overfitting Small Data](#overfitting-small-data)
+  * [Training Results](#training-results)
+  * [Full Codes](#full-codes)
+ 
+<br/>
+
+### <a id="mnist-digits-classification-with-numpy-only">MNIST Digits Classification with `numpy` only</a>
+
 <br/>
 
 <br/>
