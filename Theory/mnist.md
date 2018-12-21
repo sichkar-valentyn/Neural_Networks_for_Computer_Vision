@@ -43,6 +43,40 @@ Theory and experimental results (on this page)
 <br/>
 
 ### <a id="mnist-digits-classification-with-numpy-library-only">MNIST Digits Classification with `numpy` only</a>
+In this example we'll test CNN for Digits Classification with the help of MNIST dataset.
+<br/>Following standard and most common parameters can be used and tested:
+
+| Parameter | Description |
+| --- | --- |
+| Weights Initialization | HE Normal |
+| Weights Update Policy | Vanilla SGD, Momentum SGD, RMSProp, Adam |
+| Activation Functions | ReLU, Sigmoid |
+| Regularization | L2, Dropout |
+| Pooling | Max, Average |
+| Loss Functions | Softmax, SVM |
+
+<br/>Contractions:
+* **Vanilla SGD** - Vanilla Stochastic Gradient Descent,
+* **Momentum SGD** - Stochastic Gradient Descent with Momentum,
+* **RMSProp** - Root Mean Square Propagation,
+* **Adam** - Adaptive Moment Estimation,
+* **SVM** - Support Vector Machine.
+
+<br/>**For current example** following architecture will be used:
+<br/>`Input` --> `Conv` --> `ReLU` --> `Pool` --> `Affine` --> `ReLU` --> `Affine` --> `Softmax`
+
+![Model_1_Architecture.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Model_1_Architecture_MNIST.png)
+
+<br/>**For current example** following parameters will be used:
+
+| Parameter | Description |
+| --- | --- |
+| Weights Initialization | `HE Normal` |
+| Weights Update Policy | `Adam` |
+| Activation Functions | `ReLU` |
+| Regularization | `L2` |
+| Pooling | `Max` |
+| Loss Functions | `Softmax` |
 
 <br/>
 
