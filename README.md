@@ -106,16 +106,16 @@ The aim of the repository is to study and create complex project on Computer Vis
 * MNIST Digits Classification with `numpy` only:
   * `Data_Preprocessing`
     * `datasets`
-    * datasets_preparing.py
-    * mean_and_std.pickle  
+    * [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Digits_Classification/Data_Preprocessing/datasets_preparing.py)
+    * [mean_and_std.pickle](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Digits_Classification/Data_Preprocessing/mean_and_std.pickle)    
   * `Helper_Functions`
-    * layers.py
+    * [layers.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Digits_Classification/Helper_Functions/layers.py)
     * optimize_rules.py
   * `Classifiers`
-    * ConvNet1.py
+    * [ConvNet1.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Digits_Classification/Classifiers/ConvNet1.py) 
   * `Serialized_Models`
     * model1.pickle
-  * Solver.py
+  * [Solver.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Digits_Classification/Solver.py)
 
 <br/>
 
