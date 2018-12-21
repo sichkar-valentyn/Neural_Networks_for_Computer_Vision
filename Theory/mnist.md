@@ -78,6 +78,25 @@ In this example we'll test CNN for Digits Classification with the help of MNIST 
 | Pooling | `Max` |
 | Loss Functions | `Softmax` |
 
+<br/>**File structure** with folders and functions can be seen on the figure below:
+
+![Image_Classification_File_Structure.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Image_Classification_Files_Structure.png)
+
+<br/>Also, **file structure** can be seen below:
+* MNIST Digits Classification with `numpy` only:
+  * `Data_Preprocessing`
+    * `datasets`
+    * [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Digits_Classification/Data_Preprocessing/datasets_preparing.py)
+    * [mean_and_std.pickle](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Digits_Classification/Data_Preprocessing/mean_and_std.pickle)    
+  * `Helper_Functions`
+    * [layers.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Digits_Classification/Helper_Functions/layers.py)
+    * optimize_rules.py
+  * `Classifiers`
+    * [ConvNet1.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Digits_Classification/Classifiers/ConvNet1.py) 
+  * `Serialized_Models`
+    * model1.pickle
+  * [Solver.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Digits_Classification/Solver.py)
+  
 <br/>
 
 <br/>
