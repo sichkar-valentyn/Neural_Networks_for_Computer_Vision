@@ -96,7 +96,7 @@ In this example we'll test CNN for Image Classification with the help of CIFAR-1
     * [ConvNet1.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Classifiers/ConvNet1.py) 
   * `Serialized_Models`
     * model1.pickle
-  * Solver.py
+  * [Solver.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Solver.py)
   
 <br/>
 
