@@ -137,7 +137,7 @@ def pre_process_mnist(x_train, y_train, x_test, y_test):
     return d_processed
 
 
-# Creating function for plotting examples from CIFAR-10 dataset
+# Creating function for plotting examples from MNIST dataset
 def plot_mnist_examples(x_train, y_train):
     # Preparing labels for each class
     # MNIST has 10 classes from 0 to 9
