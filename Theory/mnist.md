@@ -100,7 +100,7 @@ In this example we'll test CNN for Digits Classification with the help of MNIST 
 <br/>
 
 ### <a id="loading-mnist-dataset">Loading MNIST dataset</a>
-After downloading files from official resource, there has to appear new folder `cifar-10-batches-py` with following files:
+After downloading files from official resource, there has to be following files:
 * train-images-idx3-ubyte.gz
 * train-labels-idx1-ubyte.gz
 * t10k-images-idx3-ubyte.gz
