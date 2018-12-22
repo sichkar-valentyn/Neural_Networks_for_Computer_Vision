@@ -56,11 +56,11 @@ In this example we'll test CNN for Digits Classification with the help of MNIST 
 | Loss Functions | Softmax, SVM |
 
 <br/>Contractions:
-* **Vanilla SGD** - Vanilla Stochastic Gradient Descent,
-* **Momentum SGD** - Stochastic Gradient Descent with Momentum,
-* **RMSProp** - Root Mean Square Propagation,
-* **Adam** - Adaptive Moment Estimation,
-* **SVM** - Support Vector Machine.
+* **Vanilla SGD** - Vanilla Stochastic Gradient Descent
+* **Momentum SGD** - Stochastic Gradient Descent with Momentum
+* **RMSProp** - Root Mean Square Propagation
+* **Adam** - Adaptive Moment Estimation
+* **SVM** - Support Vector Machine
 
 <br/>**For current example** following architecture will be used:
 <br/>`Input` --> `Conv` --> `ReLU` --> `Pool` --> `Affine` --> `ReLU` --> `Affine` --> `Softmax`
