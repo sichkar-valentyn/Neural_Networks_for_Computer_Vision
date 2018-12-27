@@ -1,4 +1,13 @@
-
+# File: Logistic_Regression.py
+# Description: Neural Networks for computer vision in autonomous vehicles and robotics
+# Environment: PyCharm and Anaconda environment
+#
+# MIT License
+# Copyright (c) 2018 Valentyn N Sichkar
+# github.com/sichkar-valentyn
+#
+# Reference to:
+# Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles and robotics // GitHub platform. DOI: 10.5281/zenodo.1317904
 
 
 
@@ -37,7 +46,6 @@ def single_batch_cifar10(file):
 
         # Returning ready data
         return x, y
-
 
 # Preparing labels for each class
 # CIFAR-10 has 10 classes from 0 to 9
@@ -120,7 +128,6 @@ plt.show()
 
 
 
-
 # Flatten prepared datsets
 
 x_train_flatten = x_train.reshape(x_train.shape[0], -1).T
@@ -144,7 +151,6 @@ print(y_test_columns.shape)
 
 x_train_processed = x_train_flatten / 255.0
 x_test_processed = x_test_flatten / 255.0
-
 
 
 
@@ -244,7 +250,6 @@ def predict(w, b, x):
     return y_prediction
 
 
-
 	
 # Creating Model
 
@@ -285,6 +290,7 @@ def model(x_train_processed, y_train_columns, x_test_processed, y_test_columns, 
     return d
 
 
+
 # Runing created model
 
 d = model(x_train_processed, y_train_columns, x_test_processed, y_test_columns, number_of_iterations = 2000, learning_rate = 0.005, print_cost = True)
@@ -316,7 +322,6 @@ d = model(x_train_processed, y_train_columns, x_test_processed, y_test_columns, 
 
 
 # Testing trained model
-
 
 # Checking how different images were classified with algorithm
 # Setting index to check from test dataset
@@ -436,11 +441,3 @@ p = predict(d['w'], d['b'], array_of_image)
 # Showing result
 # Deleting one dimension from p by np.squeeze
 print('y = ' + str(int(np.squeeze(p))))
-
-
-
-
-
-
-
-
