@@ -20,6 +20,7 @@ Theory and experimental results (on this page):
 * [Plotting Cost Function history](#plotting-cost-function-history)
 * [Analysis - Testing different learning rates](#testing-different-learning-rates)
 * [Testing our own image](#testing-our-own-image)
+* [Full Codes](#full-codes)
   
 
 <br/>
@@ -540,9 +541,9 @@ print('y = ' + str(int(np.squeeze(p))))
 
 <br/>
 
-Full code is available here: [Logistic_Regression.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Logistic_Regression/Logistic_Regression.py)
-
-Also, jupyter notebook available here: [Logistic_Regression.ipynb](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Logistic_Regression/Logistic_Regression.ipynb)
+### <a id="full-codes">Full codes are available here:</a>
+* Python: [Logistic_Regression.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Logistic_Regression/Logistic_Regression.py)
+* jupyter notebook: [Logistic_Regression.ipynb](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Logistic_Regression/Logistic_Regression.ipynb)
 
 <br/>
 
