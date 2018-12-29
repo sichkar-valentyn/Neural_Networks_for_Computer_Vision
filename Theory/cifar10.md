@@ -1545,7 +1545,7 @@ with open('Data_Preprocessing/data.pickle', 'rb') as f:
     d = pickle.load(f, encoding='latin1')  # dictionary type
 
 # Number of training examples
-number_of_training_data = 100
+number_of_training_data = 100  # Can be changed and study with just 10 examples
 
 # Preparing data by slicing in 'data' dictionary appropriate array
 small_data = {
@@ -1565,7 +1565,7 @@ solver = Solver(model,
                 optimization_config={'learning_rate':1e-3},
                 learning_rate_decay=1.0,
                 batch_size=50,
-                number_of_epochs=500,
+                number_of_epochs=500,  # Can be changed and study with just 20 epochs
                 print_every=1,
                 verbose_mode=True
                )
