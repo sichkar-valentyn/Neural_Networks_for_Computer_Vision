@@ -328,7 +328,6 @@ d = model(x_train_processed, y_train_columns, x_test_processed, y_test_columns, 
 index = 10
 
 # Plotting this image, but firstly reshaping it in form of (32, 32, 3)
-%matplotlib inline
 plt.rcParams['figure.figsize'] = (2, 2) # Setting default size of plots
 plt.imshow(x_test_flatten[:, index].reshape((32, 32, 3)))
 
@@ -344,7 +343,6 @@ print('predicted label y = ' + str(int(d['y_prediction_test'][0, index])))
 # Plotting Cost Function history while it has been training
 
 # Plotting history of calculated costs
-%matplotlib inline
 plt.rcParams['figure.figsize'] = (10, 10) # Setting default size of plots
 
 # Retrieving costs from history and deleting one dimension from it
@@ -378,7 +376,6 @@ for i in learning_rates:
     print()
     
 # Plotting history of calculated costs for every model
-%matplotlib inline
 plt.rcParams['figure.figsize'] = (10, 10) # Setting default size of plots
 
 # Retrieving costs from history and deleting one dimension from it
@@ -415,7 +412,6 @@ array_of_image = np.array(loaded_image)
 print(array_of_image.shape)  # (270, 480, 3)
 
 # Plotting loaded image
-%matplotlib inline
 fig_1 = plt.figure()
 plt.rcParams['figure.figsize'] = (2, 2) # Setting default size of plots
 plt.imshow(array_of_image)
