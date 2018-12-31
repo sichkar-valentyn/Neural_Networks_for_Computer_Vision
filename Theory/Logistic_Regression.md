@@ -31,7 +31,7 @@ Logistic Regression – is an algorithm for Binary Classification. Example: Inpu
 <br/>
 
 #### <a id="problem-statement">Problem Statement</a>
-From **Cifar-10** dataset we will take images with birds and non-birds. We will mark birds with label 1 (y=1) and others with 0 (y=0). We will divide dataset for training subset and testing subset. Finally, we will build **Simple Image-Recognition Algorithm** for classification pictures as birds or non-birds. No "for" loops will be used.
+From **Cifar-10** dataset we will take images with birds and non-birds. We will mark birds with label 1 (y=1) and others with 0 (y=0). We will divide dataset for training subset and testing subset. Finally, we will build **Simple Image-Recognition Algorithm** for classification pictures as birds or non-birds. No **"for"** loops will be used.
 
 <br/>
 
