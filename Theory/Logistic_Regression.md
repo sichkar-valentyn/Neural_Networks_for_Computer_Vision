@@ -26,12 +26,12 @@ Theory and experimental results (on this page):
 <br/>
 
 ### <a id="logistic-regression">Logistic Regression</a>
-Logistic Regression – is an algorithm for Binary Classification. Example: Input Image has some animal, output is 1 if it is a bird and 0 if it is not. Logistic Regression uses sigmoid function as an activation function in order to keep output between 0 and 1. Here we will build **Logistic Regression Classifier** to recognize birds.
+Logistic Regression – is an algorithm for Binary Classification. Example: Input Image has some animal, output is **1** if it is a bird and **0** if it is not. Logistic Regression uses sigmoid function as an activation function in order to keep output between 0 and 1. Here we will build **Logistic Regression Classifier** to recognize birds.
 
 <br/>
 
 #### <a id="problem-statement">Problem Statement</a>
-From Cifar-10 dataset we will take images with birds and non-birds. We will mark birds with label 1 (y=1) and others with 0 (y=0). We will divide dataset for training subset and testing subset. Finally, we will build **Simple Image-Recognition Algorithm** for classification pictures as birds or non-birds. No "for" loops will be used.
+From **Cifar-10** dataset we will take images with birds and non-birds. We will mark birds with label 1 (y=1) and others with 0 (y=0). We will divide dataset for training subset and testing subset. Finally, we will build **Simple Image-Recognition Algorithm** for classification pictures as birds or non-birds. No "for" loops will be used.
 
 <br/>
 
