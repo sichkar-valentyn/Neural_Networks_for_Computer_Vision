@@ -170,7 +170,7 @@ plt.show()
 <br/>
 
 ### <a id="flatten-prepared-datsets">Flatten prepared datsets</a>
-For convenience we will reshape images of shape (32, 32, 3) into numpy array of shape (3072, 1).
+For convenience we will reshape images of shape **(32, 32, 3)** into numpy array of shape **(3072, 1)**.
 <br/>By using '-1' we say that number of column is unknown, but number of rows is known.
 <br/>By using '.T' we're transposing each image and making their data arranged in columns.
 <br/>Consider following part of the code:
