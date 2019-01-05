@@ -141,7 +141,7 @@ The aim of the repository is to study and create complex project on Computer Vis
 <br/>
 
 ### MIT License
-### Copyright (c) 2018 Valentyn N Sichkar
+### Copyright (c) 2018-2019 Valentyn N Sichkar
 ### github.com/sichkar-valentyn
 ### Reference to:
 Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles and robotics // GitHub platform. DOI: 10.5281/zenodo.1317904
