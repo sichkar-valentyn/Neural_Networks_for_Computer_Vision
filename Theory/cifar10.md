@@ -1561,7 +1561,7 @@ model = ConvNet1(weight_scale=1e-2, hidden_dimension=100)
 # Creating instance of class for 'Solver' and initializing model
 solver = Solver(model,
                 small_data,
-                update_rule='adam',
+                update_rule='sgd',
                 optimization_config={'learning_rate':1e-3},
                 learning_rate_decay=1.0,
                 batch_size=50,
@@ -1599,7 +1599,7 @@ model = ConvNet1(weight_scale=1e-3, hidden_dimension=500, regularization=1-e3)
 # Creating instance of class for 'Solver' and initializing model
 solver = Solver(model,
                 d,
-                update_rule='adam',
+                update_rule='sgd',
                 optimization_config={'learning_rate':1e-3},
                 learning_rate_decay=1.0,
                 batch_size=50,
