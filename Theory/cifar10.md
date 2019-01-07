@@ -72,7 +72,7 @@ In this example we'll test CNN for Image Classification with the help of CIFAR-1
 | Parameter | Description |
 | --- | --- |
 | Weights Initialization | `HE Normal` |
-| Weights Update Policy | `Adam` |
+| Weights Update Policy | `Vanilla SGD` |
 | Activation Functions | `ReLU` |
 | Regularization | `L2` |
 | Pooling | `Max` |
