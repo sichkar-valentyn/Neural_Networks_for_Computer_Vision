@@ -1208,7 +1208,7 @@ Using different types of optimization rules to update parameters of the Model.
 #### <a id="vanilla-sgd">Vanilla SGD updating method</a>
 
 Consider following part of the code:
-<br/>(related file: [Solver.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Solver.py))
+<br/>(related file: [optimize_rules.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Helper_Functions/optimize_rules.py))
 ```py
 # Creating function for parameters updating based on Vanilla SGD
 def sgd(w, dw, config=None):
