@@ -1203,8 +1203,30 @@ Consider following part of the code:
 <br/>
 
 ### <a id="optimization-functions">Defining Functions for Optimization</a>
+Using different types of optimization rules to update parameters of the Model.
 
 #### <a id="vanilla-sgd">Vanilla SGD updating method</a>
+
+Consider following part of the code:
+<br/>(related file: [Solver.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Solver.py))
+```py
+# Creating function for parameters updating based on Vanilla SGD
+def sgd(w, dw, config=None):
+    # Checking if there was not passed any configuration
+    # Then, creating config as dictionary
+    if config is None:
+        config = {}
+
+    # Assigning to 'learning_rate' value by default
+    # If 'learning_rate' was passed in config dictionary, then this will not influence
+    config.setdefault('learning_rate', 1e-2)
+	
+    # Implementing update rule as Vanilla SGD
+    w -= config['learning_rate'] * dw
+	
+    # Returning updated parameter and configuration
+    return w, config
+```
 
 #### <a id="momentum-sgd">Momentum SGD updating method</a>
 
