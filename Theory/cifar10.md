@@ -1206,6 +1206,9 @@ Consider following part of the code:
 Using different types of optimization rules to update parameters of the Model.
 
 #### <a id="vanilla-sgd">Vanilla SGD updating method</a>
+Rule for updating parameters is as following:
+
+![Vanilla SGD](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/vanilla_sgd.png)
 
 Consider following part of the code:
 <br/>(related file: [optimize_rules.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Helper_Functions/optimize_rules.py))
@@ -1229,10 +1232,19 @@ def sgd(w, dw, config=None):
 ```
 
 #### <a id="momentum-sgd">Momentum SGD updating method</a>
+Rule for updating parameters is as following:
+
+![Momentum SGD](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/momentum_sgd.png)
 
 #### <a id="rms-propagation">RMS Propagation updating method</a>
+Rule for updating parameters is as following:
+
+![RMS](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/rms.png)
 
 #### <a id="adam">Adam updating method</a>
+Rule for updating parameters is as following:
+
+![Adam](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/adam.png)
 
 <br/>
 
