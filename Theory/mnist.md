@@ -1560,7 +1560,11 @@ solver = Solver(model,
 solver.train()
 ```
 
+Overfitting Small Data with 100 training examples and 50 epochs is show on the figure below.
 ![Overfitting Small Data](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/overfitting_small_data_model_1_mnist.png)
+
+Overfitting Small Data with 10 training examples and 40 epochs is show on the figure below.
+![Overfitting Small Data](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/overfitting_small_data_model_1_mnist_1.png)
 
 <br/>
 
