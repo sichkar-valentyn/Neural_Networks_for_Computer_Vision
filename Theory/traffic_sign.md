@@ -11,7 +11,7 @@ Theory and experimental results (on this page):
   * [Unique Training Examples](#unique-examples)
   * [Histogram of Training Examples](#histogram-of-unique-examples)
   * [Good Quality Examples](#good-quality-examples)
-  * [Tabel of Labels](#table-of-labels)
+  * [Table of Labels](#table-of-labels)
 
 <br/>
 
@@ -49,7 +49,7 @@ Examples of good quality traffic signs for every class to show in GUI for driver
 
 <br/>
 
-### <a id="table-of-labels">Tabel of Labels</a>
+### <a id="table-of-labels">Table of Labels</a>
 Following tabel represents number of class and its corresponding label (description).
 
 | Class | Description |
