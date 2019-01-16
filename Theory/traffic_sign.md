@@ -25,7 +25,7 @@ For current task datasets were organized as it was done for [CIFAR-10 Image Clas
 * **y_train, y_validation, y_test** - 1D numpy.ndarray type with shapes *(12345, )*
 
 Here,
-<br/>**12345** - number of *images/labels*,
+<br/>**12345** - number of *images / labels*,
 <br/>**32, 32, 3** - image with size of *32x32* and with *3* channels.
 
 <br/>
