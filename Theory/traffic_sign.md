@@ -14,7 +14,7 @@ Data used for this task is **German Traffic Sign Benchmarks (GTSB)**.
 <br>Initially datasets consist of images in ppm format with different sizes. 
 <br>It is up to researcher how to prepare datasets from GTSB to feed Neural Network and can be done individually.
 
-<br>For current task datasets were organized as it was done for CIFAR-10 Image Classification:
+<br>For current task datasets were organized as it was done for [CIFAR-10 Image Classification](#https://raw.githubusercontent.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/master/Theory/cifar10.md):
 * x_train, x_validation, x_test - 4D numpy.ndarray type with shapes (12345, 32, 32, 3)
 * y_train, y_validation, y_test - 1D numpy.ndarray type with shapes (12345, )
 
