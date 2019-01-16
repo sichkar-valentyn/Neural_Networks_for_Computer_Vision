@@ -6,6 +6,9 @@ Implementing Traffic Sign Classification in Python for Computer Vision tasks.
 Theory and experimental results (on this page):
 
 * [Loading Data](#loading-data)
+  * [Unique Train Examples](#unique-examples)
+  * [Histogram of Train Examples](#histogram-of-unique-examples)
+  * [Good Quality Examples](#good-quality-examples)
 
 <br/>
 
@@ -20,15 +23,18 @@ Data used for this task is **German Traffic Sign Benchmarks (GTSB)**.
 
 Here, **12345** - number of *images/labels*, **32, 32, 3** - image with size of *32x32* and with *3* channels.
 
-<br>Examples of unique traffic signs for every class from training dataset is shown on the figure below.
+### <a id="unique-examples">Unique Train Examples</a>
+Examples of unique traffic signs for every class from training dataset is shown on the figure below.
 
 ![43 unique examples](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/43_unique_examples.png)
 
-<br>Histogram of 43 classes with their number of examples is shown on the figure below.
+### <a id="histogram-of-unique-examples">Histogram of Train Examples</a>
+Histogram of 43 classes with their number of examples is shown on the figure below.
 
 ![Histogram of 43 classes](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/histogram_of_43_classes.png)
 
-<br>Examples of good quality traffic signs for every class to show in GUI for driver is shown on the figure below.
+### <a id="good-quality-examples">Good Quality Examples</a>
+Examples of good quality traffic signs for every class to show in GUI for driver is shown on the figure below.
 
 ![43 good quality examples](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/43_good_quality_examples.png)
 
