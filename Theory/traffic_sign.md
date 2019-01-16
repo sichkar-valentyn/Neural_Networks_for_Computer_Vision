@@ -18,7 +18,7 @@ Data used for this task is **German Traffic Sign Benchmarks (GTSB)**.
 * **x_train, x_validation, x_test** - 4D numpy.ndarray type with shapes (12345, 32, 32, 3)
 * **y_train, y_validation, y_test** - 1D numpy.ndarray type with shapes (12345, )
 
-Here, **12345** - number of examples, **32, 32, 3** - image with size of *32x32* and with *3* channels.
+Here, **12345** - number of *images/labels*, **32, 32, 3** - image with size of *32x32* and with *3* channels.
 
 <br>Examples of unique traffic signs for every class from training dataset is shown on the figure below.
 
