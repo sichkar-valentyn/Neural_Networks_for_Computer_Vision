@@ -28,6 +28,14 @@ Here,
 <br/>**12345** - number of *images / labels*,
 <br/>**32, 32, 3** - image with size of *32x32* and with *3* channels.
 
+All datasets were put in a dictionary adn were written in a pickcle file:
+<br/>
+```py
+d = {'x_train': x_train, 'y_train': y_train,
+     'x_validation': x_validation, 'y_validation': y_validation,
+     'x_test': x_test, 'y_test': y_test}
+```
+
 <br/>
 
 ### <a id="unique-examples">Unique Training Examples</a>
