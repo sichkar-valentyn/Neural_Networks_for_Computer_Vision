@@ -28,7 +28,7 @@ Here,
 <br/>**12345** - number of *images / labels*,
 <br/>**32, 32, 3** - image with size of *32x32* and with *3* channels.
 
-All datasets were put in a dictionary adn were written in a pickcle file:
+All datasets were put in a dictionary and were written in a pickle file:
 <br/>
 ```py
 d = {'x_train': x_train, 'y_train': y_train,
