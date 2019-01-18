@@ -26,7 +26,7 @@ For current task datasets were organized as it was done for [CIFAR-10 Image Clas
 
 Here,
 <br/>**12345** - number of *images / labels*,
-<br/>**32, 32, 3** - image with size of *32x32* and with *3* channels.
+<br/>**32, 32, 3** - image with size of *32x32 (height and width)* and with *3 channels*.
 
 All datasets were put in a dictionary and were written in a pickle file:
 <br/>
