@@ -73,8 +73,13 @@ The aim of the repository is to study and to develope complex project on Compute
 
 <br/>
 
+* **Example #9** - Histogram of 43 classes with their number of examples for Traffic Signs Classification:
+<br/>![Filters Cifar10](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/filters_mnist.png)
+
+<br/>
+
 ### <a id="content">Content</a>
-**<a id="theory-and-experimental-results">Theory and experimental results</a>** (it'll send you to appropriate page):
+### **<a id="theory-and-experimental-results">Theory and experimental results</a>** (it'll send you to appropriate page):
 * [Introduction into Neural Networks](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Introduction.md)
   * [Gradient descent](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Gradient_descent.md)
   * [Backpropagation](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Backpropagation.md)
@@ -97,7 +102,7 @@ The aim of the repository is to study and to develope complex project on Compute
 
 <br/>
 
-**<a name="codes">Codes</a>** (it'll send you to appropriate file):
+### **<a name="codes">Codes</a>** (it'll send you to appropriate file):
 * Introduction part:
   * [Intro_simple_NN.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Intro_simple_NN.py)
   * [Intro_simple_three_layers_NN.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Intro_simple_three_layers_NN.py)
