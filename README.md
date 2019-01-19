@@ -9,8 +9,9 @@ Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles a
 * [Related works](#related-works)
 * [Description](#description)
 * [Content](#content)
-  * [Codes](#codes)
   * [Theory and experimental results](#theory-and-experimental-results)
+  * [Codes](#codes)
+
 
 <br/>
 
@@ -73,6 +74,29 @@ The aim of the repository is to study and to develope complex project on Compute
 <br/>
 
 ### <a id="content">Content</a>
+**<a id="theory-and-experimental-results">Theory and experimental results</a>** (it'll send you to appropriate page):
+* [Introduction into Neural Networks](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Introduction.md)
+  * [Gradient descent](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Gradient_descent.md)
+  * [Backpropagation](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Backpropagation.md)
+  * [Logistic Regression](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Logistic_Regression.md)
+
+<br/>
+
+* [Convolutional Neural Networks](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Convolutional_Neural_Network.md)
+  * [CIFAR-10 Image Classification with pure `numpy`](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/cifar10.md)
+  * [MNIST Image Classification with pure `numpy`](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/mnist.md)
+
+<br/>
+
+* [Traffic Sign Classification](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/traffic_sign.md)
+
+<br/>
+
+* [OpenCV](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/OpenCV.md)
+* [Tensorflow](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Tensorflow.md)
+
+<br/>
+
 **<a name="codes">Codes</a>** (it'll send you to appropriate file):
 * Introduction part:
   * [Intro_simple_NN.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Intro_simple_NN.py)
@@ -118,29 +142,6 @@ The aim of the repository is to study and to develope complex project on Compute
   * `Serialized_Models`
     * model1.pickle
   * [Solver.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Digits_Classification/Solver.py)
-
-<br/>
-
-**<a id="theory-and-experimental-results">Theory and experimental results</a>** (it'll send you to appropriate page):
-* [Introduction into Neural Networks](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Introduction.md)
-  * [Gradient descent](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Gradient_descent.md)
-  * [Backpropagation](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Backpropagation.md)
-  * [Logistic Regression](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Logistic_Regression.md)
-
-<br/>
-
-* [Convolutional Neural Networks](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Convolutional_Neural_Network.md)
-  * [CIFAR-10 Image Classification with pure `numpy`](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/cifar10.md)
-  * [MNIST Image Classification with pure `numpy`](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/mnist.md)
-
-<br/>
-
-* [Traffic Sign Classification](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/traffic_sign.md)
-
-<br/>
-
-* [OpenCV](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/OpenCV.md)
-* [Tensorflow](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Tensorflow.md)
 
 <br/>
 
