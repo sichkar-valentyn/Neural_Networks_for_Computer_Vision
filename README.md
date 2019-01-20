@@ -74,7 +74,7 @@ The aim of the repository is to study and to develope complex project on Compute
 <br/>
 
 * **Example #9** - Histogram of 43 classes with their number of examples for Traffic Signs Classification:
-<br/>![Histogram of 43 classes](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/histogram_of_43_classes.png)
+<br/>![Histogram of 43 classes with their number of examples](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/histogram_of_43_classes.png)
 
 <br/>
 
