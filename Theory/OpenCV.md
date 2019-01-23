@@ -138,6 +138,7 @@ figure, ax = plt.subplots(nrows=2, ncols=4)
 # Plotting image with rotations
 for i in range(4):
     ax[0, i].set_axis_off()
+    ax[0, i].set_title(str(90 * (i +1)))
     ax[0, i].imshow(rotation_changement(image_OpenCV, 90 * (i + 1)))
 
 # Plotting image with changing brightness
