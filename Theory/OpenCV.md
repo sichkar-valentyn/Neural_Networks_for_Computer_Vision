@@ -1,5 +1,5 @@
 # OpenCV with Python
-Implementing OpenCV in Python for Computer Vision tasks. **Coming soon. Will be released in January 2019.**
+Implementing OpenCV in Python for Computer Vision tasks.
 <br/>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1317904.svg)](https://doi.org/10.5281/zenodo.1317904)
 
 ## Content
