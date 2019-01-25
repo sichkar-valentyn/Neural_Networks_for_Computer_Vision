@@ -73,7 +73,7 @@ The aim of the repository is to study and to develope complex project on Compute
 
 <br/>
 
-* **Example #9** - Histogram of 43 classes for training dataset with their number of examples for Traffic Signs Classification before and after equalization by adding transformated images from original dataset:
+* **Example #9** - Histogram of 43 classes for training dataset with their number of examples for Traffic Signs Classification before and after Equalization by adding transformated images from original dataset:
 <br/>![Histogram of 43 classes with their number of examples](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/histogram_of_43_classes.png)
 
 <br/>
