@@ -149,6 +149,8 @@ for i in range(4):
 plt.show()
 ```
 
+Results can be seen on the figure below.
+
 ![brightness_rotation_changing.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/brightness_rotation_changing.png)
 
 <br/>
