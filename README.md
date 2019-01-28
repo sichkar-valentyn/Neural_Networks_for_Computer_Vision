@@ -78,7 +78,7 @@ The aim of the repository is to study and to develope complex project on Compute
 
 <br/>
 
-* **Example #10** - Examples of prepared and preprocessed data for Traffic Sign Classification (`RGB`, `Gray`, `Local Histogram Equalization`):
+* **Example #10** - Prepared and preprocessed data for Traffic Sign Classification (`RGB`, `Gray`, `Local Histogram Equalization`):
 <br/>![Preprocessed_examples](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Preprocessed_examples.png)
 
 <br/>
