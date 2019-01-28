@@ -12,6 +12,7 @@ Theory and experimental results (on this page):
   * [Histogram of Training Examples](#histogram-of-unique-examples)
   * [Good Quality Examples](#good-quality-examples)
   * [Table of Labels](#table-of-labels)
+* [Preprocessing Data](#preprocessing-data)
 
 <br/>
 
@@ -110,6 +111,21 @@ Following tabel represents number of class and its corresponding label (descript
 
 <br/>
 
+### <a id="preprocessing-data">Preprocessing Data</a>
+Prepared data is preprocessed in variaty of ways and appropriate datasets are written into 'pickle' files:
+  * data0.pickle - Shuffling
+  * data1.pickle - Shuffling, /255.0 Normalization
+  * data2.pickle - Shuffling, /255.0 + Mean Normalization
+  * data3.pickle - Shuffling, /255.0 + Mean + STD Normalization
+  * data4.pickle - Grayscale, Shuffling
+  * data5.pickle - Grayscale, Shuffling, Local Histogram Equalization
+  * data6.pickle - Grayscale, Shuffling, Local Histogram Equalization, /255.0 Normalization
+  * data7.pickle - Grayscale, Shuffling, Local Histogram Equalization, /255.0 + Mean Normalization
+  * data8.pickle - Grayscale, Shuffling, Local Histogram Equalization, /255.0 + Mean + STD Normalization 
+
+<br>Examples of some of them (`RGB`, `Gray`, `Local Histogram Equalization`) are shown on the figure below:
+
+![Preprocessed_examples](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Preprocessed_examples.png)
 
 <br/>
 
