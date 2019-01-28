@@ -22,14 +22,14 @@ Data used for this task is **German Traffic Sign Benchmarks (GTSB)**.
 <br/>It is up to researcher how to prepare datasets from GTSB to feed Neural Network and can be done individually.
 
 For current task datasets were organized as it was done for [CIFAR-10 Image Classification](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/cifar10.md):
-* **x_train, x_validation, x_test** - 4D numpy.ndarray type with shapes *(12345, 32, 32, 3)*
-* **y_train, y_validation, y_test** - 1D numpy.ndarray type with shapes *(12345, )*
+* **x_train, x_validation, x_test** - 4D tensor as numpy.ndarray type with shapes *(12345, 3, 32, 32)*
+* **y_train, y_validation, y_test** - 1D tensor as numpy.ndarray type with shapes *(12345, )*
 
 Here,
 <br/>**12345** - number of *images / labels*,
-<br/>**32, 32, 3** - image with size of *32x32 (height and width)* and with *3 channels*.
+<br/>**3, 32, 32** - image with *3 channels* and size of *32x32 (height and width)*.
 
-All datasets were put in a dictionary and were written in a pickle file:
+All tensors were put in a dictionary and were written in a pickle file:
 <br/>
 ```py
 d = {'x_train': x_train, 'y_train': y_train,
