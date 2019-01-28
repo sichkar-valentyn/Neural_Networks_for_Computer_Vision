@@ -22,8 +22,8 @@ Data used for this task is **German Traffic Sign Benchmarks (GTSB)**.
 <br/>It is up to researcher how to prepare datasets from GTSB to feed Neural Network and can be done individually.
 
 For current task datasets were organized as it was done for [CIFAR-10 Image Classification](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/cifar10.md):
-* **x_train, x_validation, x_test** - 4D tensor as numpy.ndarray type with shapes *(12345, 3, 32, 32)*
-* **y_train, y_validation, y_test** - 1D tensor as numpy.ndarray type with shapes *(12345, )*
+* **x_train, x_validation, x_test** - 4D tensors as numpy.ndarray type with shapes *(12345, 3, 32, 32)*
+* **y_train, y_validation, y_test** - 1D tensors as numpy.ndarray type with shapes *(12345, )*
 
 Here,
 <br/>**12345** - number of *images / labels*,
