@@ -112,7 +112,7 @@ Following tabel represents number of class and its corresponding label (descript
 <br/>
 
 ### <a id="preprocessing-data">Preprocessing Data</a>
-Prepared data is preprocessed in variety of ways and appropriate datasets are written into 'pickle' files:
+Prepared data is preprocessed in variety of ways and appropriate datasets are written into 'pickle' files.
   * data0.pickle - Shuffling
   * data1.pickle - Shuffling, /255.0 Normalization
   * data2.pickle - Shuffling, /255.0 + Mean Normalization
