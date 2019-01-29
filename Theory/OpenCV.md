@@ -64,7 +64,7 @@ image_OpenCV = cv2.imread('images/stop_sign.jpg', 1)
 image_OpenCV = cv2.cvtColor(image_OpenCV, cv2.COLOR_BGR2RGB)
 
 # Checking if arrays are equal
-print(np.array_equal(image_OpenCV, image_OpenCV))  # True
+print(np.array_equal(image_PIL_np, image_OpenCV))  # True
 
 # Showing image in OpenCV window
 cv2.namedWindow('Traffic Sign', cv2.WINDOW_NORMAL)  # Specifing that window is resizable
