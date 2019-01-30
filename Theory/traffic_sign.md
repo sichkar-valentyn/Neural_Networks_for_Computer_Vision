@@ -54,7 +54,7 @@ Histogram of 43 classes for training dataset with their number of examples for T
 <br/>
 
 ### <a id="good-quality-examples">Good Quality Examples</a>
-Examples of good quality traffic signs for every class to show in GUI for driver are shown on the figure below.
+Examples of Good Quality Traffic Signs for every class to show in GUI for driver are shown on the figure below.
 
 ![43 good quality examples](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/43_good_quality_examples.png)
 
