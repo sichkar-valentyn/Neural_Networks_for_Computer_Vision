@@ -140,7 +140,7 @@ For **Model 1** architecture will be used as it was done for [CIFAR-10 Image Cla
 | Parameter | Description |
 | --- | --- |
 | Weights Initialization | `HE Normal` |
-| Weights Update Policy | `Vanilla SGD` |
+| Weights Update Policy | `Adam` |
 | Activation Functions | `ReLU` |
 | Regularization | `L2` |
 | Pooling | `Max` |
