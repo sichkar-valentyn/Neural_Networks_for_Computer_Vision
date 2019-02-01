@@ -13,6 +13,8 @@ Theory and experimental results (on this page):
   * [Good Quality Examples](#good-quality-examples)
   * [Table of Labels](#table-of-labels)
 * [Preprocessing Data](#preprocessing-data)
+* [Model 1](#model-1)
+* [Model 2](#model-2)
 
 <br/>
 
@@ -127,6 +129,45 @@ Prepared data is preprocessed in variety of ways and appropriate datasets are wr
 ![Preprocessed_examples](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Preprocessed_examples.png)
 
 <br/>
+
+### <a id="model-1">Model 1</a>
+<br/>For **Model 1** architecture will be used as it was done for [CIFAR-10 Image Classification](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/cifar10.md):
+<br/>`Input` --> `Conv` --> `ReLU` --> `Pool` --> `Affine` --> `ReLU` --> `Affine` --> `Softmax`
+
+![Model_1_Architecture.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Model_1_Architecture.png)
+
+<br/>For **Model 1** following parameters will be used:
+
+| Parameter | Description |
+| --- | --- |
+| Weights Initialization | `HE Normal` |
+| Weights Update Policy | `Vanilla SGD` |
+| Activation Functions | `ReLU` |
+| Regularization | `L2` |
+| Pooling | `Max` |
+| Loss Functions | `Softmax` |
+
+<br/>
+
+### <a id="model-2">Model 2</a>
+<br/>For **Model 2** architecture will be used as it was done for [MNIST Digits Classification](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/mnist.md):
+<br/>`Input` --> `Conv` --> `ReLU` --> `Pool` --> `Affine` --> `ReLU` --> `Affine` --> `Softmax`
+
+![Model_1_Architecture.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Model_1_Architecture_MNIST.png)
+
+<br/>For **Model 2** following parameters will be used:
+
+| Parameter | Description |
+| --- | --- |
+| Weights Initialization | `HE Normal` |
+| Weights Update Policy | `Vanilla SGD` |
+| Activation Functions | `ReLU` |
+| Regularization | `L2` |
+| Pooling | `Max` |
+| Loss Functions | `Softmax` |
+
+<br/>
+
 
 ### MIT License
 ### Copyright (c) 2019 Valentyn N Sichkar
