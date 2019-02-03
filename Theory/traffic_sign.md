@@ -16,6 +16,10 @@ Theory and experimental results (on this page):
 * [Model 1](#model-1)
 * [Overfitting Small Data for Model 1](#overfitting-small-data-for-model-1)
 * [Training of Model 1](#training-of-model-1)
+* [Visualizing Filters](#visualizing-filters)
+* [Visualizing Feature Maps](#visualizing-feature-maps)
+* [Predicting with image from test dataset](#predicting-with-image-from-test-dataset)
+* [Predicting with user's image](#predicting-with-users-image)
 
 <br/>
 
@@ -244,6 +248,22 @@ solver.train()
 Training process of Model 1 with 18 000 iterations is shown on the figure below.
 
 ![Training_of_Model_1_TS.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Training_of_Model_1_TS.png)
+
+<br/>
+
+### <a id="visualizing-filters">Visualizing Filters</a>
+
+<br/>
+
+### <a id="visualizing-feature-maps">Visualizing Feature Maps</a>
+
+<br/>
+
+### <a id="predicting-with-image-from-test-dataset">Predicting with image from test dataset</a>
+
+<br/>
+
+### <a id="predicting-with-users-image">Predicting with user's image</a>
 
 <br/>
 
