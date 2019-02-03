@@ -189,7 +189,7 @@ solver = Solver(model,
                 optimization_config={'learning_rate':1e-3},
                 learning_rate_decay=1.0,
                 batch_size=50,
-                number_of_epochs=200,
+                number_of_epochs=100,
                 print_every=1,
                 verbose_mode=True
                )
@@ -198,7 +198,7 @@ solver = Solver(model,
 solver.train()
 ```
 
-Overfitting Small Data with 10 training examples and 200 epochs is shown on the figure below.
+Overfitting Small Data with 10 training examples and 100 epochs is shown on the figure below.
 
 ![Overfitting_Small_Data_for_Model_1_TS.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Overfitting_Small_Data_for_Model_1_TS.png)
 
