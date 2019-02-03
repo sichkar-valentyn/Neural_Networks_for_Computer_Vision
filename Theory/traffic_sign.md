@@ -14,6 +14,8 @@ Theory and experimental results (on this page):
   * [Table of Labels](#table-of-labels)
 * [Preprocessing Data](#preprocessing-data)
 * [Model 1](#model-1)
+* [Overfitting Small Data for Model 1](#overfitting-small-data-for-model-1)
+* [Training of Model 1](#training-of-model-1)
 
 <br/>
 
@@ -148,6 +150,102 @@ For **Model 1** architecture will be used as it was done for [CIFAR-10 Image Cla
 
 <br/>
 
+### <a id="overfitting-small-data-for-model-1">Overfitting Small Data for Model 1</a>
+For Overfitting Small data of Model 1 dataset 'data8.pickle' was chosen.
+<br>Code for Overfitting Small Data for Model 1 will be used as it was done for [CIFAR-10 Image Classification](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/cifar10.md):
+
+```py
+import numpy as np
+
+# Importing module 'ConvNet1.py'
+from Helper_Functions.ConvNet1 import *
+
+# Importing module 'Solver.py'
+from Solver import *
+
+# Loading data
+# Opening file for reading in binary mode
+with open('Data_Preprocessing/data8.pickle', 'rb') as f:
+    d = pickle.load(f, encoding='latin1')  # dictionary type
+
+# Number of training examples
+number_of_training_data = 10
+
+# Preparing data by slicing in 'data' dictionary appropriate array
+small_data = {
+             'x_train':d['x_train'][:number_of_training_data],
+             'y_train':d['y_train'][:number_of_training_data],
+             'x_validation':d['x_validation'],
+             'y_validation':d['y_validation']
+             }
+
+# Creating instance of class for 'ConvNet1' and initializing model
+model = ConvNet1(weight_scale=1e-2, hidden_dimension=100)
+
+# Creating instance of class for 'Solver' and initializing model
+solver = Solver(model,
+                small_data,
+                update_rule='adam',
+                optimization_config={'learning_rate':1e-3},
+                learning_rate_decay=1.0,
+                batch_size=50,
+                number_of_epochs=200,
+                print_every=1,
+                verbose_mode=True
+               )
+
+# Running training process
+solver.train()
+```
+
+Overfitting Small Data with 10 training examples and 200 epochs is shown on the figure below.
+
+![Overfitting_Small_Data_for_Model_1_TS.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Overfitting_Small_Data_for_Model_1_TS.png)
+
+<br/>
+
+### <a id="training-of-model-1">Training of Model 1</a>
+For training Model 1 dataset 'data8.pickle' was chosen.
+<br>Code for training Model 1 will be used as it was done for [CIFAR-10 Image Classification](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/cifar10.md):
+
+```py
+import numpy as np
+
+# Importing module 'ConvNet1.py'
+from Helper_Functions.ConvNet1 import *
+
+# Importing module 'Solver.py'
+from Solver import *
+
+# Loading data
+# Opening file for reading in binary mode
+with open('Data_Preprocessing/data8.pickle', 'rb') as f:
+    d = pickle.load(f, encoding='latin1')  # dictionary type
+
+# Creating instance of class for 'ConvNet1' and initializing model
+model = ConvNet1(input_dimension=(1, 32, 32), weight_scale=1e-3, hidden_dimension=500, regularization=1-e3)
+
+# Creating instance of class for 'Solver' and initializing model
+solver = Solver(model,
+                d,
+                update_rule='adam',
+                optimization_config={'learning_rate':1e-3},
+                learning_rate_decay=1.0,
+                batch_size=50,
+                number_of_epochs=50,
+                print_every=1,
+                verbose_mode=True
+               )
+
+# Running training process
+solver.train()
+```
+
+Training process of Model 1 with 18 000 iterations is shown on the figure below.
+
+![Training_of_Model_1_TS.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Training_of_Model_1_TS.png)
+
+<br/>
 
 ### MIT License
 ### Copyright (c) 2019 Valentyn N Sichkar
