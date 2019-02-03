@@ -151,7 +151,7 @@ For **Model 1** architecture will be used as it was done for [CIFAR-10 Image Cla
 <br/>
 
 ### <a id="overfitting-small-data-for-model-1">Overfitting Small Data for Model 1</a>
-For Overfitting Small data of Model 1 dataset 'data8.pickle' was chosen.
+For Overfitting Small Data of Model 1 dataset 'data8.pickle' was chosen.
 <br>Code for Overfitting Small Data for Model 1 will be used as it was done for [CIFAR-10 Image Classification](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/cifar10.md):
 
 ```py
