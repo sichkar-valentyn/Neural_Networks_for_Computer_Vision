@@ -130,21 +130,21 @@ Prepared data is preprocessed in variety of ways and appropriate datasets are wr
   * data7.pickle - Grayscale, Shuffling, Local Histogram Equalization, /255.0 + Mean Normalization
   * data8.pickle - Grayscale, Shuffling, Local Histogram Equalization, /255.0 + Mean + STD Normalization
   
- Shapes of data0 - data3 are as following:
- <br/>x_train: (86989, 3, 32, 32)
- <br/>y_train: (86989,)
- <br/>x_validation: (4410, 3, 32, 32)
- <br/>y_validation: (4410,)
- <br/>x_test: (12630, 3, 32, 32)
- <br/>y_test: (12630,)
+Shapes of data0 - data3 are as following:
+* x_train: (86989, 3, 32, 32)
+* y_train: (86989,)
+* x_validation: (4410, 3, 32, 32)
+* y_validation: (4410,)
+* x_test: (12630, 3, 32, 32)
+* y_test: (12630,)
  
- Shapes of data4 - data8 are as following:
- <br/>x_train: (86989, 1, 32, 32)
- <br/>y_train: (86989,)
- <br/>x_validation: (4410, 1, 32, 32)
- <br/>y_validation: (4410,)
- <br/>x_test: (12630, 1, 32, 32)
- <br/>y_test: (12630,)
+Shapes of data4 - data8 are as following:
+* x_train: (86989, 1, 32, 32)
+* y_train: (86989,)
+* x_validation: (4410, 1, 32, 32)
+* y_validation: (4410,)
+* x_test: (12630, 1, 32, 32)
+* y_test: (12630,)
 
 <br>Examples of some of them (`RGB`, `Gray`, `Local Histogram Equalization`) are shown on the figure below:
 
