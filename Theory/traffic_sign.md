@@ -138,7 +138,7 @@ Prepared data is preprocessed in variety of ways and appropriate datasets are wr
  <br/>x_test: (12630, 3, 32, 32)
  <br/>y_test: (12630,)
  
- <br/>Shapes of data4 - data8 are as following:
+ Shapes of data4 - data8 are as following:
  <br/>x_train: (86989, 1, 32, 32)
  <br/>y_train: (86989,)
  <br/>x_validation: (4410, 1, 32, 32)
