@@ -172,7 +172,7 @@ For **Model 1** architecture will be used as it was done for [CIFAR-10 Image Cla
 <br/>
 
 ### <a id="overfitting-small-data-for-model-1">Overfitting Small Data for Model 1</a>
-For Overfitting Small Data of Model 1 dataset 'data8.pickle' was chosen.
+For Overfitting Small Data of Model 1 dataset **'data8.pickle'** was chosen.
 <br>Code for Overfitting Small Data for Model 1 will be used as it was done for [CIFAR-10 Image Classification](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/cifar10.md):
 
 ```py
@@ -226,7 +226,7 @@ Overfitting Small Data with 10 training examples and 100 epochs is shown on the 
 <br/>
 
 ### <a id="training-of-model-1">Training of Model 1</a>
-For training Model 1 dataset 'data8.pickle' was chosen.
+For training Model 1 dataset **'data8.pickle'** was chosen as it reashed the best accuracy over all datasets.
 <br>Code for training Model 1 will be used as it was done for [CIFAR-10 Image Classification](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/cifar10.md):
 
 ```py
@@ -262,7 +262,8 @@ solver = Solver(model,
 solver.train()
 ```
 
-Training process of Model 1 with 17 500 iterations is shown on the figure below.
+Model 1 with 'data8.pickle' dataset reached **0.989** training accuracy.
+<br/>Training process of Model 1 with 17 500 iterations is shown on the figure below.
 
 ![Training_of_Model_1_TS.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Training_of_Model_1_TS.png)
 
