@@ -270,6 +270,9 @@ Model 1 with 'data8.pickle' dataset reached **0.989** training accuracy.
 <br/>
 
 ### <a id="visualizing-filters">Visualizing Filters</a>
+Initialized and Trained filters for CNN Layer are shown on the figure below.
+
+![Filters_Initialized_TS.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Filters_Initialized_TS.png)
 
 <br/>
 
