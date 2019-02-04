@@ -53,7 +53,7 @@ Examples of Unique Traffic Signs for every class from training dataset are shown
 <br/>
 
 ### <a id="histogram-of-unique-examples">Histogram of Training Examples</a>
-Histogram of 43 classes for training dataset with their number of examples for Traffic Signs Classification before and after equalization by adding transformated images from original dataset is shown on the figure below.
+Histogram of 43 classes for training dataset with their number of examples for Traffic Signs Classification before and after equalization by adding transformated images from original dataset is shown on the figure below. After equalization, training dataset has increased up to **86989 examples**.
 
 ![Histogram of 43 classes](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/histogram_of_43_classes.png)
 
@@ -119,6 +119,7 @@ Following tabel represents number of class and its corresponding label (descript
 
 ### <a id="preprocessing-data">Preprocessing Data</a>
 Prepared data is preprocessed in variety of ways and appropriate datasets are written into 'pickle' files.
+<br/>Datasets data0 - data3 have RGB images and datasets data4 - data8 have Gray images.
   * data0.pickle - Shuffling
   * data1.pickle - Shuffling, /255.0 Normalization
   * data2.pickle - Shuffling, /255.0 + Mean Normalization
@@ -127,7 +128,23 @@ Prepared data is preprocessed in variety of ways and appropriate datasets are wr
   * data5.pickle - Grayscale, Shuffling, Local Histogram Equalization
   * data6.pickle - Grayscale, Shuffling, Local Histogram Equalization, /255.0 Normalization
   * data7.pickle - Grayscale, Shuffling, Local Histogram Equalization, /255.0 + Mean Normalization
-  * data8.pickle - Grayscale, Shuffling, Local Histogram Equalization, /255.0 + Mean + STD Normalization 
+  * data8.pickle - Grayscale, Shuffling, Local Histogram Equalization, /255.0 + Mean + STD Normalization
+  
+ Shapes of data0 - data3 are as following:
+ <br/>x_train: (86989, 3, 32, 32)
+ <br/>y_train: (86989,)
+ <br/>x_validation: (4410, 3, 32, 32)
+ <br/>y_validation: (4410,)
+ <br/>x_test: (12630, 3, 32, 32)
+ <br/>y_test: (12630,)
+ 
+ <br/>Shapes of data4 - data8 are as following:
+ <br/>x_train: (86989, 1, 32, 32)
+ <br/>y_train: (86989,)
+ <br/>x_validation: (4410, 1, 32, 32)
+ <br/>y_validation: (4410,)
+ <br/>x_test: (12630, 1, 32, 32)
+ <br/>y_test: (12630,)
 
 <br>Examples of some of them (`RGB`, `Gray`, `Local Histogram Equalization`) are shown on the figure below:
 
@@ -245,7 +262,7 @@ solver = Solver(model,
 solver.train()
 ```
 
-Training process of Model 1 with 18 000 iterations is shown on the figure below.
+Training process of Model 1 with 17 500 iterations is shown on the figure below.
 
 ![Training_of_Model_1_TS.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Training_of_Model_1_TS.png)
 
