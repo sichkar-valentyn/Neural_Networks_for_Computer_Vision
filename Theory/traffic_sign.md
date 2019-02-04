@@ -285,9 +285,13 @@ Feature maps of trained network for CNN Layer are shown on the figure below.
 
 ### <a id="predicting-with-image-from-test-dataset">Predicting with image from test dataset</a>
 
+
 <br/>
 
 ### <a id="predicting-with-users-image">Predicting with user's image</a>
+Predicting with user's image is shown on the figure below.
+
+![Predicting_with_users_image.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Predicting_with_users_image.png)
 
 <br/>
 
