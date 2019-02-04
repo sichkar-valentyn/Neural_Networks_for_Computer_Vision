@@ -277,6 +277,9 @@ Initialized and Trained filters for CNN Layer are shown on the figure below.
 <br/>
 
 ### <a id="visualizing-feature-maps">Visualizing Feature Maps</a>
+Feature maps of trained network for CNN Layer are shown on the figure below.
+
+![Feature_Maps_CNN_TS.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Feature_Maps_CNN_TS.png)
 
 <br/>
 
