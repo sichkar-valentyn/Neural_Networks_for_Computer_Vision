@@ -226,7 +226,7 @@ Overfitting Small Data with 10 training examples and 100 epochs is shown on the 
 <br/>
 
 ### <a id="training-of-model-1">Training of Model 1</a>
-For training Model 1 dataset **'data8.pickle'** was chosen as it reashed the best accuracy over all datasets.
+For training Model 1 dataset **'data8.pickle'** was chosen as it reached the best accuracy over all datasets.
 <br>Code for training Model 1 will be used as it was done for [CIFAR-10 Image Classification](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/cifar10.md):
 
 ```py
