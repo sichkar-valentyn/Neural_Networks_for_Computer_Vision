@@ -284,7 +284,7 @@ Feature maps of trained network for CNN Layer are shown on the figure below.
 <br/>
 
 ### <a id="predicting-with-image-from-test-dataset">Predicting with image from test dataset</a>
-Prediction with image from test dataset is shown on the figure below.
+Prediction with image from test dataset **'data8.pickle'** is shown on the figure below.
 <br/>Classified as **Speed limit (60km/h)**.
 
 ![Predicting_with_test_image.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Predicting_with_test_image.png)
