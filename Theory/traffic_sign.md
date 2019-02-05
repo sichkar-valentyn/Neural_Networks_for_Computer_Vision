@@ -130,7 +130,7 @@ Prepared data is preprocessed in variety of ways and appropriate datasets are wr
   * data7.pickle - Grayscale, Shuffling, Local Histogram Equalization, /255.0 + Mean Normalization
   * data8.pickle - Grayscale, Shuffling, Local Histogram Equalization, /255.0 + Mean + STD Normalization
   
-Shapes of data0 - data3 are as following:
+Shapes of data0 - data3 are as following (RGB):
 * x_train: (86989, 3, 32, 32)
 * y_train: (86989,)
 * x_validation: (4410, 3, 32, 32)
@@ -138,7 +138,7 @@ Shapes of data0 - data3 are as following:
 * x_test: (12630, 3, 32, 32)
 * y_test: (12630,)
  
-Shapes of data4 - data8 are as following:
+Shapes of data4 - data8 are as following (Gray):
 * x_train: (86989, 1, 32, 32)
 * y_train: (86989,)
 * x_validation: (4410, 1, 32, 32)
