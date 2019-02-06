@@ -1,5 +1,5 @@
 # Traffic Sign Classification with Convolutional Neural Networks in Python
-Implementing Traffic Sign Classification in Python for Computer Vision tasks in autonomous vehicles.
+Implementing Traffic Sign Classification in Python for Computer Vision tasks in Autonomous Vehicles.
 <br/>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1317904.svg)](https://doi.org/10.5281/zenodo.1317904)
 
 ## Test online [here](https://valentynsichkar.name/traffic_signs.html)
