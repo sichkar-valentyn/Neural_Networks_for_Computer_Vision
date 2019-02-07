@@ -107,6 +107,7 @@ The aim of the repository is to study and to develope complex project on Compute
 
 <br/>
 
+
 ### **<a name="codes">Codes</a>** (it'll send you to appropriate file):
 * Introduction part:
   * [Intro_simple_NN.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Intro_simple_NN.py)
