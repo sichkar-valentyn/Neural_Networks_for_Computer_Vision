@@ -20,6 +20,7 @@ Theory and experimental results (on this page):
   * [Visualizing Feature Maps for Model 1](#visualizing-feature-maps)
 * [Predicting with image from test dataset](#predicting-with-image-from-test-dataset)
 * [Predicting with user's image](#predicting-with-users-image)
+* [Traffic Sign Classification in Real Time](#traffic-sign-classification-in-real-time)
 
 <br/>
 
@@ -296,6 +297,13 @@ Prediction with user's image is shown on the figure below.
 <br/>Classified as **Keep right**.
 
 ![Predicting_with_users_image.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Predicting_with_users_image.png)
+
+<br/>
+
+### <a id="traffic-sign-classification-in-real-time">Traffic Sign Classification in Real Tim</a>
+Traffic Sign Classification with Convolutional Neural Network. Left: original frame with detected Sign. Upper Right: cut frame with detected Sign. Lower Right: classified frame by ConvNet according to the detected Sign.
+
+![Traffic_Sign_Classification_Small_Small.gif](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Traffic_Sign_Classification_Small_Small.gif)
 
 <br/>
 
