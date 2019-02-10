@@ -83,6 +83,11 @@ The aim of the repository is to study and to develope complex project on Compute
 
 <br/>
 
+* **Example #11** - Implementing Traffic Sign Classification with Convolutional Neural Network. Left: original frame with detected Sign. Upper Right: cut frame with detected Sign. Lower Right: classified frame by ConvNet according to the detected Sign
+<br/>![Traffic_Sign_Classification_Small_Small.gif](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Traffic_Sign_Classification_Small_Small.gif)
+
+<br/>
+
 ### <a id="content">Content</a>
 ### **<a id="theory-and-experimental-results">Theory and experimental results</a>** (it'll send you to appropriate page):
 * [Introduction into Neural Networks](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Introduction.md)
