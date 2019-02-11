@@ -300,7 +300,7 @@ Prediction with user's image is shown on the figure below.
 
 <br/>
 
-### <a id="traffic-sign-classification-in-real-time">Traffic Sign Classification in Real Tim</a>
+### <a id="traffic-sign-classification-in-real-time">Traffic Sign Classification in Real Time</a>
 Traffic Sign Classification with Convolutional Neural Network. Left: original frame with detected Sign. Upper Right: cut frame with detected Sign. Lower Right: classified frame by ConvNet according to the detected Sign.
 
 ![Traffic_Sign_Classification_Small_Small.gif](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Traffic_Sign_Classification_Small_Small.gif)
