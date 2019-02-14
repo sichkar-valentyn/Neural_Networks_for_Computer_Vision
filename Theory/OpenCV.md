@@ -7,6 +7,7 @@ Theory and experimental results (on this page):
 
 * [The easiest ways to install OpenCV for Linux Ubuntu](#the-easiest-ways-to-install-opencv-for-linux-ubuntu)
 * [Brightness and Rotation changes](#brightness-and-rotation-changes)
+* [Contrast Limited Adaptive Histogram Equalization](#contrast-limited-adaptive-histogram-equalization)
 
 <br/>
 
@@ -152,6 +153,130 @@ plt.show()
 Results can be seen on the figure below.
 
 ![brightness_rotation_changing.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/brightness_rotation_changing.png)
+
+<br/>
+
+### <a id="contrast-limited-adaptive-histogram-equalization)">Contrast Limited Adaptive Histogram Equalization</a>
+Enhancing image by CLAHE algorithm with **OpenCV**.
+<br/>Can be used for preprocessing datasets for **Classification Tasks**.
+
+```py
+# Importing needed libraries
+import numpy as np
+import matplotlib.pyplot as plt
+import cv2 
+import pickle
+
+
+# Opening file for reading in binary mode
+# Can be used any user's RGB image
+with open('data0.pickle', 'rb') as f:
+    x_input = pickle.load(f, encoding='latin1')  # dictionary type
+    
+
+# Getting image
+x_rgb = x_input[4]
+print(x_rgb.shape)  # (32, 32, 3)
+
+# Showing RGB image in OpenCV window
+cv2.namedWindow('RGB', cv2.WINDOW_NORMAL)  # Specifing that window is resizable
+# WARNING! 'cv2.imshow' takes images in BGR format
+# Consequently, we need to convert image from RGB to BGR
+cv2.imshow('RGB', cv2.cvtColor(x_rgb, cv2.COLOR_RGB2BGR))
+cv2.waitKey(0)  # Waiting for any key being pressed
+cv2.destroyWindow('RGB')
+
+
+# Converting image from RGB to LAB colour model
+x_lab = cv2.cvtColor(x_rgb, cv2.COLOR_RGB2LAB)
+# Showing LAB image in OpenCV window
+cv2.namedWindow('LAB', cv2.WINDOW_NORMAL)  # Specifing that window is resizable
+cv2.imshow('LAB', x_lab)
+cv2.waitKey(0)  # Waiting for any key being pressed
+cv2.destroyWindow('LAB')
+
+
+# Splitting LAB image to different channels
+l, a, b = cv2.split(x_lab)
+# Showing L channel in OpenCV window
+cv2.namedWindow('L', cv2.WINDOW_NORMAL)  # Specifing that window is resizable
+cv2.imshow('L', l)
+cv2.waitKey(0)  # Waiting for any key being pressed
+cv2.destroyWindow('L')
+# Showing A channel in OpenCV window
+cv2.namedWindow('A', cv2.WINDOW_NORMAL)  # Specifing that window is resizable
+cv2.imshow('A', a)
+cv2.waitKey(0)  # Waiting for any key being pressed
+cv2.destroyWindow('A')
+# Showing B channel in OpenCV window
+cv2.namedWindow('B', cv2.WINDOW_NORMAL)  # Specifing that window is resizable
+cv2.imshow('B', b)
+cv2.waitKey(0)  # Waiting for any key being pressed
+cv2.destroyWindow('B')
+
+
+# Applying CLAHE to L channel
+clahe = cv2.createCLAHE(clipLimit=3.0, tileGridSize=(8,8))
+l_clahe = clahe.apply(l)
+# Showing L channel after CLAHE in OpenCV window
+cv2.namedWindow('L CLAHE', cv2.WINDOW_NORMAL)  # Specifing that window is resizable
+cv2.imshow('L CLAHE', l_clahe)
+cv2.waitKey(0)  # Waiting for any key being pressed
+cv2.destroyWindow('L CLAHE')
+
+
+# Merging enhanced L channel with CLAHE with other channels A and B
+x_lab_enhanced = cv2.merge((l_clahe, a, b))
+# Showing enhanced LAB image after CLAHE in OpenCV window
+cv2.namedWindow('LAB Enhanced', cv2.WINDOW_NORMAL)  # Specifing that window is resizable
+cv2.imshow('LAB Enhanced', x_lab_enhanced)
+cv2.waitKey(0)  # Waiting for any key being pressed
+cv2.destroyWindow('LAB Enhanced')
+
+
+# Converting image from LAB to RGB colour model
+x_rgb_enhanced = cv2.cvtColor(x_lab_enhanced, cv2.COLOR_LAB2RGB)
+# Showing enhanced RGB image in OpenCV window
+cv2.namedWindow('RGB Enhanced', cv2.WINDOW_NORMAL)  # Specifing that window is resizable
+# WARNING! 'cv2.imshow' takes images in BGR format
+# Consequently, we need to convert image from RGB to BGR
+cv2.imshow('RGB Enhanced', cv2.cvtColor(x_rgb_enhanced, cv2.COLOR_RGB2BGR))
+cv2.waitKey(0)  # Waiting for any key being pressed
+cv2.destroyWindow('RGB Enhanced')
+
+
+cv2.destroyAllWindows()
+
+
+%matplotlib inline
+
+# Showing results with matplotlib
+plt.rcParams['figure.figsize'] = (10.0, 8.0) # Setting default size of plots
+
+figure, ax = plt.subplots(nrows=1, ncols=4)
+# 'ax 'is as (1, 1) np.array and we can call each time ax[0, 0]
+ax[0].set_axis_off()
+ax[0].set_title('RGB')
+ax[0].imshow(x_rgb)
+
+ax[1].set_axis_off()
+ax[1].set_title('LAB')
+ax[1].imshow(x_lab)
+
+ax[2].set_axis_off()
+ax[2].set_title('LAB Enhanced')
+ax[2].imshow(x_lab_enhanced)
+
+ax[3].set_axis_off()
+ax[3].set_title('RGB Enhanced')
+ax[3].imshow(x_rgb_enhanced)
+
+plt.show()
+```
+
+Results can be seen on the figure below.
+
+![clahe_enhancing.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/clahe_enhancing.png)
 
 <br/>
 
