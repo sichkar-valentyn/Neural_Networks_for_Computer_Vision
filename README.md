@@ -88,6 +88,11 @@ The aim of the repository is to study and to develope complex project on Compute
 
 <br/>
 
+* **Example #12** - Enhancing image by CLAHE (Contrast Limited Adaptive Histogram Equalization) algorithm with OpenCV:
+<br/>![clahe_enhancing.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/clahe_enhancing.png)
+
+<br/>
+
 ### <a id="content">Content</a>
 ### **<a id="theory-and-experimental-results">Theory and experimental results</a>** (it'll send you to appropriate page):
 * [Introduction into Neural Networks](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Introduction.md)
