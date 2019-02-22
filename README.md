@@ -1,5 +1,5 @@
 # Neural Networks for Computer Vision
-Implementing Neural Networks for Computer Vision in Autonomous Vehicles and Robotics, for Objects Detection and Tracking, Objects Classification, Pattern Recognition, Robotics Control. From very beginning to Complex Project.
+Implementing Neural Networks for Computer Vision in Autonomous Vehicles and Robotics, for Object Detection and Object Tracking, Object Classification, Pattern Recognition, Robotics Control. From very beginning to Complex Project.
 <br/>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1317904.svg)](https://doi.org/10.5281/zenodo.1317904)
 
 ### Reference to:
