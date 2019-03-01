@@ -157,7 +157,7 @@ Results can be seen on the figure below.
 <br/>
 
 ### <a id="contrast-limited-adaptive-histogram-equalization)">Contrast Limited Adaptive Histogram Equalization</a>
-Enhancing image by CLAHE algorithm with **OpenCV**.
+Enhancing image by **CLAHE** algorithm with **OpenCV**.
 <br/>Can be used for preprocessing datasets for **Classification Tasks**.
 
 ```py
