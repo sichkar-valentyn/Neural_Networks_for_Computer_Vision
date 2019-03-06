@@ -24,7 +24,7 @@ Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles a
 
 * The research results for Neural Network Knowledge Based system for the tasks of collision avoidance is put in separate repository and is available here: https://github.com/sichkar-valentyn/Matlab_implementation_of_Neural_Networks
 
-* The research on Machine Learning algorithms and techniques in Python is put in separate repository and is available here: https://github.com/sichkar-valentyn/Machine_Learning_in_Python
+* The research on Machine Learning Algorithms and techniques in Python is put in separate repository and is available here: https://github.com/sichkar-valentyn/Machine_Learning_in_Python
 
 <br/>
 
