@@ -54,7 +54,7 @@ Examples of Unique Traffic Signs for every class from training dataset are shown
 <br/>
 
 ### <a id="histogram-of-unique-examples">Histogram of Training Examples</a>
-Histogram of 43 classes for training dataset with their number of examples for Traffic Signs Classification before and after equalization by adding transformated images (brightness and rotation) from original dataset is shown on the figure below. After equalization, training dataset has increased up to **86989 examples**.
+Histogram of 43 classes for training dataset with their number of examples for Traffic Signs Classification before and after **Equalization** by adding transformated images (brightness and rotation) from original dataset is shown on the figure below. After **Equalization**, training dataset has increased up to **86989 examples**.
 
 ![Histogram of 43 classes](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/histogram_of_43_classes.png)
 
