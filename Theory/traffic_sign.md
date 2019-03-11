@@ -26,7 +26,7 @@ Theory and experimental results (on this page):
 
 ### <a id="loading-data">Loading Data</a>
 Data used for this task is **German Traffic Sign Benchmarks (GTSB)**.
-<br/>Initially datasets consist of images in *PPM* format with different sizes. 
+<br/>Initially datasets consist of images in ***PPM*** format with different sizes. 
 
 For current task datasets were organized in the same way as it was done for [CIFAR-10 Image Classification](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/cifar10.md):
 * **x_train, x_validation, x_test** - 4D tensors as numpy.ndarray type with shapes *(12345, 3, 32, 32)*
