@@ -272,6 +272,8 @@ Model 1 with 'data8.pickle' dataset reached **0.989** training accuracy.
 
 ![Accuracy_of_different_datasets_of_Model_1_TS.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Accuracy_of_different_datasets_of_Model_1_TS.png)
 
+<br/>Table with training results is shown on the figure below.
+
 | Dataset | Training Accuracy | Validation Accuracy |
 | --- | --- | --- |
 | data2 | `0.977` | `0.881` |
