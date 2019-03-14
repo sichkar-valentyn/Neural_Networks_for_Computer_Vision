@@ -275,7 +275,9 @@ Model 1 with 'data8.pickle' dataset reached **0.989** training accuracy.
 | Dataset | Training Accuracy | Validation Accuracy |
 | --- | --- | --- |
 | data2 | `0.977` | `0.881` |
-
+| data3 | `0.983` | `0.889` |
+| data7 | `0.988` | `0.943` |
+| data8 | `0.989` | `0.924` |
 
 <br/>
 
