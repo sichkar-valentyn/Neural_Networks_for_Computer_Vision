@@ -120,7 +120,7 @@ Following tabel represents number of class and its corresponding label (descript
 
 ### <a id="preprocessing-data">Preprocessing Data</a>
 Prepared data is preprocessed in variety of ways and appropriate datasets are written into 'pickle' files.
-<br/>Datasets data0 - data3 have RGB images and datasets data4 - data8 have Gray images.
+<br/>Datasets **data0 - data3** have RGB images and datasets **data4 - data8** have Gray images.
   * data0.pickle - Shuffling
   * data1.pickle - Shuffling, /255.0 Normalization
   * data2.pickle - Shuffling, /255.0 + Mean Normalization
@@ -267,6 +267,15 @@ Model 1 with 'data8.pickle' dataset reached **0.989** training accuracy.
 <br/>Training process of Model 1 with 17 500 iterations is shown on the figure below.
 
 ![Training_of_Model_1_TS.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Training_of_Model_1_TS.png)
+
+<br/>Accuracy for different datasets are shown on the figure below.
+
+![Accuracy_of_different_datasets_of_Model_1_TS.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Accuracy_of_different_datasets_of_Model_1_TS.png)
+
+| Dataset | Training Accuracy | Validation Accuracy |
+| --- | --- | --- |
+| data2 | `0.977` | `0.881` |
+
 
 <br/>
 
