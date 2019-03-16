@@ -93,7 +93,7 @@ The aim of the repository is to study and to develope complex project on Compute
 
 <br/>
 
-* **Example #13** - Accuracy for training CNN with different datasets for Traffic Sign Classification is shown on the figure below.:
+* **Example #13** - Accuracy for training CNN with different datasets for Traffic Sign Classification is shown on the figure below:
 <br/>![Accuracy_of_different_datasets_of_Model_1_TS.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Accuracy_of_different_datasets_of_Model_1_TS.png)
 
 <br/>
