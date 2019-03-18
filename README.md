@@ -12,7 +12,6 @@ Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles a
   * [Theory and experimental results](#theory-and-experimental-results)
   * [Codes](#codes)
 
-
 <br/>
 
 ### <a id="related-works">Related works</a>
