@@ -36,7 +36,7 @@ The aim of the repository is to study and to develope complex project on Compute
 <br/>
 
 * **Example #2** - more complex convolving of input image with following architecture:
-<br/>`Input` --> `Conv --> ReLU --> Pool` --> `Conv --> ReLU --> Pool` --> `Conv --> ReLU --> Pool`
+<br/>`Input` ---> `Conv --> ReLU --> Pool` ---> `Conv --> ReLU --> Pool` ---> `Conv --> ReLU --> Pool`
 
 <br/><img src="images/CNN_More_complex_example.gif" alt="Conv --> ReLU --> Pool">
 
