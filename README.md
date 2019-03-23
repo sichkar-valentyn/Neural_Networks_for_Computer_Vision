@@ -82,7 +82,10 @@ The **main aim** of the repository is to study and to develope complex project o
 
 <br/>
 
-* **Example #11** - Implementing Traffic Sign Classification with Convolutional Neural Network. **Left:** Original frame with Detected Sign. **Upper Right:** cut frame with Detected Sign. **Lower Right:** classified frame by ConvNet according to the Detected Sign
+* **Example #11** - Implementing Traffic Sign Classification with Convolutional Neural Network.
+<br/>**Left:** Original frame with Detected Sign
+<br/>**Upper Right:** cut frame with Detected Sign
+<br/>**Lower Right:** classified frame by ConvNet according to the Detected Sign
 <br/>![Traffic_Sign_Classification_Small_Small.gif](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Traffic_Sign_Classification_Small_Small.gif)
 
 <br/>
