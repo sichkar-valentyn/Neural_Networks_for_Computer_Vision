@@ -42,7 +42,7 @@ The **main aim** of the repository is to study and to develope complex project o
 
 <br/>
 
-* **Example #3** - video introduction into Convolutional NN with Python from scratch:
+* **Example #3** - video introduction into Convolutional Neural Network with Python from scratch:
 <br/><a href="https://www.youtube.com/watch?v=04G3kRFI7pc" target="_blank"><img src="images/Video_Introduction_into_ConvNet.bmp" alt="Convolutional NN from scratch" /></a>
 
 <br/>
