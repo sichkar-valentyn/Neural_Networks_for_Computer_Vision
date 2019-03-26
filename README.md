@@ -57,7 +57,7 @@ The **main aim** of the repository is to study and to develope complex project o
 
 <br/>
 
-* **Example #6** - Initialized Filters and Trained Filters for ConvNet Layer for CIFAR-10 Image Classification:
+* **Example #6** - Initialized Filters and Trained Filters for ConvNet Layer for CIFAR-10 Image Classification task:
 <br/>![Filters Cifar10](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/filters_cifar10.png)
 
 <br/>
