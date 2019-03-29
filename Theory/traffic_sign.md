@@ -265,7 +265,7 @@ solver.train()
 ```
 
 Model 1 with 'data8.pickle' dataset reached **0.989** training accuracy.
-<br/>Training process of Model 1 with 17 500 iterations is shown on the figure below.
+<br/>Training process of Model 1 with **17 500** iterations is shown on the figure below.
 
 ![Training_of_Model_1_TS.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Training_of_Model_1_TS.png)
 
