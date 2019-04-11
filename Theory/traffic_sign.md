@@ -48,7 +48,7 @@ d = {'x_train': x_train, 'y_train': y_train,
 <br/>
 
 ### <a id="unique-examples">Unique Training Examples</a>
-Examples of *Unique Traffic Signs* for every class from Training dataset are shown on the figure below.
+Examples of ***Unique Traffic Signs*** for every class from Training dataset are shown on the figure below.
 
 ![43 unique examples](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/43_unique_examples.png)
 
