@@ -112,10 +112,7 @@ The **main aim** of the repository is to study and to develope complex project o
 * [Convolutional Neural Networks](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Convolutional_Neural_Network.md)
   * [CIFAR-10 Image Classification with pure `numpy`](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/cifar10.md)
   * [MNIST Image Classification with pure `numpy`](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/mnist.md)
-
-<br/>
-
-* [Traffic Sign Classification](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/traffic_sign.md)
+  * [Traffic Sign Classification](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/traffic_sign.md)
 
 <br/>
 
