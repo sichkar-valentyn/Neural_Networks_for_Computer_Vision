@@ -6,6 +6,7 @@ Implementing Neural Networks for Computer Vision in Autonomous Vehicles and Robo
 Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles and robotics // GitHub platform. DOI: 10.5281/zenodo.1317904
 
 ### Structure of repository
+* [Research papers](#research-papers)
 * [Related works](#related-works)
 * [Description](#description)
 * [Content](#content)
@@ -14,9 +15,12 @@ Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles a
 
 <br/>
 
-### <a id="related-works">Related works</a>
+### <a id="research-papers">Research papers</a>
 * Sichkar V.N. Comparison analysis of knowledge based systems for navigation of mobile robot and collision avoidance with obstacles in unknown environment. St. Petersburg State Polytechnical University Journal. Computer Science. Telecommunications and Control Systems, 2018, Vol. 11, No. 2, Pp. 64–73. DOI: <a href="https://doi.org/10.18721/JCSTCS.11206" target="_blank">10.18721/JCSTCS.11206</a> (Full-text available also here https://www.researchgate.net/profile/Valentyn_Sichkar)
 
+<br/>
+
+### <a id="related-works">Related works</a>
 * The study on image processing in Python is put in separate repository and is available here: https://github.com/sichkar-valentyn/Image_processing_in_Python
 
 * The study of Semantic Web languages OWL and RDF for Knowledge representation of Alarm-Warning System is put in separate repository and is available here: https://github.com/sichkar-valentyn/Knowledge_Base_Represented_by_Semantic_Web_Language
