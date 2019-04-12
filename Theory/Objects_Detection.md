@@ -5,11 +5,11 @@ Building Neural Networks for Objects Detection Algorithms. **Coming soon. Will b
 ## Content
 Theory and experimental results (on this page):
 
-* [Objects Detection Algorithms](#objects-detection-algorithms)
+* [Objects Detection Algorithms](#main-objects-detection-algorithms)
 
 <br/>
 
-### <a id="objects-detection-algorithms">Objects Detection Algorithms</a>
+### <a id="main-objects-detection-algorithms">Objects Detection Algorithms</a>
 
 
 ```py
