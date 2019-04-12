@@ -120,6 +120,7 @@ The **main aim** of the repository is to study and to develope complex project o
 
 <br/>
 
+* [Objects Detection](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Objects_Detection.md)
 * [OpenCV](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/OpenCV.md)
 * [Tensorflow](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/Tensorflow.md)
 
