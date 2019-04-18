@@ -16,8 +16,6 @@ Consider following part of the code (related file soon.py):
 import numpy as np
 ```
 
-Full code is available here: 
-
 <br/>
 
 ### MIT License
