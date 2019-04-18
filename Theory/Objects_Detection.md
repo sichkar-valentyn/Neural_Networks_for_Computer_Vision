@@ -11,7 +11,8 @@ Theory and experimental results (on this page):
 
 ### <a id="main-objects-detection-algorithms">Objects Detection Algorithms Overview</a>
 
-
+Consider following part of the code: 
+(related file: soon.py)
 ```py
 import numpy as np
 ```
