@@ -6,6 +6,9 @@ Building Neural Networks for Objects Detection Algorithms. **Coming soon. Will b
 Theory and experimental results (on this page):
 
 * [Objects Detection Algorithms Overview](#main-objects-detection-algorithms)
+  * [YOLO v1](#yolo-v1)
+  * [YOLO v2](#yolo-v2)
+  * [YOLO v3](#yolo-v3)
 
 <br/>
 
