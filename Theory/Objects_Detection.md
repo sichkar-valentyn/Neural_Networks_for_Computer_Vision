@@ -21,7 +21,7 @@ import numpy as np
 
 <br/>
 
-### <a id="yolo-v1">YOLO v1</a>
+#### <a id="yolo-v1">YOLO v1</a>
 
 Consider following part of the code (related file soon.py):
 ```py
@@ -30,7 +30,7 @@ import numpy as np
 
 <br/>
 
-### <a id="yolo-v2">YOLO v2</a>
+#### <a id="yolo-v2">YOLO v2</a>
 
 Consider following part of the code (related file soon.py):
 ```py
@@ -39,7 +39,7 @@ import numpy as np
 
 <br/>
 
-### <a id="yolo-v3">YOLO v3</a>
+#### <a id="yolo-v3">YOLO v3</a>
 
 Consider following part of the code (related file soon.py):
 ```py
