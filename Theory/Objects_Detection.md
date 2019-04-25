@@ -14,7 +14,7 @@ Theory and experimental results (on this page):
 <br/>
 
 ### <a id="main-objects-detection-algorithms">Objects Detection Algorithms Overview</a>
-There are variety of algorithms for Detection Objects on the image.
+There are variety of algorithms for Detection Objects on the image. Let's consider the most popular ones.
 
 <br/>Consider following part of the code (related file soon.py):
 ```py
