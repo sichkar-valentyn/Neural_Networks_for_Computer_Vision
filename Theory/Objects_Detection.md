@@ -16,11 +16,6 @@ Theory and experimental results (on this page):
 ### <a id="main-objects-detection-algorithms">Objects Detection Algorithms Overview</a>
 There are variety of algorithms for Detection Objects on the image. Let's consider the most popular ones like YOLO of versions 1, 2 and 3. Also, there is such algorithm as SSD and others.
 
-<br/>Consider following part of the code (related file soon.py):
-```py
-import numpy as np
-```
-
 <br/>
 
 ### <a id="yolo-v1">YOLO v1</a>
@@ -45,7 +40,15 @@ import numpy as np
 
 Consider following part of the code (related file soon.py):
 ```py
+# Importing necessary libraries
 import numpy as np
+import cv2
+import time
+
+# Loading COCO class labels from file
+# Opening file, reading, eliminating whitespaces, and splitting by '\n', which in turn creates list
+labels = open('yolo-coco-data/coco.names').read().strip().split('\n')  # list of names
+
 ```
 
 
