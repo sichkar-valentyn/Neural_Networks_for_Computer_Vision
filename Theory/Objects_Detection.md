@@ -20,19 +20,9 @@ There are variety of algorithms for Detection Objects on the image. Let's consid
 
 ### <a id="yolo-v1">YOLO v1</a>
 
-Consider following part of the code (related file soon.py):
-```py
-import numpy as np
-```
-
 <br/>
 
 ### <a id="yolo-v2">YOLO v2</a>
-
-Consider following part of the code (related file soon.py):
-```py
-import numpy as np
-```
 
 <br/>
 
