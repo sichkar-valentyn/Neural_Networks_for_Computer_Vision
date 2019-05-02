@@ -28,19 +28,6 @@ There are variety of algorithms for Detection Objects on the image. Let's consid
 
 ### <a id="yolo-v3">YOLO v3</a>
 
-Consider following part of the code (related file soon.py):
-```py
-# Importing necessary libraries
-import numpy as np
-import cv2
-import time
-
-# Loading COCO class labels from file
-# Opening file, reading, eliminating whitespaces, and splitting by '\n', which in turn creates list
-labels = open('yolo-coco-data/coco.names').read().strip().split('\n')  # list of names
-
-```
-
 
 <br/>
 
