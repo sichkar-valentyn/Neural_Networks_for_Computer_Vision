@@ -14,7 +14,7 @@ Theory and experimental results (on this page):
 <br/>
 
 ### <a id="main-objects-detection-algorithms">Objects Detection Algorithms Overview</a>
-There are variety of algorithms for Detection Objects on the image. Let's consider the most popular ones like YOLO of versions 1, 2 and 3. Also, there is such algorithm as SSD and others.
+There are variety of algorithms for Detection Objects on the image. Let's consider the most popular ones like YOLO of versions 1, 2 and 3. Also, there are such algorithms as SSD and others.
 
 <br/>
 
