@@ -12,7 +12,7 @@ Theory and experimental results (on this page):
 <br/>
 
 ### <a id="the-easiest-ways-to-install-opencv-for-linux-ubuntu">The easiest ways to install OpenCV for Linux Ubuntu</a>
-There are few the most simple ways to install OpenCV for Linux Ubuntu, and they are:
+There are few the simplest ways to install OpenCV for Linux Ubuntu, and they are:
 * by using `conda`
 * by using `pip3` for python 3
 
@@ -35,7 +35,7 @@ import cv2
 print(cv2.__version__)
 ```
 
-As a result the version of installed OpenCV has to be shown, like this:
+As a result, the version of installed OpenCV has to be shown, like this:
 <br/>`3.4.3`
 
 <br/>
