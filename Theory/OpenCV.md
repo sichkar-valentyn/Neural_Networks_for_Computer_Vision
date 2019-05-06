@@ -36,7 +36,7 @@ print(cv2.__version__)
 ```
 
 As a result, the version of installed OpenCV has to be shown, like this:
-<br/>`3.4.3`
+<br/>`4.1.0`
 
 <br/>
 
