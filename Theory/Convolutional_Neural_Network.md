@@ -63,7 +63,7 @@ These layers are used to build complete **CNN architecture**. A simple example o
 
 **Input (Input Layer)** - contains the original information about the image in the form of [32x32x3], where 32 is the width, another 32 is the height and 3 is the color channels - R, G, B (Red, Green and Blue).
 
-**Conv (Conolutional Layer)** - is a set of maps (known also as feature maps), each of which has a filter (known also as core or kernel). The process of obtaining these maps can be described as following: the window of the filter size is going through whole image with a given step, and at each step the elemenrwise multiplication of values of local image window by filter is done, then result is summed (by adding all elements of the matrix all together) and written into the resulted output matrix of map. For example, if 12 filters are used, the output volume of the maps will be [32x32x12].
+**Conv (Convolutional Layer)** - is a set of maps (known also as feature maps), each of which has a filter (known also as core or kernel). The process of obtaining these maps can be described as following: the window of the filter size is going through whole image with a given step, and at each step the elementwise multiplication of values of local image window by filter is done, then result is summed (by adding all elements of the matrix all together) and written into the resulted output matrix of map. For example, if 12 filters are used, the output volume of the maps will be [32x32x12].
 
 **ReLU (Rectified Linear Unit Layer)** - applies elementwise activation function (like f(x) = max(0, x)) with zero as threshold. In other words, it performs the following actions: if x > 0, then the value remains the same, and x < 0 changes this value by substituting it to 0.
 
