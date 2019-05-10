@@ -1,6 +1,6 @@
 # Objects Detection Algorithms
 Building Neural Networks for Objects Detection Algorithms.
-<br/>**Under construction. Coming soon. Will be released in May 2019.**
+<br/>**Under construction. Coming soon.**
 <br/>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1317904.svg)](https://doi.org/10.5281/zenodo.1317904)
 
 ## Content
