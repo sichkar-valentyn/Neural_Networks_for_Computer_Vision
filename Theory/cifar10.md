@@ -8,7 +8,7 @@ Example on Image Classification with the help of CIFAR-10 dataset and Convolutio
 Explore course **"Convolutional Neural Networks for Image Classification"** here: https://stepik.org/course/53801/promo
 
 ## Content
-Short description. Full codes you can find inside the course by link above:
+Short description of the content. Full codes you can find inside the course by link above:
 
 * [CIFAR-10 Image Classification with `numpy` only](#cifar10-image-classification-with-numpy-only)
   * [Loading batches of CIFAR-10 dataset](#loading-batches-of-cifar19-dataset)
@@ -31,9 +31,6 @@ Short description. Full codes you can find inside the course by link above:
     * [Calculating scores for predicting ConvNet1](#calculating-scores-for-predicting-convnet1)
   * [Functions for Optimization](#optimization-functions)
     * [Vanilla SGD](#vanilla-sgd)
-    * [Momentum SGD](#momentum-sgd)
-    * [RMS Propagation](#rms-propagation)
-    * [Adam](#adam)
   * [Creating Solver Class](#creating-solver-class)
     * [_Reset](#reset)
     * [_Step](#step)
@@ -177,21 +174,6 @@ Using different types of optimization rules to update parameters of the Model.
 Rule for updating parameters is as following:
 
 ![Vanilla SGD](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/vanilla_sgd.png)
-
-#### <a id="momentum-sgd">Momentum SGD updating method</a>
-Rule for updating parameters is as following:
-
-![Momentum SGD](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/momentum_sgd.png)
-
-#### <a id="rms-propagation">RMS Propagation updating method</a>
-Rule for updating parameters is as following:
-
-![RMS](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/rms.png)
-
-#### <a id="adam">Adam updating method</a>
-Rule for updating parameters is as following:
-
-![Adam](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/adam.png)
 
 <br/>
 
