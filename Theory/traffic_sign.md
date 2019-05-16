@@ -4,8 +4,11 @@ Implementing Traffic Sign Classification in Python for Computer Vision tasks in 
 
 ## Test online [here](https://valentynsichkar.name/traffic_signs.html)
 
+### Courses:
+* Explore course **"Convolutional Neural Networks for Image Classification"** here: https://stepik.org/course/53801/promo
+
 ## Content
-Theory and experimental results (on this page):
+Short description of the content. Full codes you can find inside the course by link above:
 
 * [Loading Data](#loading-data)
   * [Unique Training Examples](#unique-examples)
@@ -26,7 +29,7 @@ Theory and experimental results (on this page):
 <br/>
 
 ### <a id="loading-data">Loading Data</a>
-Data used for this task is **German Traffic Sign Benchmarks (GTSB)**.
+Data used for this task is **German Traffic Sign Benchmarks (GTSRB)**.
 <br/>Initially dataset consists of images in ***PPM*** format with different sizes. 
 
 For current task datasets were organized in the same way as it was done for [CIFAR-10 Image Classification](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/cifar10.md):
@@ -158,8 +161,6 @@ Shapes of data4 - data8 are as following (Gray):
 For **Model 1** architecture will be used as it was done for [CIFAR-10 Image Classification](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/cifar10.md):
 <br/>`Input` --> `Conv` --> `ReLU` --> `Pool` --> `Affine` --> `ReLU` --> `Affine` --> `Softmax`
 
-![Model_1_Architecture_TS.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Model_1_Architecture_TS.png)
-
 <br/>For **Model 1** following parameters will be used:
 
 | Parameter | Description |
@@ -175,52 +176,6 @@ For **Model 1** architecture will be used as it was done for [CIFAR-10 Image Cla
 
 ### <a id="overfitting-small-data-for-model-1">Overfitting Small Data for Model 1</a>
 For Overfitting Small Data of Model 1 dataset **'data8.pickle'** was chosen.
-<br>Code for Overfitting Small Data for Model 1 will be used as it was done for [CIFAR-10 Image Classification](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/cifar10.md):
-
-```py
-import numpy as np
-
-# Importing module 'ConvNet1.py'
-from Helper_Functions.ConvNet1 import *
-
-# Importing module 'Solver.py'
-from Solver import *
-
-# Loading data
-# Opening file for reading in binary mode
-with open('Data_Preprocessing/data8.pickle', 'rb') as f:
-    d = pickle.load(f, encoding='latin1')  # dictionary type
-
-# Number of training examples
-number_of_training_data = 10
-
-# Preparing data by slicing in 'data' dictionary appropriate array
-small_data = {
-             'x_train':d['x_train'][:number_of_training_data],
-             'y_train':d['y_train'][:number_of_training_data],
-             'x_validation':d['x_validation'],
-             'y_validation':d['y_validation']
-             }
-
-# Creating instance of class for 'ConvNet1' and initializing model
-model = ConvNet1(weight_scale=1e-2, hidden_dimension=100)
-
-# Creating instance of class for 'Solver' and initializing model
-solver = Solver(model,
-                small_data,
-                update_rule='adam',
-                optimization_config={'learning_rate':1e-3},
-                learning_rate_decay=1.0,
-                batch_size=50,
-                number_of_epochs=100,
-                print_every=1,
-                verbose_mode=True
-               )
-
-# Running training process
-solver.train()
-```
-
 Overfitting Small Data with 10 training examples and 100 epochs is shown on the figure below.
 
 ![Overfitting_Small_Data_for_Model_1_TS.png](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Overfitting_Small_Data_for_Model_1_TS.png)
@@ -229,41 +184,6 @@ Overfitting Small Data with 10 training examples and 100 epochs is shown on the 
 
 ### <a id="training-of-model-1">Training of Model 1</a>
 For training Model 1 dataset **'data8.pickle'** was chosen as it reached the best accuracy over all datasets.
-<br>Code for training Model 1 will be used as it was done for [CIFAR-10 Image Classification](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Theory/cifar10.md):
-
-```py
-import numpy as np
-
-# Importing module 'ConvNet1.py'
-from Helper_Functions.ConvNet1 import *
-
-# Importing module 'Solver.py'
-from Solver import *
-
-# Loading data
-# Opening file for reading in binary mode
-with open('Data_Preprocessing/data8.pickle', 'rb') as f:
-    d = pickle.load(f, encoding='latin1')  # dictionary type
-
-# Creating instance of class for 'ConvNet1' and initializing model
-model = ConvNet1(input_dimension=(1, 32, 32), weight_scale=1e-3, hidden_dimension=500, regularization=1-e3)
-
-# Creating instance of class for 'Solver' and initializing model
-solver = Solver(model,
-                d,
-                update_rule='adam',
-                optimization_config={'learning_rate':1e-3},
-                learning_rate_decay=1.0,
-                batch_size=50,
-                number_of_epochs=50,
-                print_every=1,
-                verbose_mode=True
-               )
-
-# Running training process
-solver.train()
-```
-
 Model 1 with 'data8.pickle' dataset reached **0.989** training accuracy.
 <br/>Training process of Model 1 with **17 500** iterations is shown on the figure below.
 
