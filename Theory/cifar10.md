@@ -5,7 +5,7 @@ Example on Image Classification with the help of CIFAR-10 dataset and Convolutio
 ## Test online [here](https://valentynsichkar.name/cifar10.html)
 
 ### Courses:
-Explore course **"Convolutional Neural Networks for Image Classification"** here: https://stepik.org/course/53801/promo
+* Explore course **"Convolutional Neural Networks for Image Classification"** here: https://stepik.org/course/53801/promo
 
 ## Content
 Short description of the content. Full codes you can find inside the course by link above:
