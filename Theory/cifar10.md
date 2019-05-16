@@ -16,26 +16,26 @@ Short description of the content. Full codes you can find inside the course by l
   * [Preprocessing loaded CIFAR-10 dataset](#preprocessing-loaded-cifar10-dataset)
   * [Saving and Loading serialized models](#saving-and-loading-serialized-models)
   * [Functions for dealing with CNN layers](#functions-for-dealing-with-cnn-layers)
-    * [Naive Forward Pass for Convolutional layer](#naive-forward-pass-for-convolutional-layer)
-    * [Naive Backward Pass for Convolutional layer](#naive-backward-pass-for-convolutional-layer)
-    * [Naive Forward Pass for Max Pooling layer](#naive-forward-pass-for-max-pooling-layer)
-    * [Naive Backward Pass for Max Pooling layer](#naive-backward-pass-for-max-pooling-layer)
-    * [Forward Pass for Affine layer](#forward-pass-for-affine-layer)
-    * [Backward Pass for Affine layer](#backward-pass-for-affine-layer)
-    * [Forward Pass for ReLU layer](#forward-pass-for-relu-layer)
-    * [Backward Pass for ReLU layer](#backward-pass-for-relu-layer)
-    * [Softmax Classification loss](#softmax-classification-loss)
+    * Naive Forward Pass for Convolutional layer
+    * Naive Backward Pass for Convolutional layer
+    * Naive Forward Pass for Max Pooling layer
+    * Naive Backward Pass for Max Pooling layer
+    * Forward Pass for Affine layer
+    * Backward Pass for Affine layer
+    * Forward Pass for ReLU layer
+    * Backward Pass for ReLU layer
+    * Softmax Classification loss
   * [Creating Classifier - model of CNN](#creating-classifier-model-of-cnn)
-    * [Initializing new Network](#initializing-new-network)
-    * [Evaluating loss for training ConvNet1](#evaluating-loss-for-training-convnet1)
-    * [Calculating scores for predicting ConvNet1](#calculating-scores-for-predicting-convnet1)
+    * Initializing new Network
+    * Evaluating loss for training ConvNet1
+    * Calculating scores for predicting ConvNet1
   * [Functions for Optimization](#optimization-functions)
     * [Vanilla SGD](#vanilla-sgd)
   * [Creating Solver Class](#creating-solver-class)
-    * [_Reset](#reset)
-    * [_Step](#step)
-    * [Checking Accuracy](#accuracy)
-    * [Train](#train)
+    * _Reset
+    * _Step
+    * Checking Accuracy
+    * Train
   * [Overfitting Small Data](#overfitting-small-data)
   * [Training Results](#training-results)
   * [Full Codes](#full-codes)
@@ -125,32 +125,7 @@ Creating functions for CNN layers:
 * Backward Pass for ReLU layer
 * Softmax Classification loss
 
-#### <a id="naive-forward-pass-for-convolutional-layer">Naive Forward Pass for Convolutional layer</a>
-Defining function for naive forward pass for convolutional layer.
-
-#### <a id="naive-backward-pass-for-convolutional-layer">Naive Backward Pass for Convolutional layer</a>
-Defining function for naive backward pass for convolutional layer.
-
-#### <a id="naive-forward-pass-for-max-pooling-layer">Naive Forward Pass for Max Pooling layer</a>
-Defining function for naive forward pass for Max Pooling layer.
-
-#### <a id="naive-backward-pass-for-max-pooling-layer">Naive Backward Pass for Max Pooling layer</a>
-Defining function for naive backward pass for Max Pooling layer.
-
-#### <a id="forward-pass-for-affine-layer">Forward Pass for Affine layer</a>
-Defining function for forward pass for Affine layer.
-
-#### <a id="backward-pass-for-affine-layer">Backward Pass for Affine layer</a>
-Defining function for backward pass for Affine layer.
-
-#### <a id="forward-pass-for-relu-layer">Forward Pass for ReLU layer</a>
-Defining function for forward pass for ReLU layer.
-
-#### <a id="backward-pass-for-relu-layer">Backward Pass for ReLU layer</a>
-Defining function for backward pass for ReLU layer.
-
-#### <a id="softmax-classification-loss">Softmax Classification loss</a>
-Defining function for Softmax Classification loss.
+<br/>
 
 ### <a id="creating-classifier-model-of-cnn">Creating Classifier - model of CNN</a>
 Creating model of CNN Classifier:
@@ -158,12 +133,6 @@ Creating model of CNN Classifier:
 * Initializing new Network
 * Evaluating loss for training ConvNet1
 * Calculating scores for predicting ConvNet1
-
-#### <a id="initializing-new-network">Creating Class and Initializing new Network</a>
-
-#### <a id="evaluating-loss-for-training-convnet1">Evaluating loss for training ConvNet1</a>
-
-#### <a id="calculating-scores-for-predicting-convnet1">Calculating scores for predicting ConvNet1</a>
 
 <br/>
 
@@ -184,14 +153,6 @@ Creating Solver class for training classification models and for predicting:
 * Creating function 'step' for making single gradient update
 * Creating function for checking accuracy of the model on the current provided data
 * Creating function for training the model
-
-#### <a id="reset">Defining function with additional variables</a>
-
-#### <a id="step">Defining function for making single step</a>
-
-#### <a id="accuracy">Defining function for checking accuracy</a>
-
-#### <a id="train">Defining function for running training procedure</a>
 
 <br/>
 
