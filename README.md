@@ -3,7 +3,7 @@ Implementing Neural Networks for Computer Vision in Autonomous Vehicles and Robo
 <br/>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1317904.svg)](https://doi.org/10.5281/zenodo.1317904)
 
 ### Courses:
-Explore course **"Convolutional Neural Networks for Image Classification"** here: https://stepik.org/course/53801/promo
+* Explore course **"Convolutional Neural Networks for Image Classification"** here: https://stepik.org/course/53801/promo
 
 ### Reference to:
 Valentyn N Sichkar. Neural Networks for computer vision in autonomous vehicles and robotics // GitHub platform. DOI: 10.5281/zenodo.1317904
