@@ -175,11 +175,6 @@ Initialized Filters and Trained Filters for ConvNet Layer is shown on the figure
 
 ![Filters Cifar10](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/filters_cifar10.png)
 
-Training process for Filters of ConvNet Layer is shown on the figure below:
-
-![Training Filters Cifar10](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/cifar10_filters_training.gif)
-
-
 <br/>
 
 ### MIT License
