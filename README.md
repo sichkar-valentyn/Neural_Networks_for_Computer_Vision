@@ -142,39 +142,6 @@ The **main aim** of the repository is to study and to develope complex project o
 
 <br/>
 
-* CIFAR-10 Image Classification with `numpy` only:
-  * `Data_Preprocessing`
-    * `datasets`
-      * [get_CIFAR-10.sh](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Data_Preprocessing/datasets/get_CIFAR-10.sh)
-    * [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Data_Preprocessing/datasets_preparing.py)
-    * [mean_and_std.pickle](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Data_Preprocessing/mean_and_std.pickle)    
-  * `Helper_Functions`
-    * [layers.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Helper_Functions/layers.py)
-    * [optimize_rules.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Helper_Functions/optimize_rules.py)
-  * `Classifiers`
-    * [ConvNet1.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Classifiers/ConvNet1.py) 
-  * `Serialized_Models`
-    * model1.pickle
-  * [Solver.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Image_Classification/Solver.py)
-
-<br/>
-
-* MNIST Digits Classification with `numpy` only:
-  * `Data_Preprocessing`
-    * `datasets`
-    * [datasets_preparing.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Digits_Classification/Data_Preprocessing/datasets_preparing.py)
-    * [mean_and_std.pickle](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Digits_Classification/Data_Preprocessing/mean_and_std.pickle)    
-  * `Helper_Functions`
-    * [layers.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Digits_Classification/Helper_Functions/layers.py)
-    * [optimize_rules.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Digits_Classification/Helper_Functions/optimize_rules.py)
-  * `Classifiers`
-    * [ConvNet1.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Digits_Classification/Classifiers/ConvNet1.py) 
-  * `Serialized_Models`
-    * model1.pickle
-  * [Solver.py](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/Codes/Digits_Classification/Solver.py)
-
-<br/>
-
 ### MIT License
 ### Copyright (c) 2018-2019 Valentyn N Sichkar
 ### github.com/sichkar-valentyn
