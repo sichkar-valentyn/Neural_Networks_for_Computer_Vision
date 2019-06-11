@@ -7,30 +7,40 @@ Building Neural Networks for Objects Detection Algorithms.
 Theory and experimental results (on this page):
 
 * [Objects Detection Algorithms Overview](#main-objects-detection-algorithms)
-  * [YOLO v1](#yolo-v1)
-  * [YOLO v2](#yolo-v2)
-  * [YOLO v3](#yolo-v3)
+  * [YOLO](#yolo)
+    * [YOLO v1](#yolo-v1)
+    * [YOLO v2](#yolo-v2)
+    * [YOLO v3](#yolo-v3)
+  * [SSD](#ssd)
 
 <br/>
 
 ### <a id="main-objects-detection-algorithms">Objects Detection Algorithms Overview</a>
-There are variety of algorithms for Detection Objects on the image. Flowchart below shows most popular of them. We will move step by step exploring each of them.
+There are variety of algorithms for Detection Objects on the image. Fig.1.1 below shows most popular of them. We will move step by step exploring each of them.
 
 | ![Objects Detection Algorithms](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Objects_Detection/Objects_Detection_Algorithms.png) | 
 |:--:| 
-| *Objects Detection Algorithms* |
+| *Figure 1.1. Objects Detection Algorithms* |
 
 <br/>
 
-### <a id="yolo-v1">YOLO v1</a>
+### <a id="yolo">YOLO</a>
 
 <br/>
 
-### <a id="yolo-v2">YOLO v2</a>
+#### <a id="yolo-v1">YOLO v1</a>
 
 <br/>
 
-### <a id="yolo-v3">YOLO v3</a>
+#### <a id="yolo-v2">YOLO v2</a>
+
+<br/>
+
+#### <a id="yolo-v3">YOLO v3</a>
+
+<br/>
+
+### <a id="ssd">SSD</a>
 
 
 <br/>
