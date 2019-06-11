@@ -16,6 +16,10 @@ Theory and experimental results (on this page):
 ### <a id="main-objects-detection-algorithms">Objects Detection Algorithms Overview</a>
 There are variety of algorithms for Detection Objects on the image. Flowchart below shows most popular of them. We will move step by step exploring each of them.
 
+| ![Objects Detection Algorithms](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Objects_Detection/Objects_Detection_Algorithms.png) | 
+|:--:| 
+| *Objects Detection Algorithms* |
+
 <br/>
 
 ### <a id="yolo-v1">YOLO v1</a>
