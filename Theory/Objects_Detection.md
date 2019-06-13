@@ -12,6 +12,15 @@ Theory and experimental results (on this page):
     * [YOLO v2](#yolo-v2)
     * [YOLO v3](#yolo-v3)
   * [SSD](#ssd)
+  * [DSSD](#dssd)
+  * [R-FCN](#r-fcn)
+  * [R-CNN](#r-cnn)
+  * [Fast R-CNN](#fast-r-cnn)
+  * [Faster R-CNN](#faster-r-cnn)
+  * [Mask R-CNN](#mask-r-cnn)
+  * [NASNet](#nasnet)
+  * [FPN FRCN](#fpn-frcn)
+  * [Retinanet](#retinanet)
 
 <br/>
 
@@ -42,6 +51,41 @@ There are variety of algorithms for Detection Objects on the image. Fig.1.1 belo
 
 ### <a id="ssd">SSD</a>
 
+<br/>
+
+### <a id="dssd">DSSD</a>
+
+<br/>
+
+### <a id="r-fcn">R-FCN</a>
+
+<br/>
+
+### <a id="r-cnn">R-CNN</a>
+
+<br/>
+
+### <a id="fast-r-cnn">Fast R-CNN</a>
+
+<br/>
+
+### <a id="faster-r-cnn">Faster R-CNN</a>
+
+<br/>
+
+### <a id="mask-r-cnn">Mask R-CNN</a>
+
+<br/>
+
+### <a id="nasnet">NASNet</a>
+
+<br/>
+
+### <a id="fpn-frcn">FPN FRCN</a>
+
+<br/>
+
+### <a id="retinanet">Retinanet</a>
 
 <br/>
 
