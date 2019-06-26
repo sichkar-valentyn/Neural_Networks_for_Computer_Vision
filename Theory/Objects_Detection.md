@@ -31,6 +31,9 @@ There are variety of algorithms for Detection Objects on the image. Fig.1.1 belo
 <br/>
 
 ### <a id="yolo">YOLO</a>
+**YOLO** stands for **You Only Look Ones**. Here we will describe how to prepare data in *YOLO* format, install *Darknet* framework, train NN and use it for *Objects Detection*.
+
+
 
 <br/>
 
