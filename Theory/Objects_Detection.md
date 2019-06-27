@@ -33,7 +33,24 @@ There are variety of algorithms for Detection Objects on the image. Fig.1.1 belo
 ### <a id="yolo">YOLO</a>
 **YOLO** stands for **You Only Look Ones**. Here we will describe how to prepare data in *YOLO* format, install *Darknet* framework, train NN and use it for *Objects Detection*.
 
+Before starting to train with *YOLO* it is needed to prepare data. It is possible to collect data or to use already prepared data.
 
+| ![Data_Preparation](https://github.com/sichkar-valentyn/Neural_Networks_for_Computer_Vision/blob/master/images/Objects_Detection/Data_Preparation.png) | 
+|:--:| 
+| *Figure 1.2. Data Preparation* |
+
+Data has to be converted in *YOLO format*.
+
+After data preparation file's structure will be as following:
+```
++-- data
+|   +-- train
+|   +-- test
+|   train.txt
+|   test.txt
+```
+
+Folders *train* and *test* contain images and corresponding *.txt* files with the same names as images. In every *.txt* file there are 5 numbers that are number of *class* and *coordinates* of *boundary box*. In files *train.txt* and *test.txt* there are full paths to the images that will be used in *Darknet* framework.
 
 <br/>
 
