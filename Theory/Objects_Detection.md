@@ -50,7 +50,7 @@ After data preparation file's structure will be as following:
 |   test.txt
 ```
 
-Folders *train* and *test* contain images and corresponding *.txt* files with the same names as images. In every *.txt* file there are 5 numbers that are number of *class* and *coordinates* of *boundary box*. In files *train.txt* and *test.txt* there are full paths to the images that will be used in *Darknet* framework. After *Darknet* installation we will configure the file and set the paths to these files.
+Folders *train* and *test* contain images and corresponding *.txt* files with the same names as images. In every *.txt* file there are 5 numbers that are number of *class* and *coordinates* of *boundary box*. In files *train.txt* and *test.txt* there are full paths to the images that will be used in *Darknet* framework. After *Darknet* installation we will update configuration and set the paths to these files in order *Darknet* knows with which data to train and test.
 
 <br/>
 
