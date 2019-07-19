@@ -4,9 +4,6 @@ Implementing Traffic Sign Classification in Python for Computer Vision tasks in 
 
 ## Test online [here](https://valentynsichkar.name/traffic_signs.html)
 
-### Courses:
-* Explore the course **"Convolutional Neural Networks for Image Classification"** here: https://stepik.org/course/53801/promo
-
 ## Content
 Short description of the content. Full codes you can find inside the course by link above:
 
