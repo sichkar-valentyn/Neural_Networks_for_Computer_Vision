@@ -4,9 +4,6 @@ Example on Digits Classification with the help of MNIST dataset of handwritten d
 
 ## Test online [here](https://valentynsichkar.name/mnist.html)
 
-### Courses:
-* Explore the course **"Convolutional Neural Networks for Image Classification"** here: https://stepik.org/course/53801/promo
-
 ## Content
 Short description of the content. Full codes you can find inside the course by link above:
 
