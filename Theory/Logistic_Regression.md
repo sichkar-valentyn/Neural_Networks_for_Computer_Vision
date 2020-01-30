@@ -2,9 +2,6 @@
 Implementing **Logistic Regression** for **Image Recognition** task.
 <br/>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1317904.svg)](https://doi.org/10.5281/zenodo.1317904)
 
-### Courses:
-* Explore the course **"Convolutional Neural Networks for Image Classification"** here: https://stepik.org/course/53801/promo
-
 ## Content
 Theory and experimental results (on this page):
 
