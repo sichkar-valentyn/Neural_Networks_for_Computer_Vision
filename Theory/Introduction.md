@@ -2,9 +2,6 @@
 Explaining basic concepts on how NN works and implementing simple, kind of classical, task in Python using just <b>numpy</b> library without special toolkits and without high-level NN libraries.
 <br/>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1317904.svg)](https://doi.org/10.5281/zenodo.1317904)
 
-### Courses:
-* Explore the course **"Convolutional Neural Networks for Image Classification"** here: https://stepik.org/course/53801/promo
-
 ## Content
 Theory and experimental results (on this page):
 
