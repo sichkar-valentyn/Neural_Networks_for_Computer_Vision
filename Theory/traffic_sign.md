@@ -4,7 +4,7 @@ Implementing Traffic Sign Classification in Python for Computer Vision tasks in 
 
 ## Test online [here](https://valentynsichkar.name/traffic_signs.html)
 
-## Related Course
+## Related Course for Detection Tasks
 **Training YOLO v3 for Objects Detection with Custom Data.** *Build your own detector by labelling, training and testing on image, video and in real time with camera.* Available here: [https://www.udemy.com/course/training-yolo-v3-for-objects-detection-with-custom-data/](https://www.udemy.com/course/training-yolo-v3-for-objects-detection-with-custom-data/)
 
 Detections on video are shown below. **Trained weights** for detection tasks can be found in the course mentioned above.
