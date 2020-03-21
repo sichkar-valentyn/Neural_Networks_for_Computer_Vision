@@ -54,8 +54,13 @@ The **main aim** of the repository is to study and to develope complex project o
 
 <br/>
 
-* **Example #3** - video Introduction into Convolutional Neural Network with Python from scratch:
-<br/><a href="https://www.youtube.com/watch?v=04G3kRFI7pc" target="_blank"><img src="images/Video_Introduction_into_ConvNet.bmp" alt="Convolutional NN from scratch" /></a>
+* :mortar_board: Related Course for Detection Tasks. **Training YOLO v3 for Objects Detection with Custom Data.** *Build your own detector by labelling, training and testing on image, video and in real time with camera.* Join here: [https://www.udemy.com/course/training-yolo-v3-for-objects-detection-with-custom-data/](https://www.udemy.com/course/training-yolo-v3-for-objects-detection-with-custom-data/?referralCode=A283956A57327E37DDAD)
+
+:triangular_flag_on_post: Concept Map of the Course
+![Concept Map of the Course](https://github.com/sichkar-valentyn/YOLO-v3-Objects-Detection-with-Custom-Data/blob/master/images/Concept_map_YOLO_3.png "Concept Map of the Course")
+
+:point_right: Join the Course
+[https://www.udemy.com/course/training-yolo-v3-for-objects-detection-with-custom-data/](https://www.udemy.com/course/training-yolo-v3-for-objects-detection-with-custom-data/?referralCode=A283956A57327E37DDAD)
 
 <br/>
 
